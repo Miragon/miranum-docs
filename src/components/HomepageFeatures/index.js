@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/dev_process.svg').default,
     description: (
       <>
-        Miranum ist so konzipiert, dass Ihre Entwickler sich darauf konzentrieren können, wiederverwendbare Funktionalitäten zur Verfügung zu stellen. Die Prozess-Modellierer können diese dann ohne Programmieraufwand verwenden.
+        Miranum ist so konzipiert, dass deine Entwickler sich darauf konzentrieren können, wiederverwendbare Funktionalitäten zur Verfügung zu stellen. Die Prozess-Modellierer können diese dann ohne Programmieraufwand verwenden.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/integration.svg').default,
     description: (
       <>
-        Über Miranum sind Ihre Prozesse (und andere Services) so mit der Unternehmensinfrastruktur verbunden, dass Sie problemlos Systeme austauschen können, ohne einen einzigen Prozess / Service anfassen zu müssen.
+        Über Miranum sind deine Prozesse (und andere Services) so mit der Unternehmensinfrastruktur verbunden, dass du problemlos Systeme austauschen kannst, ohne einen einzigen Prozess / Service anfassen zu müssen.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/c7_to_c8.svg').default,
     description: (
       <>
-        Mit Miranum gestalten Sie den Wechsel von Camunda 7 zu 8 kinderleicht ohne Anpassung Ihrer Prozesse. Sie können sogar Ihre Prozesse nach und nach von C7 auf C8 migrieren.
+        Mit Miranum gestaltest du den Wechsel von Camunda 7 zu 8 kinderleicht ohne Anpassung deiner Prozesse. Du kannst sogar deine Prozesse nach und nach von C7 auf C8 migrieren.
       </>
     ),
   },
