@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Entwicklungsprozess optimieren',
+    Svg: require('@site/static/img/dev_process.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Miranum ist so konzipiert, dass deine Entwickler sich darauf konzentrieren können, wiederverwendbare Funktionalitäten zur Verfügung zu stellen. Die Prozess-Modellierer können diese dann ohne Programmieraufwand verwenden.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Lose Kopplung in die Infrastruktur',
+    Svg: require('@site/static/img/integration.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Über Miranum sind deine Prozesse (und andere Services) so mit der Unternehmensinfrastruktur verbunden, dass du problemlos Systeme austauschen kannst, ohne einen einzigen Prozess / Service anfassen zu müssen.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Camunda Versionswechsel leicht gemacht',
+    Svg: require('@site/static/img/c7_to_c8.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Mit Miranum gestaltest du den Wechsel von Camunda 7 zu 8 kinderleicht ohne inhaltliche Anpassung deiner Prozesse und ohne Anpassung der Integrationen. Du kannst sogar deine Prozesse nach und nach von C7 auf C8 migrieren.
       </>
     ),
   },

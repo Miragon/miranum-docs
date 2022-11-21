@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'evigon',
-  tagline: 'Integration leicht gemacht',
+  title: 'miranum',
+  tagline: 'Für uns bedeutet Low-Code, dass Entwickler mit Standard-Technologien Funktionalität bereitstellen, die einfach wiederverwendet werden kann.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
@@ -57,10 +57,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'evgion',
+        title: '',
         logo: {
-          alt: 'evigon Logo',
-          src: 'img/logo.svg',
+          alt: 'miranum logo',
+          src: 'img/logo_blau.png',
         },
         items: [
           {
