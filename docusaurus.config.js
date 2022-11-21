@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'miranum',
-  tagline: 'Für uns bedeutet Low-Code, dass Entwickler mit Standard-Technologien Funktionalität bereit stellen, die einfach wiederverwendet werden kann.',
+  tagline: 'Für uns bedeutet Low-Code, dass Entwickler mit Standard-Technologien Funktionalität bereitstellen, die einfach wiederverwendet werden kann.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
