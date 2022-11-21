@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/c7_to_c8.svg').default,
     description: (
       <>
-        Mit Miranum gestaltest du den Wechsel von Camunda 7 zu 8 kinderleicht ohne Anpassung deiner Prozesse. Du kannst sogar deine Prozesse nach und nach von C7 auf C8 migrieren.
+        Mit Miranum gestaltest du den Wechsel von Camunda 7 zu 8 kinderleicht ohne inhaltliche Anpassung deiner Prozesse und ohne Anpassung der Integrationen. Du kannst sogar deine Prozesse nach und nach von C7 auf C8 migrieren.
       </>
     ),
   },
