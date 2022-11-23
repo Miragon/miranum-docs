@@ -63,13 +63,13 @@ const config = {
           src: 'img/logo_blau.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Einführung',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Einführung',
+          // },
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/flowsquad',
             label: 'GitHub',
@@ -83,35 +83,35 @@ const config = {
           {
             title: 'Dokumentation',
             items: [
-              {
-                label: 'Einführung',
-                to: '/docs/intro',
-              },
+              // {
+              //   label: 'Einführung',
+              //   to: '/docs/intro',
+              // },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-              {
-                label: 'Slack',
-                href: 'https://twitter.com/docusaurus',
-              },
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
+              // {
+              //   label: 'Slack',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
             ],
           },
           {
             title: 'Mehr',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/flowsquad',
               },
             ],
           },
