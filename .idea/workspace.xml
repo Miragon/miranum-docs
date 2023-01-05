@@ -1,38 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bf6c0-6db2-4db0-b07b-e38cc0b82a48" name="Changes" comment="feat: added commands.md from miranum-ide">
-      <change afterPath="$PROJECT_DIR$/docs/Appendix/commands/_category_.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Appendix/commands/deployAllFiles.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Appendix/commands/deployFile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Appendix/commands/generateFile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Appendix/commands/generateProject.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial-cli/example.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial-console/_category_.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tutorial-console/example.md" afterDir="false" />
+    <list default="true" id="720bf6c0-6db2-4db0-b07b-e38cc0b82a48" name="Changes" comment="refactor: docs folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gettingstarted.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gettingstarted.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/_category_.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Appendix/_category_.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/commands.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/congratulations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/create-a-blog-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/create-a-document.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/create-a-page.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/deploy-your-site.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-basics/markdown-features.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-extras/_category_.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tutorial-cli/_category_.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-extras/img/docsVersionDropdown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-extras/img/localeDropdown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-extras/manage-docs-versions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tutorial-extras/translate-your-site.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/docusaurus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/gettingStartet/gettingStartet_step1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/gettingStartet/gettingStartet_step2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/gettingStartet/gettingStartet_step3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/gettingStartet/gettingStartet_step5.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/gettingStartet/gettingStartet_step7.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672920415220</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: docs folder">
+      <created>1672926906611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672926906611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: added gettingstarted.md and commands.md from miranum-ide" />
     <MESSAGE value="feat: added commands.md from miranum-ide" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added commands.md from miranum-ide" />
+    <MESSAGE value="refactor: docs folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: docs folder" />
   </component>
 </project>

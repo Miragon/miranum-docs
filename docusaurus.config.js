@@ -63,13 +63,13 @@ const config = {
           src: 'img/logo_blau.png',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Einführung',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'doc',
+            docId: 'gettingstarted',
+            position: 'left',
+            label: 'docs',
+          },
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/flowsquad',
             label: 'GitHub',
