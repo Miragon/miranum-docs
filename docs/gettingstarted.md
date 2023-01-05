@@ -17,14 +17,14 @@ Open the Miranum-Console on the side-bar and generate your first Project.
 (Alternatively you can right-click a folder and select "generate" -> "generateProject")
 After that all you need to do is input a name and select the path you want your project to be saved to.
 
-![gettingStartet_1](../static/img/gettingStartet/gettingStartet_step1.png)
+![gettingStartet_1](img/gettingStartet_step1.png)
 
 Now that we have our base project set up we can start modeling. 
 Therefore, open the path you selected in the VS-Explorer and open the .bpmn file.
 You should see an almost empty diagram. Let's extend this a bit and add a Task to it.
 If we now click the element again and use the wrench on it, we can make it a UserTask.
 
-![gettingStartet_2](../static/img/gettingStartet/gettingStartet_step2.png)
+![gettingStartet_2](img/gettingStartet_step2.png)
 
 Here comes our first feature. If you use Camunda a lot, you already know the Form-Property.
 With Miranum however, we now enable you to skip the process of remembering Form-keys and instead directly select one out of your collection.
@@ -38,7 +38,7 @@ Let's first concentrate on the builder, and drag a group and then a textfield in
 In the preview you shoud now see a change, if not press the refresh button in its top right corner.
 Great Job, we made our first form! It's quite simple at the moment, so let's enhance it by adding a number and then a switch into the same group.
 
-![gettingStartet_3](../static/img/gettingStartet/gettingStartet_step3.gif) //edit after digiwf update (x-display is now availaible)
+![gettingStartet_3](img/gettingStartet_step3.gif) //edit after digiwf update (x-display is now availaible)
 
 Let's rename some segments. First, press the Options-Button (three dots on the right) of the textfield and press Edit. 
 A new window should pop up. This should have a lot of options to it, we only want to change the name though, so let's change the title to "Article".
@@ -54,7 +54,7 @@ Now make the Task a ServiceTask. (In case you forgot how to do it: click on the 
 
 This is the final diagram (Does yours look the same?):
 
-![gettingStartet_5](../static/img/gettingStartet/gettingStartet_step5.png)
+![gettingStartet_5](img/gettingStartet_step5.png)
 
 Let's do some more editing though. First, select the "Select"-button on the Template property of the Service-Task.
 This should open a window with your available Templates. (Make sure that you don't have the template open though, it will disable vs-code to read the file) 
@@ -70,6 +70,6 @@ Let's try this for our UserTask. Let's name it "Present approval". We do the sam
 That's us done, now we can deploy our new creation. To do this, you can either right-click the Project-folder and say DeployAll.
 Or you can go back to the Miranum-Console, and use the DeployAll button there.
 
-![gettingStartet_7](../static/img/gettingStartet/gettingStartet_step7.png)
+![gettingStartet_7](img/gettingStartet_step7.png)
 
 //again without "MyProject2"
