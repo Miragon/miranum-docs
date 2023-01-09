@@ -67,7 +67,7 @@ const config = {
             type: 'doc',
             docId: 'gettingstarted',
             position: 'left',
-            label: 'docs',
+            label: 'miranum-ide',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {

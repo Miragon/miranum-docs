@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bf6c0-6db2-4db0-b07b-e38cc0b82a48" name="Changes" comment="refactor: docs folder">
+    <list default="true" id="720bf6c0-6db2-4db0-b07b-e38cc0b82a48" name="Changes" comment="refactor: english -&gt; german">
+      <change afterPath="$PROJECT_DIR$/docs/References/commands/deployAllFiles.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/References/commands/deployFile.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/_category_.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/References/_category_.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/commands/_category_.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/References/commands/_category_.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/commands/deployAllFiles.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/commands/deployFile.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/commands/generateFile.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/References/commands/generateFile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Appendix/commands/generateProject.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/References/commands/generateProject.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gettingstarted.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gettingstarted.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/gettingStartet_step7.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/gettingStartet_step7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docusaurus.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +52,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jakobmertl/source/miragon/miranum-docs/docs/tutorial-console",
+    "last_opened_file_path": "/Users/jakobmertl/source/miragon/miranum-docs/docs/img",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/jakobmertl/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/222.3739.54/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -55,11 +65,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/img" />
       <recent name="$PROJECT_DIR$/docs/tutorial-console" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/docs/tutorial-basics/commands" />
       <recent name="$PROJECT_DIR$/docs/tutorial-basics" />
-      <recent name="$PROJECT_DIR$/static/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -102,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672926906611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: added doc field to navbar">
+      <created>1672927704560</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672927704560</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +140,7 @@
     <MESSAGE value="feat: added gettingstarted.md and commands.md from miranum-ide" />
     <MESSAGE value="feat: added commands.md from miranum-ide" />
     <MESSAGE value="refactor: docs folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: docs folder" />
+    <MESSAGE value="feat: added doc field to navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added doc field to navbar" />
   </component>
 </project>

@@ -5,71 +5,82 @@ sidebar_position: 1
 # Getting Started with Miranum
 
 ## Setup
-Before being able to use the full potential Miranum offers you also need to download the following Extensions:
+Bevor das volle Potenzial von Miranum ausgeschöpft werden kann benötigen Sie folgende VS-Code Extensions:
+
+[Miranum: Console](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-console)
 
 [Miranum: BPMN-Modeler](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-bpmn-modeler)
 
 [Miranum: Form](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-vuetify-jsonschema-builder)
 
 
-## Steps to your first BPMN-Project
-Open the Miranum-Console on the side-bar and generate your first Project. 
-(Alternatively you can right-click a folder and select "generate" -> "generateProject")
-After that all you need to do is input a name and select the path you want your project to be saved to.
+## Ihr erstes BPMN-Projekt
+Öffnen Sie den Reiter Miranum-Console in der side-bar links und drücken sie "generate project". 
+(Alternativ kann auch über einen rechts-click auf einen Ordner und dann unter dem Reiter "generate" -> "generateProject" ein Projekt generiert werden)
+Nun sollte sich ein neues Fenster öffnen, in dem Sie die Option haben einen Namen und einen Pfad anzugeben/auszuwählen.
+Geben Sie ihrem Projekt einen passenden Namen und wählen Sie einen für Sie passenden Pfad aus.
 
 ![gettingStartet_1](img/gettingStartet_step1.png)
 
-Now that we have our base project set up we can start modeling. 
-Therefore, open the path you selected in the VS-Explorer and open the .bpmn file.
-You should see an almost empty diagram. Let's extend this a bit and add a Task to it.
-If we now click the element again and use the wrench on it, we can make it a UserTask.
+Nun da das basic Projekt steht können wir mit dem Modellieren anfangen. 
+Gehen Sie dafür mit vs-code in ihren Projektordner (Datei -> Öffnen -> Ihr Projekt) und öffnen das sich darin befindende .bpmn File.
+Dieses sollte zurzeit fast leer sein. Lassen Sie uns das schnell ändern, indem wir eine "Task" hinzufügen.
+Diese Task können wir nun durch erneutes auswählen und klicken auf den Schraubenschlüssel zu einer "UserTask" machen
 
 ![gettingStartet_2](img/gettingStartet_step2.png)
 
-Here comes our first feature. If you use Camunda a lot, you already know the Form-Property.
-With Miranum however, we now enable you to skip the process of remembering Form-keys and instead directly select one out of your collection.
-Let's say we don't want one of the forms we already have and need to make a new one. No Problem.
-Go back to the Miranum-Console, but this time generate a File and select type="form". (Right-click and selecting "generate" -> "generateFile" works as well)
+Unser erstes feature behandelt nun die sogenannte form-property.
+Wer sich mit Camunda bereits auskennt weiß wie komplex diese sein kann.
+Durch Miranum jedoch können Sie sich hier viele kleinigkeiten sparen. 
+Formulare müssen nun nicht mehr umständlich hin und her kopiert werden und sich deren Form-keys gemerkt werden, 
+nein all dies wird Ihnen durch eine optimierte Struktur und ein bequemes drop-down vereinfacht.
+Nehmen wir jedoch an die zwei generierten forms erfüllen nicht unsere erwartungen, kein Problem - wir erstellen uns ein neues.
+Öffnen Sie hierfür erneut die Miranum-Console, diesmal wollen wir jedoch nur ein File generieren. Drücken Sie also "generate file", 
+geben Sie dem File einen passenden Namen und wählen Sie den Typen "form" aus. 
+(Wie zuvor kann auch über rechts-click "generate" -> "generateFile" gegangen werden)
 
-The newly generated form file will be automatically added into your form-folder and can therefore be used in the select field.
-But we aren't done yet, we want to edit the form. Therefore, double click it.
-The extension should give you a new editor window. You should see a builder and a JSON-Schema preview.
-Let's first concentrate on the builder, and drag a group and then a textfield into one of the groups. 
-In the preview you shoud now see a change, if not press the refresh button in its top right corner.
-Great Job, we made our first form! It's quite simple at the moment, so let's enhance it by adding a number and then a switch into the same group.
+Das neu generierte Form-File wird durch die miranum.json automatisch im Form-Ordner abgelegt, und kann so im drop-down verwendet werden.
+Wir sind jedoch noch nicht fertig, schließlich wollen wir ja unser eigenes Formular erstelln. Klicken Sie dafür auf das Formular.
+Durch die Extension sollte sich nun ein neuer Editor aufmachen, in dem Sie sowohl einen Builder, als auch eine Preview sehen.
+Konzentrieren wir uns zuerst auf den Builder. Ziehen Sie von den auswählbaren Elementen hierfür ein Group- und dann ein TextFiel-Objekt in ihre Sektion.
+In der Preview sollte sogleich eine Veränderung zu sehen sein, sollte dies nicht der fall sein, laden Sie bitte die Seite neu.
+Gut gemacht! Wir haben nun unser erstes Formular erstellt, zugegeben, es is noch etwas simpel, aber das können wir durch zwei weitere Objekte schnell ändern.
+Fügen Sie also noch ein Number-Object und einen Switch Ihrer Gruppe hinz.
 
 ![gettingStartet_3](img/gettingStartet_step3.gif) //edit after digiwf update (x-display is now availaible)
 
-Let's rename some segments. First, press the Options-Button (three dots on the right) of the textfield and press Edit. 
-A new window should pop up. This should have a lot of options to it, we only want to change the name though, so let's change the title to "Article".
-Let's do the same with our number -> "Price", and our switch -> "Approve".
-Amazing, we have a full functioning form which we can now integrate into our bpmn-diagram.
-So, let's do that. Open your bpmn again, and select your UserTask. 
-Now select the newly generated form in your form-property. This should fill out an input-variable for you.
+Lasst uns nun die Objekte benennen. Hierfür müssen Sie den Options-Button (die drei Punkte ) und dann "Edit" drücken.
+Hierdurch sollte sich ein neues Fenster öffnen, welches Ihnen vielerlei Optionen bietet.
+Da wir nur den Namen ändern wollen konzentrieren wir uns auf das Feld "title" und ändern diesen zu "Artikel".
+Lassen Sie uns nun auch die Nummer zu "Preis", und den Switcht zu "Genehmigen" ändern.
+Klasse, nun haben wir ein vollständiges Formular welches sicht in unser bpmn-diagram einbinden lässt.
+Klicken Sie hierfür auf das .bpmn File (Schließen Sie das Formular) und selektieren die UserTask.
+Wählen Sie unter Form Ihr neu erstelltes Formular aus, und es sollte sich eine input-variable befüllen.
 
 //after update digiwf
 
-Let's add another Task to our diagram and then finish the diagram with the "End Event" block.
-Now make the Task a ServiceTask. (In case you forgot how to do it: click on the Task, press the wrench, and select ServiceTask)
+Nun fügen wir noch eine weitere Task hinzu und beenden unser BPMN mit dem "End-Event" Objekt.
+Machen Sie die Task zu einer "ServiceTask". (Sollten Sie vergessen haben wie dies geht: 
+klicken Sie auf die Task, wählen Sie den Schraubenschlüssel aus, und dann die ServiceTask - ein Zahnrad)
 
-This is the final diagram (Does yours look the same?):
+Damit ist unser Diagramm fertig, sieht Ihres genauso aus?:
 
 ![gettingStartet_5](img/gettingStartet_step5.png)
 
-Let's do some more editing though. First, select the "Select"-button on the Template property of the Service-Task.
-This should open a window with your available Templates. (Make sure that you don't have the template open though, it will disable vs-code to read the file) 
-Now choose the "Mail Task" and fill out custom properties.
-As recipient use your email. As content say "hi". As subject put "present".
+Lassen Sie uns jedoch noch ein paar Verfeinerungen daran vornehmen. 
+Beginnen wir damit ein Template anzubinden. Hierfür müssen Sie bei der eben erstellten Service-Task auf den Knopf "Select +" in der Template-property drücken.
+Dies sollte ein neues Fenster öffnen, in dem Sie ihr Template auswählen können. (Stellen Sie sicher das, das Template zurzeit nicht geöffnet ist, da vs-code es sonst nicht lesen kann) 
+Wählen Sie die "Mail Task" aus und befüllen Sie die Felder folgendermaßen:
+Als "recipient" tragen Sie Ihre email-adresse ein, als "content" das Wort "Willkommen", und als "subject" das Wort "Geschenk".
 
-Let's also change the name of our elements. Anyone who knows his way around Camunda can do this by themselves.
-If you haven't used Camunda yet, naming is done under the property General -> Name.
-Let's try this for our UserTask. Let's name it "Present approval". We do the same with the ServiceTask, but this time we give it the name "Send Mail".
+Wir wollen auch die Titel unserer Tasks ändern. 
+Falls Sie noch nicht mit Camunda vertraut sind, Titel können über den Reiter "General" und dann die Property "Name" vergeben werden.
+Benennen wir als unsere UserTask "Geschenk erstellung" und unsere ServiceTask "Mail versenden".
 
 //after bpmn update (as email: yourName@miragon.io)
 
-That's us done, now we can deploy our new creation. To do this, you can either right-click the Project-folder and say DeployAll.
-Or you can go back to the Miranum-Console, and use the DeployAll button there.
+Mit dem jetzigen Ergebnis sind wir zufrieden und können unser Projekt somit final deployen.
+Hierfür rechts-clicken Sie den Ordner, clicken dann auf "Deploy All", und wählen danach Ihre gewünschte Target-Umgebung aus.
 
 ![gettingStartet_7](img/gettingStartet_step7.png)
 
-//again without "MyProject2"
