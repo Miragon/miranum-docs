@@ -10,12 +10,13 @@ Im Folgenden wird auf das standard File bezug genommen:
 
 ```
 {
+  "$schema": "url",
   "projectVersion": "1.0.0",
   "name": "project-template",
   "workspace": {
-    "forms": "forms",
-    "elementTemplates": "element-templates",
-    "configs": "configs"
+    "forms": { path: "forms", extension: ".form" },
+    "elementTemplates": { path: "element-templates", extension: ".json" },
+    "configs": { path: "configs", extension: ".config" }
   },
   "deployment": [
     {
