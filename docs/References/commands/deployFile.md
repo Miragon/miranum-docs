@@ -5,8 +5,8 @@ sidebar_position: 1
 # Deploy A File
 
 Dieser Command deployed ein Artefakt in eine gewünschte Umgebung.
-Ein Artefakt besteht hierbei aus einem Type (string), einem Projekt (string), und einem File
-Das File wiederum besteht aus einem Namen, einer Extension, Content, einer Größe, und einem Pfad.
+Ein Artefakt besteht hierbei aus einem Type (string), einem Projekt (string), und einem File.
+Das File wiederum besteht aus einem Namen, einer Extension, Content, einer Größe und einem Pfad.
 
 Eine gültige Eingabe kann wie folgt aussehen:
 ```bash
