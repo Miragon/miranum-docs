@@ -6,7 +6,7 @@ sidebar_position: 1
 Die miranum.json ist die von Miranum gelieferte config Datei.
 Sie definiert die Version des Projekts, dessen Namen, seine workspaces, sowie die zur verfügung stehenden deployment Umgebungen.
 
-Im Folgenden wird auf das standard File bezug genommen:
+Im Folgenden wird auf das standard File bezug genommen, welches nach Projekt generierung erstellt wird:
 
 ```
 {
@@ -44,10 +44,12 @@ Im Folgenden wird auf das standard File bezug genommen:
 Sind beide selbsterklärend und bedürfen keiner ausführlicheren Erklärung.
 
 ## Workspace
-Der workspace definiert die Ordner, in denen bestimmte für das BPMN-file benötigte typen abgelegt werden.
-Hierbei gibt es standardmäßig die Typen "form", "element-template", und "config", jedoch können diese beliebig erweitert werden.
-Der angegebene key muss jedoch stets in camelcase Schreibweise geschrieben sein.
+Der Workspace definiert spezielle Files oder Typen, die in das BPMN eingebunden werden können.
+Hierfür, gibt man den Ordner-Pfad und die File-Endung an.
+Standardmäßig gibt es die Typen "form", "element-template", und "config", jedoch können diese beliebig erweitert werden.
+
+Wichtig zu beachten ist, dass der angegebene key stets in camelcase Schreibweise mit Endung "s" geschrieben sein muss.
 
 ## Deployment
-Das deployment definiert die urls, unter denen unterstützte Files deployed werden können.
-Die targetEnvironments können beliebig erweitert werden, wir empfehlen jedoch die drei standardmäßigen zu nutzen.
+Das Deployment definiert die urls, unter denen unterstützte Files deployt werden können.
+Die targetEnvironments können beliebig erweitert werden, wir empfehlen jedoch die drei standardmäßigen in abgeänderter Form zu nutzen.
