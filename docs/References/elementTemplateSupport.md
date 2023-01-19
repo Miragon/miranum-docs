@@ -19,7 +19,7 @@ Im Folgenden wird erklärt, wie beides in VS-Code einfach zu erlangen ist.
 Folgende Möglichkeiten stehen Ihnen zur Verfügung um Autocompletion für Element-Templates zu erlangen.
 
 ### Von Miranum-Console generierte Element-Templates
-Unsere generierten Element-Templates enthalten automatisch ein Autocomplete Support in VS-Code.
+Unsere generierten Element-Templates enthalten automatisch einen Autocomplete Support in VS-Code.
 Sie müssen in diesem Fall also nichts machen.
 
 ### Eigene Element-Templates
