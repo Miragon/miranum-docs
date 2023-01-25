@@ -13,11 +13,11 @@ Im Folgenden wird auf das standard File bezug genommen, welches nach Projekt gen
   "$schema": "url",
   "projectVersion": "1.0.0",
   "name": "project-template",
-  "workspace": {
-    "forms": { path: "forms", extension: ".form" },
-    "elementTemplates": { path: "element-templates", extension: ".json" },
-    "configs": { path: "configs", extension: ".config" }
-  },
+  "workspace": [
+    { "type": "form", "path": "forms", "extension": ".form" },
+    { "type": "element-template", "path": "element-templates", "extension": ".json" },
+    { "type": "config", "path": "configs", "extension": ".config.json" }
+  ],
   "deployment": [
     {
       "plugin": "rest",
@@ -45,8 +45,8 @@ Sind beide selbsterklärend und bedürfen keiner ausführlicheren Erklärung.
 
 ## Workspace
 Der Workspace definiert spezielle Files oder Typen, die in das BPMN eingebunden werden können.
-Hierfür, gibt man den Ordner-Pfad und die File-Endung an.
-Standardmäßig gibt es die Typen "form", "element-template", und "config", jedoch können diese beliebig erweitert werden.
+Hierfür, gibt man den gewünschten Typen, den Ordner-Pfad, unter dem dieser abgelegt werden soll, und die gewünschte File-Endung an.
+Standardmäßig gibt es die Typen "form", "element-template", und "config", jedoch kann der workspace beliebig erweitert/verändert werden.
 
 Wichtig zu beachten ist, dass der angegebene key stets in camelcase Schreibweise mit Endung "s" geschrieben sein muss.
 
