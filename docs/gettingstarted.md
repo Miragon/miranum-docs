@@ -11,7 +11,7 @@ Bevor das volle Potenzial von Miranum ausgeschöpft werden kann benötigen Sie f
 
 [Miranum: BPMN-Modeler](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-bpmn-modeler)
 
-[Miranum: Form](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-vuetify-jsonschema-builder)
+[Miranum: Form](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-vs-code-forms)
 
 
 ## Ihr erstes BPMN-Projekt
