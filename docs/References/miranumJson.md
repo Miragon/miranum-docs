@@ -3,10 +3,10 @@ sidebar_position: 1
 ---
 
 # Miranum.json
-Die miranum.json ist die von Miranum gelieferte config Datei.
-Sie definiert die Version des Projekts, dessen Namen, seine workspaces, sowie die zur verfügung stehenden deployment Umgebungen.
+The miranum.json is the config file provided by Miranum.
+It defines the version of the project, its name, its workspaces and the available deployment environments.
 
-Im Folgenden wird auf das standard File bezug genommen, welches nach Projekt generierung erstellt wird:
+In the following we refer to the standard file which is created after project generation:
 
 ```
 {
@@ -14,6 +14,8 @@ Im Folgenden wird auf das standard File bezug genommen, welches nach Projekt gen
   "projectVersion": "1.0.0",
   "name": "project-template",
   "workspace": [
+    { "type": "bpmn", "path": "", "extension": ".bpmn" },
+    { "type": "dmn", "path": "", "extension": ".dmn" },
     { "type": "form", "path": "forms", "extension": ".form" },
     { "type": "element-template", "path": "element-templates", "extension": ".json" },
     { "type": "config", "path": "configs", "extension": ".config.json" }
@@ -40,16 +42,14 @@ Im Folgenden wird auf das standard File bezug genommen, welches nach Projekt gen
 }
 ```
 
-## Version und Name
-Sind beide selbsterklärend und bedürfen keiner ausführlicheren Erklärung.
+## Version and Name
+Both are self-explanatory and do not require any explanation.
 
 ## Workspace
-Der Workspace definiert spezielle Files oder Typen, die in das BPMN eingebunden werden können.
-Hierfür, gibt man den gewünschten Typen, den Ordner-Pfad, unter dem dieser abgelegt werden soll, und die gewünschte File-Endung an.
-Standardmäßig gibt es die Typen "form", "element-template", und "config", jedoch kann der workspace beliebig erweitert/verändert werden.
-
-Wichtig zu beachten ist, dass der angegebene key stets in camelcase Schreibweise mit Endung "s" geschrieben sein muss.
+The workspace defines all files or types that can be generated and used in the BPMN.
+For this, you specify the desired type, the folder path under which it is to be stored and the desired file extension.
+By default, there are the types "bpmn", "dmn", "form", "element-template" and "config", but the workspace can be extended/changed as desired.
 
 ## Deployment
-Das Deployment definiert die urls, unter denen unterstützte Files deployt werden können.
-Die targetEnvironments können beliebig erweitert werden, wir empfehlen jedoch die drei standardmäßigen in abgeänderter Form zu nutzen.
+The deployment defines the urls under which supported files ("bpmn", "dmn", "form", "config") can be deployed.
+The targetEnvironments can be extended as desired, but we recommend using the three standard ones in modified form.
