@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+The life version can be found under [https://miranum.com/](https://miranum.com/)
+
 ### Installation
 
 ```
