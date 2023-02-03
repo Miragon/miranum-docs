@@ -24,89 +24,116 @@ const config = {
     defaultLocale: 'de',
     locales: ['de'],
   },
-  themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        navbar: {
-          title: '',
-          logo: {
-            alt: 'miranum logo',
-            src: 'img/logo_blau.png',
-          },
-          items: [
-            {
-              type: 'doc',
-              docId: 'gettingstarted',
-              position: 'left',
-              label: 'miranum-ide',
-            },
-            //{to: '/blog', label: 'Blog', position: 'left'},
-            {
-              href: 'https://github.com/flowsquad',
-              label: 'GitHub',
-              position: 'right',
-            },
-          ],
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        footer: {
-          style: 'dark',
-          links: [
-            {
-              title: 'Dokumentation',
-              items: [
-                // {
-                //   label: 'Einführung',
-                //   to: '/docs/intro',
-                // },
-              ],
-            },
-            {
-              title: 'Community',
-              items: [
-                // {
-                //   label: 'Twitter',
-                //   href: 'https://twitter.com/docusaurus',
-                // },
-                // {
-                //   label: 'Slack',
-                //   href: 'https://twitter.com/docusaurus',
-                // },
-              ],
-            },
-            {
-              title: 'More',
-              items: [
-                // {
-                //   label: 'Blog',
-                //   to: '/blog',
-                // },
-                {
-                  label: 'GitHub',
-                  href: 'https://github.com/flowsquad',
-                },
-              ],
-            },
-            {
-              title: 'Legal',
-              items: [
-                {
-                  label: 'Impressum',
-                  href: 'https://miragon.io/impressum',
-                },
-                {
-                  label: 'Privacy',
-                  href: 'https://miragon.io/datenschutz',
-                },
-              ],
-            },
-          ],
-          copyright: `Copyright © ${new Date().getFullYear()} Miragon`,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        prism: {
-          theme: lightCodeTheme,
-          darkTheme: darkCodeTheme,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: '',
+        logo: {
+          alt: 'miranum logo',
+          src: 'img/logo_blau.png',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'gettingstarted',
+            position: 'left',
+            label: 'miranum-ide',
+          },
+          //{to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/flowsquad',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Dokumentation',
+            items: [
+              // {
+              //   label: 'Einführung',
+              //   to: '/docs/intro',
+              // },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
+              // {
+              //   label: 'Slack',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/flowsquad',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Impressum',
+                href: 'https://miragon.io/impressum',
+              },
+              {
+                label: 'Privacy',
+                href: 'https://miragon.io/datenschutz',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Miragon`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
 
 module.exports = config;
