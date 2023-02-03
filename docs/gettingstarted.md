@@ -9,9 +9,9 @@ Before being able to use the full potential Miranum offers you need to download 
 
 [Miranum: Console](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-console)
 
-[Miranum: BPMN-Modeler](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-bpmn-modeler)
+[Miranum: Modeler](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.vs-code-bpmn-modeler)
 
-[Miranum: Form](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-vs-code-forms)
+[Miranum: Form Builder](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-vs-code-forms)
 
 
 ## Steps to your first BPMN-Project
