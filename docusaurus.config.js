@@ -79,7 +79,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Dokumentation',
+            title: 'Documentation',
             items: [
               // {
               //   label: 'Einführung',
@@ -117,7 +117,7 @@ const config = {
             title: 'Legal',
             items: [
               {
-                label: 'Impressum',
+                label: 'Imprint',
                 href: 'https://miragon.io/impressum',
               },
               {
