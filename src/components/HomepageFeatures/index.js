@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Entwicklungsprozess optimieren',
+    title: 'Optimizing development process',
     Svg: require('@site/static/img/dev_process.svg').default,
     description: (
       <>
-        Miranum ist so konzipiert, dass deine Entwickler sich darauf konzentrieren können, wiederverwendbare Funktionalitäten zur Verfügung zu stellen. Die Prozess-Modellierer können diese dann ohne Programmieraufwand verwenden.
+          Your developers can focus on providing reusable functionality, which can be used by process modelers without any programming effort.
       </>
     ),
   },
   {
-    title: 'Lose Kopplung in die Infrastruktur',
+    title: 'Loose infrastructure coupling',
     Svg: require('@site/static/img/integration.svg').default,
     description: (
       <>
-        Über Miranum sind deine Prozesse (und andere Services) so mit der Unternehmensinfrastruktur verbunden, dass du problemlos Systeme austauschen kannst, ohne einen einzigen Prozess / Service anfassen zu müssen.
+          Through Miranum, your processes and other services are connected to the enterprise infrastructure in such a way that you can easily replace systems without having to touch a single process/ service.
       </>
     ),
   },
   {
-    title: 'Camunda Versionswechsel leicht gemacht',
+    title: 'Easily migrating camunda engines',
     Svg: require('@site/static/img/c7_to_c8.svg').default,
     description: (
       <>
-        Mit Miranum gestaltest du den Wechsel von Camunda 7 zu 8 kinderleicht ohne inhaltliche Anpassung deiner Prozesse und ohne Anpassung der Integrationen. Du kannst sogar deine Prozesse nach und nach von C7 auf C8 migrieren.
+          Migrate from Camunda 7 to 8 without changing the content of your processes or integrations. You can even migrate your processes gradually from C7 to C8.
       </>
     ),
   },
