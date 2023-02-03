@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'miranum',
-  tagline: 'Miranum simplifies the complexity process automation comes with.',
+  tagline: 'Simplifying the complexity process automation comes with.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
