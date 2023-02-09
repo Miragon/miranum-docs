@@ -20,14 +20,14 @@ Bevor das volle Potenzial von Miranum ausgeschöpft werden kann benötigen Sie f
 Nun sollte sich ein neues Fenster öffnen, in dem Sie die Option haben einen Namen und einen Pfad anzugeben/auszuwählen.
 Geben Sie ihrem Projekt einen passenden Namen und wählen Sie einen für Sie passenden Pfad aus.
 
-![gettingStartet_1](docs/img/gettingStartet_step1.png)
+![gettingStartet_1](docs/guides/getting-started/img/gettingStartet_step1.png)
 
 Nun da das basic Projekt steht können wir mit dem Modellieren anfangen. 
 Gehen Sie dafür mit vs-code in ihren Projektordner (Datei -> Öffnen -> Ihr Projekt) und öffnen das sich darin befindende .bpmn File.
 Dieses sollte zurzeit fast leer sein. Lassen Sie uns das schnell ändern, indem wir eine "Task" hinzufügen.
 Diese Task können wir nun durch erneutes auswählen und klicken auf den Schraubenschlüssel zu einer "UserTask" machen
 
-![gettingStartet_2](docs/img/gettingStartet_step2.png)
+![gettingStartet_2](docs/guides/getting-started/img/gettingStartet_step2.png)
 
 Unser erstes feature behandelt nun die sogenannte form-property.
 Wer sich mit Camunda bereits auskennt, weiß wie komplex diese sein kann.
@@ -47,7 +47,7 @@ In der Preview sollte sogleich eine Veränderung zu sehen sein, sollte dies nich
 Gut gemacht! Wir haben nun unser erstes Formular erstellt, zugegeben, es is noch etwas simpel, aber das können wir durch zwei weitere Objekte schnell ändern.
 Fügen Sie also noch ein Number-Object und einen Switch Ihrer Gruppe hinzu.
 
-![gettingStartet_3](docs/img/gettingStartet_step3.gif)
+![gettingStartet_3](docs/guides/getting-started/img/gettingStartet_step3.gif)
 
 Lasst uns nun die Objekte benennen. Hierfür müssen Sie den Options-Button (die drei Punkte) und dann "Edit" drücken.
 Hierdurch sollte sich ein neues Fenster öffnen, welches Ihnen vielerlei Optionen bietet.
@@ -57,7 +57,7 @@ Klasse, nun haben wir ein vollständiges Formular welches sicht in unser bpmn-di
 Klicken Sie hierfür auf das .bpmn File (Schließen und Öffnen Sie das BPMN-file) und selektieren die UserTask.
 Wählen Sie unter Form Ihr neu erstelltes Formular aus, und es sollte sich eine input-variable befüllen.
 
-![gettingStartet_4](docs/img/gettingStartet_step4.gif)
+![gettingStartet_4](docs/guides/getting-started/img/gettingStartet_step4.gif)
 
 Nun fügen wir noch einen weiteren Task hinzu und beenden unser BPMN mit dem "End-Event" Objekt.
 Machen Sie den Task zu einer "ServiceTask". (Sollten Sie vergessen haben wie dies geht: 
@@ -65,7 +65,7 @@ klicken Sie auf den Task, wählen Sie den Schraubenschlüssel aus, und dann die 
 
 Damit ist unser Diagramm fertig, sieht Ihres genauso aus?:
 
-![gettingStartet_5](docs/img/gettingStartet_step5.png)
+![gettingStartet_5](docs/guides/getting-started/img/gettingStartet_step5.png)
 
 Lassen Sie uns jedoch noch ein paar Verfeinerungen daran vornehmen. 
 Beginnen wir damit ein Template anzubinden. Da das Generieren eines Projektes keine element-templates liefert, müssen Sie für dieses Beispiel, das sich in [miranum-ide](https://github.com/FlowSquad/miranum-ide/blob/main/resources/templates/basicTemplates/mail-task-template.json)
@@ -79,10 +79,10 @@ Wir wollen auch die Titel unserer Tasks ändern.
 Falls Sie noch nicht mit Camunda vertraut sind, Titel können über den Reiter "General" und dann die Property "Name" vergeben werden.
 Benennen wir als unsere UserTask "Geschenk erstellung" und unsere ServiceTask "Mail versenden".
 
-![gettingStartet_6](docs/img/gettingStartet_step6.gif)
+![gettingStartet_6](docs/guides/getting-started/img/gettingStartet_step6.gif)
 
 Mit dem jetzigen Ergebnis sind wir zufrieden und können unser Projekt somit final deployen.
 Hierfür rechts-klicken Sie den Ordner, klicken dann auf "Deploy All", und wählen danach Ihre gewünschte Target-Umgebung aus.
 
-![gettingStartet_7](docs/img/gettingStartet_step7.png)
+![gettingStartet_7](docs/guides/getting-started/img/gettingStartet_step7.png)
 

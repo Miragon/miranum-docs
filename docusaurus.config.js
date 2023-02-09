@@ -54,9 +54,9 @@ const config = {
           src: 'img/logo_blau.png',
         },
         items: [
-          {type: "doc", position: "left", docId: 'gettingstarted', label: "Guides"},
-          {type: "doc", position: "left", docId: 'gettingstarted', label: "Components"},
-          {type: "doc", position: "left", docId: 'gettingstarted', label: "APIs"},
+          {type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"},
+          {type: "doc", position: "left", docId: "components/components-overview", label: "Components"},
+          {type: "doc", position: "left", docId: 'apis/api-overview', label: "APIs"},
           {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}
         ],
       },
@@ -66,8 +66,8 @@ const config = {
           {
             title: 'Documentation',
             items: [
-              {label: "miranum-ide", href: "docs/gettingstarted"},
-              {label: "miranum-connect", href: "docs/gettingstarted"}
+              {label: "miranum-ide", href: "docs/components/components-overview"},
+              {label: "miranum-connect", href: "docs/components/components-overview"}
             ],
           },
           {

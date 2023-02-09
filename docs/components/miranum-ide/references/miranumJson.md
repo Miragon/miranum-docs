@@ -1,5 +1,8 @@
 ---
-sidebar_position: 1
+id: miranum-json
+title: Miranum JSON
+sidebar_label: Miranum JSON
+description: "This section contains information about the Miranum.json file."
 ---
 
 # Miranum.json
