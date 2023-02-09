@@ -9,3 +9,36 @@
   height: 200px;
   width: 200px;
 }
+
+.customerVoices {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  vertical-align: center;
+}
+
+.subsection {
+  display: flex;
+  padding: 2rem 5rem;
+  alignment: center;
+  border: dashed 5px black;
+  vertical-align: center;
+}
+
+.subsectionContent {
+  padding-left: 5rem;
+  padding-top: 5rem;
+  vertical-align: center;
+
+}
+
+.customerVoicesImg {
+  height: auto;
+  width: 1500px;
+  vertical-align: center;
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+

@@ -8,33 +8,40 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-          <img src={'img/logo_weiss.png'}></img>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/gettingstarted">short Tutorial ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <div className="container">
+                <img src={'img/logo_weiss.png'}></img>
+                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
+                        to="/docs/guides/guides-overview">Get Started
+                    </Link>
+                </div>
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
+                        href="https://outlook.office365.com/owa/calendar/TechCallDominikThomas@miragon.io/bookings/">Book
+                        a Demo
+                    </Link>
+                </div>
+            </div>
+        </header>
+    );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <Layout
+            title={`${siteConfig.title}`}
+            description="Description will go into a meta tag in <head />">
+            <HomepageHeader/>
+            <main>
+                <HomepageFeatures/>
+            </main>
+        </Layout>
+    );
 }
