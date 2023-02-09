@@ -7,16 +7,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'miranum',
-  tagline: 'Simplifying the complexity process automation comes with.',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Simplifying the complexity of process automation.',
+  url: 'https://miranum.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Miragon', // Usually your GitHub org/user name.
+  projectName: 'miranum-docs', // Usually your repo name.
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -32,13 +32,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -61,69 +54,35 @@ const config = {
           src: 'img/logo_blau.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'gettingstarted',
-            position: 'left',
-            label: 'miranum-ide',
-          },
-          //{to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/flowsquad',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {type: "doc", position: "left", docId: 'gettingstarted', label: "Guides"},
+          {type: "doc", position: "left", docId: 'gettingstarted', label: "Components"},
+          {type: "doc", position: "left", docId: 'gettingstarted', label: "APIs"},
+          {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'dark',                
         links: [
           {
             title: 'Documentation',
             items: [
-              // {
-              //   label: 'Einführung',
-              //   to: '/docs/intro',
-              // },
+              {label: "miranum-ide", href: "docs/gettingstarted"},
+              {label: "miranum-connect", href: "docs/gettingstarted"}
             ],
           },
           {
-            title: 'Community',
+            title: 'Miragon',
             items: [
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-              // {
-              //   label: 'Slack',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/flowsquad',
-              },
+               {label: 'Website', href: 'https://miragon.io'},
+               {label: 'Twitter', href: 'https://twitter.com/miragon_io'},
+               {label: 'LinkedIn', href: 'https://www.linkedin.com/company/miragon-io/'}
             ],
           },
           {
             title: 'Legal',
             items: [
-              {
-                label: 'Imprint',
-                href: 'https://miragon.io/impressum',
-              },
-              {
-                label: 'Privacy',
-                href: 'https://miragon.io/datenschutz',
-              },
+              {label: 'Imprint', href: 'https://miragon.io/impressum'},
+              {label: 'Privacy', href: 'https://miragon.io/datenschutz'},
             ],
           },
         ],
