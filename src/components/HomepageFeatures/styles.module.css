@@ -22,14 +22,16 @@
   display: flex;
   padding: 2rem 5rem;
   alignment: center;
-  border: dashed 5px black;
+  border: dashed 1px black;
+  border-radius: 10px;
   vertical-align: center;
 }
 
 .subsectionContent {
   padding-left: 5rem;
-  padding-top: 5rem;
-  vertical-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 

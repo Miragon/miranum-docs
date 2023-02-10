@@ -27,6 +27,7 @@ const sidebars = {
      "components/components-overview",
      {
        "Miranum-IDE":[
+           "components/miranum-ide/intro-miranum-ide",
            "components/miranum-ide/references/miranum-json",
            "components/miranum-ide/references/element-template-support",
            {
@@ -35,6 +36,9 @@ const sidebars = {
                    "components/miranum-ide/references/commands/generate_api",
                ],
            },
+       ],
+       "Miranum-Connect":[
+          "components/miranum-connect/intro-miranum-connect"
        ]
      }
   ]
