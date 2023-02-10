@@ -1,5 +1,8 @@
 ---
-sidebar_position: 2
+id: element-template-support
+title: Element Template Support
+sidebar_label: Element Template Support
+description: "This section contains information of how element templates are supported in the miranum ide."
 ---
 import styles from './styling/elementTemplateSupport.css';
 import fileAssociations from './img/fileAssociations.png';

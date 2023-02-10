@@ -9,3 +9,38 @@
   height: 200px;
   width: 200px;
 }
+
+.customerVoices {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+  width: 100%;
+  vertical-align: center;
+}
+
+.subsection {
+  display: flex;
+  padding: 2rem 5rem;
+  alignment: center;
+  border: dashed 1px black;
+  border-radius: 10px;
+  vertical-align: center;
+}
+
+.subsectionContent {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.customerVoicesImg {
+  height: auto;
+  width: auto;
+  vertical-align: center;
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
