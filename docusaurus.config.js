@@ -66,8 +66,8 @@ const config = {
                     {
                         title: 'Documentation',
                         items: [
-                            {label: "miranum-ide", href: "docs/components/components-overview"},
-                            {label: "miranum-connect", href: "docs/components/components-overview"}
+                            {label: "miranum-ide", href: "/docs/components/components-overview"},
+                            {label: "miranum-connect", href: "/docs/components/components-overview"}
                         ],
                     },
                     {

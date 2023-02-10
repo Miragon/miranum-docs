@@ -101,12 +101,12 @@ function Feature({Svg, title, description}) {
 
 function CustomerVoice({Svg, title, description}) {
     return (
-        <div className={styles.reFormat}>
-            <div className={styles.subsection}>
-                <div className="text--center">
+        <div>
+            <div className={clsx(styles.subsection, "row")}>
+                <div className={clsx('col col--6', "text--center")}>
                     <img src={Svg} className={styles.customerVoicesImg}></img>
                 </div>
-                <div className={styles.subsectionContent}>
+                <div className={clsx('col col--6', styles.subsectionContent)}>
                     <h3>{title}</h3>
                     <p>{description}</p>
                 </div>

@@ -13,7 +13,7 @@
 .customerVoices {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 2rem 2rem 2rem;
   width: 100%;
   vertical-align: center;
 }
@@ -28,7 +28,7 @@
 }
 
 .subsectionContent {
-  padding-left: 5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,7 @@
 
 .customerVoicesImg {
   height: auto;
-  width: 1500px;
+  width: auto;
   vertical-align: center;
   border-radius: 30px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
