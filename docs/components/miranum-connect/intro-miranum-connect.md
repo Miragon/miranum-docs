@@ -5,7 +5,7 @@ sidebar_label: About Miranum-Connect
 description: "This section contains an introduction to Miranum-Connect."
 ---
 
-Miranum-Connect is a framework which enables its user to build reusable and technology neutral connectors and integrations
+Miranum-Connect is a framework which enables developers to build reusable and technology neutral connectors and integrations
 between products. For that purpose a hexagonal architecture with a strong domain focus is used. This open source project
 is accessible form our [public repository](https://github.com/FlowSquad/miranum). 
 
@@ -19,8 +19,8 @@ The picture below illustrates what Miranum-Connect is and how it actually works.
 A common use case in a business process is to send an email. Therefore, a developer usually needs to write some piece of
 integration to an email server or a no-code tool can be used in order to do so automatically. Nevertheless, a quickly 
 implemented interface or no/low-code solution can quickly create dependencies to the technical environment. Suddenly, 
-you find yourself tight into a vendors environment or with non-reusable probably redundant connectors. Miranum-Connect wants 
-to eliminate exactly this problem! 
+you find yourself tight into a vendors environment or with non-reusable probably redundant connectors. 
+Miranum-Connect eliminates exactly this problem! 
 
 To do so it uses a hexagonal architecture. At its core we find domain entities and use-cases which represent our business. 
 Outside, we find various adapters which are inwards and outwards facing. Given the rule of clean architecture, all dependencies 
@@ -28,8 +28,7 @@ are pointing towards the center. Hence, our domain services and use-cases are in
 Platform 7 or our specific Imap Server). 
 This allows us to model our domain code as freely as even possible. 
 
-With Miranum-Connect you will be able to get some out of
-the adapters to easily build such reusable connectors by yourselves. 
+With Miranum-Connect you will be able to get some out of the box adapters to easily build such reusable connectors by yourselves. 
 
 
 ![Miranum-Connect example: Sending Mail](./references/img/miranum-connect-email.svg)

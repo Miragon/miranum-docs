@@ -5,7 +5,7 @@ sidebar_label: Overview Components
 description: "This section contains product manual content for each component in miranum, including conceptual content."
 ---
 
-This section contains product manual content for each of the components in Miranum, including conceptual one. 
+This section contains product manual content for each of the components in Miranum, including conceptual information. 
 Miranum consists out of two major components. One is called Connect and the other IDE. Both of them can easily be used 
 together or separately.
 * [Miranum-IDE](./miranum-ide/intro-miranum-ide): This is an Integrated Development Environment targeted for designing and developing process automation projects. It is build and released as VS Code plugin. It comes with: 
