@@ -17,4 +17,14 @@ together or separately.
 You will be able to find more information about the concepts of these tools and how you can utilize them by clicking on 
 the referenced documentation pages. 
 
+## What Miranum solves for you
+* **One IDE for everything!** With our Visual Studio Code plugins you no longer need to access an external modeler. Edit, manage and access all artifacts for your process application in one place.
+* Miranum-Connect enables you to create **reusable integrations** without getting locked into any vendor environments. We want to rely on **pro-code** instead of low-code, enabling you to build a sustainable and clean architecture.
+* By being **technology neutral** you are set up for success when migrating to a newer version of your infrastructure components. 
+
+We want you to  become truly digital by making every organization digitally self-sufficient.
+We automate critical business processes at speed, relying on open technologies. 
+At the same time, it is important to us to create flexibility for future adjustments and to customize the solution for our customers. 
+This is what we stand for with our products.
+
 ![Miranum Logo](../../static/img/logo_blau.png)
