@@ -1,13 +1,15 @@
 ---
 id: intro-miranum-connect
-title: Intro to Miranum-Connect
+title: About Miranum-Connect
 sidebar_label: About Miranum-Connect  
 description: "This section contains an introduction to Miranum-Connect."
 ---
 
 Miranum-Connect is a framework which enables developers to build reusable and technology neutral connectors and integrations
 between products. For that purpose a hexagonal architecture with a strong domain focus is used. This open source project
-is accessible form our [public repository](https://github.com/FlowSquad/miranum). 
+is accessible form our [public repository](https://github.com/FlowSquad/miranum). In comparison, the default approach without 
+such a framework is to include dependencies to external components right into your code. Leading to problems when there is a 
+need to migrate to newer versions or competitors. Miranum want to avoid any type of vendor lock-in. 
 
 :::note
 Miranum-Connect is currently in early stage of development. No version is officially released yet. When using the framework 
