@@ -20,7 +20,7 @@
 
 .subsection {
   display: flex;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   alignment: center;
   border: dashed 1px black;
   border-radius: 10px;
@@ -28,7 +28,7 @@
 }
 
 .subsectionContent {
-  padding: 5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
