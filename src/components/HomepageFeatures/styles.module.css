@@ -13,26 +13,27 @@
 .customerVoices {
   display: flex;
   align-items: center;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 0;
   width: 100%;
   vertical-align: center;
 }
 
 .subsection {
   display: flex;
-  padding: 2rem 2rem;
+  padding: 2rem;
   alignment: center;
   border: dashed 1px black;
+  margin: 0 1rem;
   border-radius: 10px;
   vertical-align: center;
+  row-gap: 2rem;
 }
 
 .subsectionContent {
-  padding: 2rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .customerVoicesImg {
