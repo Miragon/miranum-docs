@@ -1,16 +1,16 @@
 # Miranum Documentation 
 
-This repository contains the Miranum documentation with can be found under [https://miranum.com/](https://miranum.com/)
+This repository contains the Miranum documentation which can be found under [https://miranum.com/](https://miranum.com/)
 
 ## Documentation Guidelines
 ### PRs for every change
 All changes have to be done in a separate Branch. As soon as the changes are done please open a PR. A GitHub Action runs 
-with every commit to a Branch and checks if the documentation can be build. If you create a new branch make sure to name him according 
-to what you to (e.g. feat/xyz or fix/xyz). Please use semantic commit messages as described [here](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
+with every commit to a Branch and checks if the documentation can be built. If you create a new branch make sure to name it according 
+to what it does (e.g. feat/xyz or fix/xyz). Please use semantic commit messages as described in [here](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
 
 ### Structure
 Name Markdown files according to the title. This makes it easier to find a file.
-Avoid non-alphanumeric characters in titles. Use the file name as internal document id to reference in the appropriate sidebars file.
+Avoid non-alphanumeric characters in titles. Use the file name as an internal document id to reference in the appropriate sidebars file.
 
 ### Style Guide 
 We will be using the writing [style guide defined by Camunda](https://github.com/camunda/camunda-platform-docs/blob/main/howtos/technical-writing-styleguide.md).
@@ -26,7 +26,7 @@ We also want to ensure a unified naming of our product components. Hence, please
 
 ### Troubleshooting checklist
 Have you pulled latest from `main`?
-Have you run npm install? When we update dependencies in the project, they don't automatically update in your environment.
+Have you run npm install? When we update dependencies in the project, they don't automatically get updated in your environment.
 You'll need to run npm install occasionally to acquire dependency updates locally.
 
 ## Configuration
