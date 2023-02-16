@@ -37,4 +37,4 @@ This allows us to model our domain code as freely as even possible.
 With **Miranum-Connect** you will be able to get some **out of the box adapters** to easily build such reusable connectors by **yourselves**. 
 
 
-![Miranum-Connect example: Sending Mail](./references/img/miranum-connect-email.svg)
+![Miranum-Connect example: Sending Mail](@site/docs/components/miranum-connect/static/img/miranum-connect-email.svg)

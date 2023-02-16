@@ -12,7 +12,7 @@ To get started right away follow the [getting-started guide](../../guides/gettin
 Miranum-IDE is an Integrated Development Environment targeted for designing and developing process automation projects. 
 It is build and released as three separate Visual Studio Code plugins.
 
-![Example of the Miranum IDE](./references/img/example-ide.png)
+![Example of the Miranum IDE](@site/docs/components/miranum-ide/static/img/example-ide.png)
 
 The picture above shows how Miranum IDE looks like. On the left side you are able to see the form editor whose output is
 rendered next to it. On the right side you are able to see the Modeler plugin which allows users to design BPMN processes 
@@ -37,11 +37,11 @@ and IT to work even closer together.
 
 The picture below visualises the one collaboration platform we do establish with our VS Code plugins. 
 
-![Miranum IDE overview](./references/img/miranum-ide.svg)
+![Miranum IDE overview](@site/docs/components/miranum-ide/static/img/miranum-ide.svg)
 
 Besides of making collaboration and asset management easier, the **deployment** of a process application gets easier as well. 
 Instead of needing to make sure that the right form version fits to the right process and vice versa you can handle this right 
 in your git repository where the project lives in. It is comparable to a **mono-repo** for your **process-application**. This should 
 help **versioning** your application and assets more **easily**.
 
-![Miranum IDE deployment bundle](./references/img/miranum-ide-deployment-bundle.svg)
+![Miranum IDE deployment bundle](@site/docs/components/miranum-ide/static/img/miranum-ide-deployment-bundle.svg)

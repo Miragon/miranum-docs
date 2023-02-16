@@ -1,0 +1,8 @@
+{
+  "label": "CLI-Commands",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "All Miranum-IDE CLI-Commands."
+  }
+}
