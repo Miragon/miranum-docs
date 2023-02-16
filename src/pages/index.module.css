@@ -17,7 +17,22 @@
 }
 
 .buttons {
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: inline;
+  padding: 15px 25px;
+  margin: auto auto;
+}
+
+.buttonsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttonsContainerWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
