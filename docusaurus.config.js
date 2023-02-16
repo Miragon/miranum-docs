@@ -75,9 +75,9 @@ module.exports = {
                 ],
             },
             algolia: {
-                apiKey: 'my-api-key',
-                indexName: 'my-index-name',
-                appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+                appId: 'G4FQJSWGXZ',
+                apiKey: 'df7ef918d6ad8c6f1db96d4f81932fe2',
+                indexName: 'miranum',
                 algoliaOptions: {}, // Optional, if provided by Algolia
                 placeholder: "Ask me anything",
             },
