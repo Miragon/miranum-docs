@@ -58,18 +58,31 @@ module.exports = {
                 logo: {
                     alt: 'miranum logo', src: 'img/logo_blau.png',
                 },
-                items: [{type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"}, {
-                    type: "doc",
-                    position: "left",
-                    docId: "components/components-overview",
-                    label: "Components"
-                }, {
-                    type: "doc",
-                    position: "left",
-                    docId: 'apis/api-overview',
-                    label: "APIs"
-                }, {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}],
-            }, footer: {
+                items: [
+                    {type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"},
+                    {
+                        type: "doc",
+                        position: "left",
+                        docId: "components/components-overview",
+                        label: "Components"
+                    },
+                    {
+                        type: "doc",
+                        position: "left",
+                        docId: 'apis/api-overview',
+                        label: "APIs"
+                    },
+                    {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}
+                ],
+            },
+            algolia: {
+                apiKey: 'my-api-key',
+                indexName: 'my-index-name',
+                appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+                algoliaOptions: {}, // Optional, if provided by Algolia
+                placeholder: "Ask me anything",
+            },
+            footer: {
                 style: 'dark', links: [{
                     title: 'Documentation',
                     items: [{
