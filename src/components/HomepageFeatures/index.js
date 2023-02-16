@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
     {
         title: 'Integrated Development Environment for Processes',
-        Svg: require('@site/static/img/dev_process.svg').default,
+        Svg: require('/static/img/dev_process.svg').default,
         description: (
             <>
                 One IDE for everything! With our Visual Studio Code plugins you no longer need to access an external
@@ -15,7 +15,7 @@ const FeatureList = [
     },
     {
         title: 'Avoiding Infrastructure Coupling',
-        Svg: require('@site/static/img/integration.svg').default,
+        Svg: require('/static/img/integration.svg').default,
         description: (
             <>
                 Miranum-Connect enables you to create reusable integrations without getting locked into any vendor
@@ -26,7 +26,7 @@ const FeatureList = [
     },
     {
         title: 'Ready for the Future',
-        Svg: require('@site/static/img/c7_to_c8.svg').default,
+        Svg: require('/static/img/c7_to_c8.svg').default,
         description: (
             <>
                 By being technology neutral you are set up for success when migrating to a newer version of your
@@ -36,7 +36,7 @@ const FeatureList = [
     },
     {
         title: 'Get Control over Deployments',
-        Svg: require('@site/static/img/deployment.svg').default,
+        Svg: require('/static/img/deployment.svg').default,
         description: (
             <>
                 Generate a automation project in the Miranum IDE. A central place to manage and version all your
@@ -47,7 +47,7 @@ const FeatureList = [
     },
     {
         title: 'Get Help from skilled Consultants',
-        Svg: require('@site/static/img/consulting.svg').default,
+        Svg: require('/static/img/consulting.svg').default,
         description: (
             <>
                 Kickstart your automation project or refactoring with one of our skilled Consultants. Our goal is to get
@@ -57,7 +57,7 @@ const FeatureList = [
     },
     {
         title: 'Open Source at Heart',
-        Svg: require('@site/static/img/opensource.svg').default,
+        Svg: require('/static/img/opensource.svg').default,
         description: (
             <>
                 Miranum IDE and Connect are Open Source at Heart and will always be. We value any kind of contributions
@@ -71,7 +71,7 @@ const FeatureList = [
 const CustomerVoices = [
     {
         title: 'City of Munich',
-        Svg: require('@site/static/img/lhm.webp').default,
+        Svg: require('/static/img/lhm.webp').default,
         description: (
             <>
                 We are supporting the city of Munich since June 2020 in their project neoIT. That's when the core

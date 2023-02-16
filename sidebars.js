@@ -28,12 +28,12 @@ const sidebars = {
      {
        "Miranum-IDE":[
            "components/miranum-ide/intro-miranum-ide",
-           "components/miranum-ide/references/miranum-json",
-           "components/miranum-ide/references/element-template-support",
+           "components/miranum-ide/miranum-json",
+           "components/miranum-ide/element-template-support",
            {
                "Commands": [
-                   "components/miranum-ide/references/commands/deployment_api",
-                   "components/miranum-ide/references/commands/generate_api",
+                   "components/miranum-ide/commands/deployment_api",
+                   "components/miranum-ide/commands/generate_api",
                ],
            },
        ],
