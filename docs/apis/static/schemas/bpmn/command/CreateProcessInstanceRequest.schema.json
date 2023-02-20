@@ -1,0 +1,41 @@
+{
+  "$id": "io.miranum.bpmn.command.v1.CreateProcessInstanceRequest",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "processDefinitionKey": {
+      "description": "the unique key identifying the process definition (e.g. returned from a process\nin the DeployProcessResponse message)",
+      "type": "number"
+    },
+    "bpmnProcessId": {
+      "description": "the BPMN process ID of the process definition",
+      "type": "string"
+    },
+    "version": {
+      "description": "the version of the process; set to -1 to use the latest version",
+      "type": "number"
+    },
+    "variables": {
+      "description": "JSON document that will instantiate the variables for the root variable scope of the\nprocess instance; it must be a JSON object, as variables will be mapped in a\nkey-value fashion. e.g. \"a\": 1, \"b\": 2 will create two variables, named \"a\" and\n\"b\" respectively, with their associated values. \"a\": 1, \"b\": 2 would not be a\nvalid argument, as the root of the JSON document is an array and not an object.",
+      "type": "string"
+    },
+    "startInstructions": {
+      "description": "List of start instructions. If empty (default) the process instance\nwill start at the start event. If non-empty the process instance will apply start\ninstructions after it has been created",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ProcessInstanceCreationStartInstruction"
+      }
+    }
+  },
+  "definitions": {
+    "ProcessInstanceCreationStartInstruction": {
+      "type": "object",
+      "properties": {
+        "elementId": {
+          "description": "element ID",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
