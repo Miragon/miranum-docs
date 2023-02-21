@@ -1,0 +1,112 @@
+{
+  "$id": "io.miranum.bpmn.command.v1.DeployResourceResponse",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "key": {
+      "description": "the unique key identifying the deployment",
+      "type": "number"
+    },
+    "deployments": {
+      "description": "a list of deployed resources, e.g. processes",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Deployment"
+      }
+    }
+  },
+  "definitions": {
+    "Deployment": {
+      "type": "object",
+      "properties": {
+        "process": {
+          "description": "metadata of a deployed process",
+          "$ref": "#/definitions/ProcessMetadata"
+        },
+        "decision": {
+          "description": "metadata of a deployed decision",
+          "$ref": "#/definitions/DecisionMetadata"
+        },
+        "decisionRequirements": {
+          "description": "metadata of a deployed decision requirements",
+          "$ref": "#/definitions/DecisionRequirementsMetadata"
+        }
+      }
+    },
+    "ProcessMetadata": {
+      "type": "object",
+      "properties": {
+        "bpmnProcessId": {
+          "description": "the bpmn process ID, as parsed during deployment; together with the version forms a\nunique identifier for a specific process definition",
+          "type": "string"
+        },
+        "version": {
+          "description": "the assigned process version",
+          "type": "number"
+        },
+        "processDefinitionKey": {
+          "description": "the assigned key, which acts as a unique identifier for this process",
+          "type": "number"
+        },
+        "resourceName": {
+          "description": "the resource name (see: ProcessRequestObject.name) from which this process was\nparsed",
+          "type": "string"
+        }
+      }
+    },
+    "DecisionMetadata": {
+      "type": "object",
+      "properties": {
+        "dmnDecisionId": {
+          "description": "the dmn decision ID, as parsed during deployment; together with the\nversions forms a unique identifier for a specific decision",
+          "type": "string"
+        },
+        "dmnDecisionName": {
+          "description": "the dmn name of the decision, as parsed during deployment",
+          "type": "string"
+        },
+        "version": {
+          "description": "the assigned decision version",
+          "type": "number"
+        },
+        "decisionKey": {
+          "description": "the assigned decision key, which acts as a unique identifier for this\ndecision",
+          "type": "number"
+        },
+        "dmnDecisionRequirementsId": {
+          "description": "the dmn ID of the decision requirements graph that this decision is part\nof, as parsed during deployment",
+          "type": "string"
+        },
+        "decisionRequirementsKey": {
+          "description": "the assigned key of the decision requirements graph that this decision is\npart of",
+          "type": "number"
+        }
+      }
+    },
+    "DecisionRequirementsMetadata": {
+      "type": "object",
+      "properties": {
+        "dmnDecisionRequirementsId": {
+          "description": "the dmn decision requirements ID, as parsed during deployment; together\nwith the versions forms a unique identifier for a specific decision",
+          "type": "string"
+        },
+        "dmnDecisionRequirementsName": {
+          "description": "the dmn name of the decision requirements, as parsed during deployment",
+          "type": "string"
+        },
+        "version": {
+          "description": "the assigned decision requirements version",
+          "type": "number"
+        },
+        "decisionRequirementsKey": {
+          "description": "the assigned decision requirements key, which acts as a unique identifier\nfor this decision requirements",
+          "type": "number"
+        },
+        "resourceName": {
+          "description": "the resource name (see: Resource.name) from which this decision\nrequirements was parsed",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

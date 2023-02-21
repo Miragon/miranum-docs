@@ -1,0 +1,15 @@
+{
+  "$id": "io.miranum.bpmn.command.v1.CompleteJobRequest",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "jobKey": {
+      "description": "the unique job identifier, as obtained from ActivateJobsResponse",
+      "type": "number"
+    },
+    "variables": {
+      "description": "a JSON document representing the variables in the current task scope",
+      "type": "string"
+    }
+  }
+}

@@ -44,12 +44,11 @@ module.exports = {
                     ],
                 },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: require.resolve('./src/css/custom.css')
                 },
             }),
         ],
     ],
-
     themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {

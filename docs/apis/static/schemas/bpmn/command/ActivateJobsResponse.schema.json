@@ -1,0 +1,73 @@
+{
+  "$id": "io.miranum.bpmn.command.v1.ActivateJobsResponse",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "jobs": {
+      "description": "list of activated jobs",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ActivatedJob"
+      }
+    }
+  },
+  "definitions": {
+    "ActivatedJob": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "description": "the key, a unique identifier for the job",
+          "type": "number"
+        },
+        "type": {
+          "description": "the type of the job (should match what was requested)",
+          "type": "string"
+        },
+        "processInstanceKey": {
+          "description": "the job's process instance key",
+          "type": "number"
+        },
+        "bpmnProcessId": {
+          "description": "the bpmn process ID of the job process definition",
+          "type": "string"
+        },
+        "processDefinitionVersion": {
+          "description": "the version of the job process definition",
+          "type": "number"
+        },
+        "processDefinitionKey": {
+          "description": "the key of the job process definition",
+          "type": "number"
+        },
+        "elementId": {
+          "description": "the associated task element ID",
+          "type": "string"
+        },
+        "elementInstanceKey": {
+          "description": "the unique key identifying the associated task, unique within the scope of the\nprocess instance",
+          "type": "number"
+        },
+        "customHeaders": {
+          "description": "a set of custom headers defined during modelling; returned as a serialized\nJSON document",
+          "type": "string"
+        },
+        "worker": {
+          "description": "the name of the worker which activated this job",
+          "type": "string"
+        },
+        "retries": {
+          "description": "the amount of retries left to this job (should always be positive)",
+          "type": "number"
+        },
+        "deadline": {
+          "description": "when the job can be activated again, sent as a UNIX epoch timestamp",
+          "type": "number"
+        },
+        "variables": {
+          "description": "JSON document, computed at activation time, consisting of all visible variables to\nthe task scope",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "$id": "io.miranum.bpmn.command.v1.CompleteJobResponse",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object"
+}
