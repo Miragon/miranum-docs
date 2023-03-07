@@ -43,7 +43,10 @@ const sidebars = {
     Guides: [
         "guides/guides-overview",
         {
-            "Getting Started": ["guides/getting-started/getting-started-web-ide-guide",],
+            "Getting Started": [
+                "guides/getting-started/getting-started-web-ide-guide",
+                "guides/getting-started/pizza-order-example"
+            ],
         },
     ],
     Components: [
