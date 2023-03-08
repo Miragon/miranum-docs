@@ -22,10 +22,14 @@ to make the life of an BPM Developer a little easier.
 
 #### Use element templates
 
+![add-element-templates.gif](@site/docs/components/miranum-ide/static/img/miranum-modeler/add-element-templates.gif)
+
 #### Use the integrated text editor for quick fixes
+
+![text-editor.gif](@site/docs/components/miranum-ide/static/img/miranum-modeler/text-editor.gif)
 
 ### Debugging
 
 #### Use the integrated token-simulation plugin
 
-#### See the logging information for errors
+#### See logging information for errors
