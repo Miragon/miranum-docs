@@ -55,6 +55,7 @@ We require an issue for every Pull-Request which is raised in one of the previou
 - [Code of Conduct ](https://github.com/FlowSquad/miranum-ide/blob/main/CODE_OF_CONDUCT.md)
 
 **Technologies:**
+* [VS Code Extension API](https://code.visualstudio.com/api)
 * [bpmn-js](https://bpmn.io/toolkit/bpmn-js/)
 * [Vue.js](https://vuejs.org)
 * [Typescript](https://www.typescriptlang.org)
