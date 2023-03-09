@@ -35,7 +35,7 @@ We distinguish Miranum in four different repositories:
 * [Miranum-Consulting](https://github.com/FlowSquad/miranum-consulting): Contains assets which enables users to get started with Miranum, like extensive examples. 
 
 To collect, prioritise and work on issues we have established a [GitHub project](https://github.com/orgs/FlowSquad/projects/9).
-Following the link you can find all issues of the project. They are prioritised and hopefully well describes. If you are interested in working
+Following the link you can find all issues of the project. They are prioritised and hopefully well described. If you are interested in working
 on one make sure to assign yourself. Do not hesitate to ask any questions in the issue itself. The team is keen to help you. 
 
 In case you want to create a new issue, please do so via the issue-template in the repository your issue is targeted to. 
