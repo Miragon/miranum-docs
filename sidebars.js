@@ -51,6 +51,7 @@ const sidebars = {
     ],
     Components: [
         "components/components-overview",
+        "components/contributing",
         {
             "Miranum-IDE": [
                 "components/miranum-ide/intro-miranum-ide",
