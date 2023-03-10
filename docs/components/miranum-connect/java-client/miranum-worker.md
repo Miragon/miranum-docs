@@ -107,3 +107,7 @@ we want to add an output mapping. In there, we map the local variable `something
 
 Having done so the variable `somethingGlobal` is accessible over the whole lifespan of the process-instance and could be
 used as input in a subsequent activity of our process. 
+
+:::info
+For an actual example take a look on our [miranum-connect guide](../../../guides/getting-started/pizza-order-miranum.md).
+:::

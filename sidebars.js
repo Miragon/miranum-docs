@@ -72,8 +72,7 @@ const sidebars = {
                                 "components/miranum-connect/java-client/java-quick-reference",
                                 "components/miranum-connect/java-client/miranum-worker",
                                 "components/miranum-connect/java-client/miranum-process",
-                                "components/miranum-connect/java-client/miranum-message",
-                                "components/miranum-connect/java-client/miranum-task"
+                                "components/miranum-connect/java-client/miranum-message"
                             ],
                     }
                 ]

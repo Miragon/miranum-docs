@@ -54,4 +54,3 @@ public void correlateMessage(CorrelateMessageCommand message) {
     log.info(message + " successfully correlated")
 }
 ```
-

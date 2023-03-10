@@ -65,3 +65,7 @@ public class StartProcessController {
     }
 }
 ```
+
+:::info
+For an actual example take a look on our [miranum-connect guide](../../../guides/getting-started/pizza-order-miranum.md).
+:::
