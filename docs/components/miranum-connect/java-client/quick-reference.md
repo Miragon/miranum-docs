@@ -47,3 +47,7 @@ my-project
 │         └── domain
 .
 ```
+
+- **my-project-camunda7**: contains the executable bpmn file for Camunda 7
+- **my-project-camunda8**: contains the executable bpmn file for Camunda 8 
+- **my-project-core**: contains the domain entities, use-cases as well as ports and adapters. This library is used by the Camunda 7 or Camunda 8 starter project.
