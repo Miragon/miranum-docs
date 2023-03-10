@@ -7,7 +7,7 @@ description: "This section contains product manual content for miranum-worker."
 
 # Miranum-Worker
 A Miranum-Worker connects to the process-engine (e.g. Camunda Platform 7 or 8) and fetches tasks of a certain type.
-With this functionality, our integration perform various actions on such a task occurring in an process instance. After having
+With this functionality, our integration perform various actions on such a task occurring in a process instance. After having
 worked and completed a task via a worker, the process engine continues to the next step. 
 
 To use the Miranum-Connect Worker, declare the following Maven dependency in your project:
@@ -22,7 +22,7 @@ To use the Miranum-Connect Worker, declare the following Maven dependency in you
 This dependency is usually added to the **<...>-core** module, which was introduced in the 
 [project structure](./quick-reference.md#project-structure) of our quick-reference. 
 
-## Implementing a Miranum Worker 
+## Implementing a Miranum-Worker 
 The Worker is typically implemented in the **adapter-in** package. This results out of the nature of the hexagonal architecture 
 we are using. The worker acts as an input we receive from the engine which drives the integration.
 ```bash
