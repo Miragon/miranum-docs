@@ -6,7 +6,7 @@ description: "This section contains product manual content for miranum-message."
 ---
 
 # Miranum-Message
-Miranum-Message connects to the process-engine (e.g. Camunda Platform 7 or 8) and enables users to correlate messages with 
+Miranum-Message connects to the process engine (e.g. Camunda Platform 7 or 8) and enables users to correlate messages with 
 process instance.
 
 To use the Miranum-Message, declare the following Maven dependency in your project:
@@ -22,9 +22,9 @@ This dependency is usually added to the **<...>-core** module, which was introdu
 [project structure](./quick-reference.md#project-structure) of our quick-reference. 
 
 ## Implementing Miranum-Message
-Miranum-Message is typically being imported into the **adapter-in** package. This results out of the nature of the hexagonal
-architecture we are using. 
-```bash
+When using the package structure of the hexagonal architecture we showed you in the [Quick-Reference](./quick-reference.md) 
+Miranum-Message needs to be imported into the **adapter-in** package. 
+```
 └── my-project-core
 │   └── src
 │     └── main
@@ -44,6 +44,8 @@ In the next step we want to implement a method which handles the message correla
 the Message-API. Having done so, we can create a new method `correlateMessage` which gets the CorrelateMessageCommand as an input. 
 Using `messageApi.correlateMessage` I can correlate the message with my process, by specifying the message name, correlation key
 and the variables which should be sent back to the process.
+
+In case a message correlation is not possible, an exception is thrown. 
 
 ```java
 private final MessageApi messageApi;

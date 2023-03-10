@@ -18,17 +18,17 @@ To use the Java Miranum-Connect library, declare the following Maven dependency 
 
 This library can be used only in combination with SpringBoot. Miranum-Connect is currently available as **snapshot-release** 
 in [maven-central](https://s01.oss.sonatype.org/content/repositories/snapshots/io/miragon/miranum/). You can import all Java moduls 
-as dependencies. Make sure to use the latest version 
+as dependencies. Make sure to use the latest version. 
 
 :::info
-To pull dependencies from the maven snapshot repo it needs to be part of the [settings.xml](https://github.com/FlowSquad/miranum) for your user profile
+To pull dependencies from the maven snapshot repo it needs to be part of the [settings.xml](https://github.com/FlowSquad/miranum) for your user profile.
 :::
 
 ## Project Structure 
 To make use of all the benefits Miranum-Connect provides, we recommend using a package structure suited for hexagonal architectures. 
 Below you can find such an exemplary high-level folder structure. 
 
-```bash
+```
 my-project
 ├── my-project-camunda7
 ├── my-project-camunda8

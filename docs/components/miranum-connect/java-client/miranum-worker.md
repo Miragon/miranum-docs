@@ -6,11 +6,11 @@ description: "This section contains product manual content for miranum-worker."
 ---
 
 # Miranum-Worker
-A Miranum-Worker connects to the process-engine (e.g. Camunda Platform 7 or 8) and fetches tasks of a certain type.
+A Miranum-Worker connects to the process engine (e.g. Camunda Platform 7 or 8) and fetches tasks of a certain type.
 With this functionality, our integration perform various actions on such a task occurring in a process instance. After having
 worked and completed a task via a worker, the process engine continues to the next step. 
 
-To use the Miranum-Connect Worker, declare the following Maven dependency in your project:
+To use the Miranum-Worker, declare the following Maven dependency in your project:
 ```xml
 <dependency>
     <groupId>io.miragon.miranum</groupId>
@@ -41,11 +41,11 @@ import io.miragon.miranum.connect.worker.api.Worker;
 ```
 
 In the next step we want to implement a method which acts as a worker. 
-This happens by adding the `@Worker` annotation. You are required to set a type in there. The type matches the corresponding
-type/topic defined in the BPMN activity. 
+This happens by adding the `@Worker` annotation. You are required to set a type which is used as reference to specify which 
+job worker request the respective service task job. 
 
 Your method can be of any return type. Set void if you do not want to store anything back to the scope of the process engine. 
-If you have an object in return it will be stored in a local-context in the process-instance. If you want to use it globally 
+If you have an object in return it will be stored in a local-context in the process instance. If you want to use it globally 
 make sure to define the input/output mappings in your process.
 
 ```java
@@ -58,7 +58,7 @@ public void doSomething(DoSomethingCommand doSomethingCommand) {
 ### Commands and UseCases
 As you can see in above examples we deal with Commands and UseCases. These are typically being created in the **ports-in** package
 of our project structure.
-```bash
+```
 │         ├── adapter
 │         │   ├── in
 │         │   └── out
@@ -86,17 +86,17 @@ public class DoSomethingService implements DoSomethingUseCase {
 }
 ```
 
-That is also the point where we interact with our domain object and execute the actual business logic. Keep in ming that 
-in a hexagonal architecture all dependencies point towards the domain-object. On itself it has no dependencies to anything else. 
+That is also the point where we interact with our domain object and execute the actual business logic. Keep in mind that 
+in a hexagonal architecture all dependencies point towards the domain object. On itself it has no dependencies to anything else. 
 
 ### Return variables to the process
-As already mentioned in a previous section of this documentation page, variables which are returned by the worker are treated as
-local variables for an activity by default. To change this, [input / output mappings](https://docs.camunda.io/docs/components/concepts/variables/#inputoutput-variable-mappings) 
+Variables which are returned by the worker are treated as local variables for an activity by default. To change this,
+[input / output mappings](https://docs.camunda.io/docs/components/concepts/variables/#inputoutput-variable-mappings) 
 are required. (in this case we need the output mapping)
 
 Below you can see an exemplary worker signature with return type `Something`. 
 ```java
-@Worker(type = "my-type") 
+@Worker(type = "doSomething") 
 public Something doSomething(DoSomethingCommand doSomethingCommand) 
 ```
 
@@ -105,7 +105,7 @@ we want to add an output mapping. In there, we map the local variable `something
 
 ![Output-Mapping](../static/img/output-mapping.png)
 
-Having done so the variable `somethingGlobal` is accessible over the whole lifespan of the process-instance and could be
+Having done so, the variable `somethingGlobal` is accessible over the whole lifespan of the process instance and can be
 used as input in a subsequent activity of our process. 
 
 :::info
