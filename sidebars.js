@@ -14,61 +14,71 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
 
-    APIs: [
-        "apis/api-overview",
-        {
-            "Cloud Events": [
-                "apis/cloud-events/cloud-events-overview",
-                {
-                    "Commands": [
-                        "apis/cloud-events/commands/ActivateJobsRequests",
-                        "apis/cloud-events/commands/ActivateJobsResponse",
-                        "apis/cloud-events/commands/CancelProcessInstanceRequest",
-                        "apis/cloud-events/commands/CancelProcessInstanceResponse",
-                        "apis/cloud-events/commands/CompleteJobRequest",
-                        "apis/cloud-events/commands/CompleteJobResponse",
-                        "apis/cloud-events/commands/CreateProcessInstanceRequest",
-                        "apis/cloud-events/commands/CreateProcessInstanceResponse",
-                        "apis/cloud-events/commands/DeployResourceRequest",
-                        "apis/cloud-events/commands/DeployResourceResponse",
-                        "apis/cloud-events/commands/FailJobRequest",
-                        "apis/cloud-events/commands/FailJobResponse",
-                        "apis/cloud-events/commands/PublishMessageRequest",
-                        "apis/cloud-events/commands/PublishMessageResponse",
-                    ],
-                }
-            ]
-        }
-    ],
-    Guides: [
-        "guides/guides-overview",
-        {
-            "Getting Started": [
-                "guides/getting-started/getting-started-web-ide-guide",
-                "guides/getting-started/pizza-order-example"
-            ],
-        },
-    ],
-    Components: [
-        "components/components-overview",
-        "components/contributing",
-        {
-            "Miranum-IDE": [
-                "components/miranum-ide/intro-miranum-ide",
-                "components/miranum-ide/miranum-json",
-                "components/miranum-ide/element-template-support",
-                {
-                    "Commands": [
-                        "components/miranum-ide/commands/deployment_api",
-                        "components/miranum-ide/commands/generate_api",
-                    ],
-                },
-            ],
-            "Miranum-Connect": [
-                "components/miranum-connect/intro-miranum-connect"
-            ]
-        }
-    ]
-};
+        APIs: [
+            "apis/api-overview",
+            {
+                "Cloud Events": [
+                    "apis/cloud-events/cloud-events-overview",
+                    {
+                        "Commands": [
+                            "apis/cloud-events/commands/ActivateJobsRequests",
+                            "apis/cloud-events/commands/ActivateJobsResponse",
+                            "apis/cloud-events/commands/CancelProcessInstanceRequest",
+                            "apis/cloud-events/commands/CancelProcessInstanceResponse",
+                            "apis/cloud-events/commands/CompleteJobRequest",
+                            "apis/cloud-events/commands/CompleteJobResponse",
+                            "apis/cloud-events/commands/CreateProcessInstanceRequest",
+                            "apis/cloud-events/commands/CreateProcessInstanceResponse",
+                            "apis/cloud-events/commands/DeployResourceRequest",
+                            "apis/cloud-events/commands/DeployResourceResponse",
+                            "apis/cloud-events/commands/FailJobRequest",
+                            "apis/cloud-events/commands/FailJobResponse",
+                            "apis/cloud-events/commands/PublishMessageRequest",
+                            "apis/cloud-events/commands/PublishMessageResponse",
+                        ],
+                    }
+                ]
+            }
+        ],
+        Guides: [
+            "guides/guides-overview",
+            {
+                "Getting Started": [
+                    "guides/getting-started/getting-started-web-ide-guide",
+                    "guides/getting-started/pizza-order-example"
+                ],
+            },
+        ],
+        Components: [
+            "components/components-overview",
+            "components/contributing",
+            {
+                "Miranum-IDE": [
+                    "components/miranum-ide/intro-miranum-ide",
+                    "components/miranum-ide/miranum-json",
+                    "components/miranum-ide/element-template-support",
+                    {
+                        "Commands": [
+                            "components/miranum-ide/commands/deployment_api",
+                            "components/miranum-ide/commands/generate_api",
+                        ],
+                    },
+                ],
+                "Miranum-Connect": [
+                    "components/miranum-connect/intro-miranum-connect",
+                    {
+                        "Java Client":
+                            [
+                                "components/miranum-connect/java-client/java-quick-reference",
+                                "components/miranum-connect/java-client/miranum-worker",
+                                "components/miranum-connect/java-client/miranum-process",
+                                "components/miranum-connect/java-client/miranum-message"
+                            ],
+                    }
+                ]
+            }
+        ]
+    }
+;
 
 module.exports = sidebars;

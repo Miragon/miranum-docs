@@ -23,6 +23,8 @@ We believe that open source software benefits from a diverse set of contributors
 Whether you're a seasoned developer or just starting out, we believe that you have something to contribute to our project.
 
 Thank you for considering contributing to our project. We look forward to working with you and building a thriving open source community.
+To engage with other contributors or just to join our lovely community, feel free joining our [lovely Slack workspace](https://join.slack.com/t/miranum/shared_invite/zt-1qu85oaas-mH502ffVTdPCHpM7JVYKZg).
+
 
 ## Miranum Repositories 
 As already mentioned, there are multiple ways how you can contribute to Miranum (e.g. bug fixes, documentation improvements, etc.). 
