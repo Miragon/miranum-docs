@@ -23,7 +23,7 @@ This dependency is usually added to the **<...>-core** module, which was introdu
 
 ## Implementing Miranum-Process
 When using the package structure of the hexagonal architecture we showed you in the [Quick-Reference](./quick-reference.md)
-Miranum-Process is needs to be imported into the **adapter-in** package.
+Miranum-Process needs to be imported into the **adapter-in** package.
 We are using the **in** package since an outside Miranum port is used to start the process. Starting a process is a 
 driver since it triggers the domain. 
 ```
@@ -44,18 +44,27 @@ import io.miragon.miranum.connect.process.impl.StartProcessPort;
 
 In the next step we want to implement a method which starts a process instance from our code. 
 If we use a REST-Controller to start a process we would need to add a request mapping for instance. But you are not limited 
-to use REST and can also rely on gRPC and other API mechanismns. 
-For the start of the process instance  , we need the `StartProcessPort` from our Miranum-Process implementation. 
+to use REST and can also rely on gRPC and other API mechanisms. 
+For the start of the process instance, we need the `StartProcessPort` from our Miranum-Process implementation. 
 
-In the method `triggerProcessStart` we call the `startProcessPort` to start the actual process and submit a `StartProcessCommand`. The command contains the key of the process which we want to start as well as possible variables which we want to
+In the method `triggerProcessStart` we call the `startProcessPort` to start the actual process and submit a `StartProcessCommand`. 
+The command contains the key of the process which we want to start as well as possible variables which we want to
 initialize on startup of the process instance.
 
 ```java
-private final StartProcessPort startProcessPort;
-    
-public ResponseEntity<Void> triggerProcessStart(@RequestBody final StartProcessRequestDto startProcessRequestDto) {
-    this.startProcessPort.startProcess(new StartProcessCommand(startProcessRequestDto.getProcessKey(), startProcessRequestDto.getVariables()));
-    return ResponseEntity.ok().build();
+@RestController
+@RequestMapping("api/process")
+@AllArgsConstructor
+public class StartProcessController {
+
+
+    private final StartProcessPort startProcessPort;
+
+    @PutMapping("/start")
+    public ResponseEntity<Void> triggerProcessStart(@RequestBody final StartProcessRequestDto startProcessRequestDto) {
+        this.startProcessPort.startProcess(new StartProcessCommand(startProcessRequestDto.getProcessKey(), startProcessRequestDto.getVariables()));
+        return ResponseEntity.ok().build();
+    }
 }
 ```
 
