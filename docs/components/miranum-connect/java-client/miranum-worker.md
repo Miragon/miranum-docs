@@ -134,7 +134,7 @@ needs to be added to the project. Additionally, it is required to add a specific
    <version>0.1.0-SNAPSHOT</version>
 </dependency>
 ```
-Having done so the `@GenerateElementTemplates` annotation needs to be added to a Miranum Worker method.
+Having done so, the `@GenerateElementTemplates` annotation needs to be added to a Miranum Worker method.
 The properties shown below are required when adding the annotation:
 ```java
 @Worker(type = "doSomething")
