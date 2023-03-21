@@ -49,7 +49,7 @@ If you have an object in return it will be stored in a local-context in the proc
 make sure to define the input/output mappings in your process.
 
 ```java
-@Worker(type = "my-type") 
+@Worker(type = "doSomething") 
 public void doSomething(DoSomethingCommand doSomethingCommand) {
     doSomethingUseCase.doSomething(doSomethingCommand);
 }
@@ -111,3 +111,55 @@ used as input in a subsequent activity of our process.
 :::info
 For an actual example take a look on our [miranum-connect guide](../../../guides/getting-started/pizza-order-miranum.md).
 :::
+
+
+## Generate Camunda Element-Templates
+:::note
+This feature is currently only available for Camunda Platform 7.
+:::
+
+Camunda element-templates are pre-configured building blocks that simplify the process of designing and implementing processes
+in the Camunda Platform. They are used to standardize and streamline the modeling process by providing predefined elements with 
+pre-configured properties, which can be easily customized to meet specific business requirements. This leads to a standardized way 
+of modelling processes across different departments and teams within an organization and accelerates the creation of new process models 
+for organizations that frequently develop new processes.
+
+To use the element-template generation feature for Camunda, the `miranum-core` dependency or `element-template-api` dependency 
+needs to be added to the project. Additionally, it is required to add a specific dependency for the Workflow-Engine you are using. 
+(E.g. `element-templates-c7` as the artifactId for Camunda Platform 7)
+```xml
+<dependency>
+   <groupId>io.miragon.miranum</groupId>
+   <artifactId>element-template-api</artifactId>
+   <version>0.1.0-SNAPSHOT</version>
+</dependency>
+```
+Having done so, the `@GenerateElementTemplates` annotation needs to be added to a Miranum Worker method.
+The properties shown below are required when adding the annotation:
+```java
+@Worker(type = "doSomething")
+@GenerateElementTemplate(
+        name = "Do Something",
+        id = "do-something",
+        type = "doSomething",
+        appliesTo = {BPMNElementType.BPMN_SERVICE_TASK},
+        version = 0.1)
+public void doSomething(DoSomethingCommand doSomethingCommand) {};
+```
+
+To further customize the generated element-templates, the `@ElementTemplateProperty` annotation can be added to properties 
+of the input and output parameters of the worker definition. For example, the name, type and constraints are configured 
+in the `DoSomethingCommand`.
+```java
+class DoSomethingCommand {
+    @ElementTemplateProperty(name = "Variable A", type = "String", required = true)
+    private String a;
+
+    @ElementTemplateProperty(name = "Variable B", type = "String", required = true)
+    private String b;
+}
+```
+
+The element-templates are generated on startup (not on build). Currently, the generated templates are stored inside the 
+`target` folder of the startup project and can be found in the `classes/element-templates` directory. If you require information 
+on how to use element-templates in Camunda's Modeler, please refer to the [Camunda docs](https://docs.camunda.io/docs/components/modeler/desktop-modeler/element-templates/about-templates/).
