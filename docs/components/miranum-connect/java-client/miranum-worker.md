@@ -143,12 +143,13 @@ The properties shown below are required when adding the annotation:
         id = "do-something",
         type = "doSomething",
         appliesTo = {BPMNElementType.BPMN_SERVICE_TASK},
-        version = "0.0.1")
+        version = 0.1)
 public void doSomething(DoSomethingCommand doSomethingCommand) {};
 ```
 
-To further customize the generated element-templates the `@ElementTemplateProperty` annotation can be added to input 
-and output parameter of the worker definition. For example, the name, type and constraints are configured in the `DoSomethingCommand`.
+To further customize the generated element-templates the `@ElementTemplateProperty` annotation can be added to properties 
+of the input and output parameters of the worker definition. For example, the name, type and constraints are configured 
+in the `DoSomethingCommand`.
 ```java
 class DoSomethingCommand {
     @ElementTemplateProperty(name = "Variable A", type = "String", required = true)
