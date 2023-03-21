@@ -124,7 +124,7 @@ pre-configured properties, which can be easily customized to meet specific busin
 of modelling processes across different departments and teams within an organization and accelerates the creation of new process models 
 for organizations that frequently develop new processes.
 
-To use the element-template generation feature for Camunda the `miranum-core` dependency or `element-template-api` dependency 
+To use the element-template generation feature for Camunda, the `miranum-core` dependency or `element-template-api` dependency 
 needs to be added to the project. Additionally, it is required to add a specific dependency for the Workflow-Engine you are using. 
 (E.g. `element-templates-c7` as the artifactId for Camunda Platform 7)
 ```xml
