@@ -101,7 +101,7 @@ public Something doSomething(DoSomethingCommand doSomethingCommand)
 ```
 
 Opening up our BPMN file in Miranum IDE and having created a process featuring a service task which calls our worker, 
-we want to add an output mapping. In there, we map the local variable `something` to the global variable `somethingGlobal`. 
+we want to add an output mapping. In there, we map the local variable `somethingLocal` to the global variable `somethingGlobal`. 
 
 ![Output-Mapping](../static/img/output-mapping.png)
 
