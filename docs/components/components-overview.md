@@ -27,3 +27,19 @@ We automate critical business processes at speed, relying on open technologies.
 At the same time, it is important to us to create flexibility for future adjustments and to customize the solution for our customers. 
 This is what we stand for with our products.
 
+## Roadmap
+### Why whe have a public roadmap
+Having a public roadmap for an open-source project is essential for several reasons. 
+Firstly, it helps to build transparency and trust between the project team and the community. By sharing the project's upcoming 
+features, milestones, and goals, users and contributors can better understand the direction the project is heading and contribute accordingly. 
+Additionally, having a public roadmap can help to manage user expectations and reduce confusion about the project's development process. 
+Users can see what features are planned, and when they can expect them to be implemented, rather than relying on vague promises or rumors. 
+Finally, a public roadmap can help attract new contributors, as it shows that the project team is committed to maintaining and improving 
+the project over the long term. Overall, having a public roadmap is an important part of building an active, engaged community around an open-source project.
+
+### Miranum-IDE 
+ ![IDE Roadmap](./static/img/ide-roadmap.png)
+### Miranum-Connect 
+![Connect Roadmap](./static/img/connect-roadmap.png)
+### Miranum-Docs 
+![Documentation Roadmap](./static/img/docs-roadmap.png)
