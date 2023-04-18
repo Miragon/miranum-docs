@@ -27,7 +27,8 @@ to make the life of an BPM Developer a little easier.
 1. Create a new folder
    > Note: The folder must be next to the .bpmn file and must be named *_element-templates_*.
 2. Place a new [element template](https://docs.camunda.io/docs/components/modeler/desktop-modeler/element-templates/about-templates/) inside the new created folder
-3. Assign the element template to a BPMN element by using the menu on the right side
+3. Assign the element template to a BPMN element by using the menu on the right side  
+   ![text-editor-btn](@site/docs/components/miranum-ide/static/img/miranum-modeler/add-element-templates-menu.png)
 4. Configure your diagram with the newly added values
 
 ![add-element-templates.gif](@site/docs/components/miranum-ide/static/img/miranum-modeler/add-element-templates.gif)
