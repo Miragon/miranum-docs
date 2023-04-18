@@ -33,9 +33,9 @@ to make the life of an BPM Developer a little easier.
 ![add-element-templates.gif](@site/docs/components/miranum-ide/static/img/miranum-modeler/add-element-templates.gif)
 
 #### Use the integrated text editor for quick fixes
-1. Click on the button on the navigation bar in the top right corner  
+1. Click the button on the navigation bar in the top right corner  
    ![text-editor-btn](@site/docs/components/miranum-ide/static/img/miranum-modeler/text-editor-btn.png)
-2. This will open the text editor beside the BPMN editor
+2. This will open the text editor besides the BPMN editor
 3. Now you can search or make changes directly in the text file
 4. Changes are synchronized with the BPMN editor
 
@@ -55,7 +55,7 @@ to make the life of an BPM Developer a little easier.
 ![text-editor.gif](@site/docs/components/miranum-ide/static/img/miranum-modeler/token-sim.gif)
 
 #### See logging information for errors
-1. Click on the button on the navigation bar in the top right corner  
+1. Click the button on the navigation bar in the top right corner  
    ![text-editor-btn](@site/docs/components/miranum-ide/static/img/miranum-modeler/logging-btn.png)
 2. This will open the build in **Logger** underneath the editor
 3. You can scroll through the messages to find errors
