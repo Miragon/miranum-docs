@@ -15,7 +15,7 @@ To use the Miranum-Worker, declare the following Maven dependency in your projec
 <dependency>
     <groupId>io.miragon.miranum</groupId>
     <artifactId>worker-api</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -131,19 +131,16 @@ needs to be added to the project. Additionally, it is required to add a specific
 <dependency>
    <groupId>io.miragon.miranum</groupId>
    <artifactId>element-template-api</artifactId>
-   <version>0.1.0-SNAPSHOT</version>
+   <version>0.2.0</version>
 </dependency>
 ```
-Having done so, the `@GenerateElementTemplates` annotation needs to be added to a Miranum Worker method.
+Having done so, the `@ElementTemplate` annotation needs to be added to a Miranum Worker method.
 The properties shown below are required when adding the annotation:
 ```java
 @Worker(type = "doSomething")
-@GenerateElementTemplate(
+@ElementTemplate(
         name = "Do Something",
-        id = "do-something",
-        type = "doSomething",
-        appliesTo = {BPMNElementType.BPMN_SERVICE_TASK},
-        version = 0.1)
+        description = "This is a description")
 public void doSomething(DoSomethingCommand doSomethingCommand) {};
 ```
 

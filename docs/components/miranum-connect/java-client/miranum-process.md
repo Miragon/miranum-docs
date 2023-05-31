@@ -14,7 +14,7 @@ To use the Miranum-Process, declare the following Maven dependency in your proje
 <dependency>
     <groupId>io.miragon.miranum</groupId>
     <artifactId>process-api</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
