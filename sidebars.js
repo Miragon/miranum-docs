@@ -67,6 +67,7 @@ const sidebars = {
                 ],
                 "Miranum-Connect": [
                     "components/miranum-connect/intro-miranum-connect",
+                    "components/miranum-connect/hexagonal-architecture",
                     {
                         "Java Client":
                             [
