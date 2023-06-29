@@ -175,7 +175,7 @@ Here's an example:
 public void doSomething(DoSomethingCommand doSomethingCommand) {};
 ```
 
-### Step 4: Customize your template
+### Step 4: Customize Your Template
 To customize your element templates, use the `@ElementTemplateProperty` annotation on properties of the worker's input and output parameters.
 This allows you to specify properties such as the name, type, and constraints for each parameter.
 
