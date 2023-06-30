@@ -113,29 +113,60 @@ For an actual example take a look on our [miranum-connect guide](../../../guides
 :::
 
 
-## Generate Camunda Element-Templates
-:::note
-This feature is currently only available for Camunda Platform 7.
-:::
+## Generate Camunda Element Templates
 
-Camunda element-templates are pre-configured building blocks that simplify the process of designing and implementing processes
+Camunda element templates are pre-configured building blocks that simplify the process of designing and implementing processes
 in the Camunda Platform. They are used to standardize and streamline the modeling process by providing predefined elements with 
 pre-configured properties, which can be easily customized to meet specific business requirements. This leads to a standardized way 
 of modelling processes across different departments and teams within an organization and accelerates the creation of new process models 
 for organizations that frequently develop new processes.
+Miranum supports the generation of element templates for Camunda 7 and Camunda 8.
 
-To use the element-template generation feature for Camunda, the `miranum-core` dependency or `element-template-api` dependency 
-needs to be added to the project. Additionally, it is required to add a specific dependency for the Workflow-Engine you are using. 
-(E.g. `element-templates-c7` as the artifactId for Camunda Platform 7)
+Here's a comprehensive guide on how to generate and use these element templates using Miranum's Maven Plugin and API.
+
+### Step 1: Set Up Maven Plugin
+To generate element templates, you first need to add the `element-templates-generator-maven-plugin` to your Maven project.
+This plugin supports both Camunda 7 and 8. The relevant configuration is shown below:
+
+```xml
+<plugin>
+    <groupId>io.miragon.miranum</groupId>
+    <artifactId>element-templates-generator-maven-plugin</artifactId>
+    <version>${project.version}</version>
+
+    <configuration>
+        <targetPlatforms>camunda7</targetPlatforms>
+    </configuration>
+</plugin>
+```
+
+The `targetPlatforms` configuration determines which Camunda version the plugin targets. You can target multiple versions by either separating them with commas or using multiple `<targetPlatform>` tags.
+```xml
+<configuration>
+    <targetPlatform>camunda7</targetPlatform>
+    <targetPlatform>camunda8</targetPlatform>
+</configuration>
+```
+
+### Step 2: Add API Dependency
+
+The next step is to add the `element-template-api` dependency to your Maven project. This API is necessary for specifying which worker should generate an element template.
+Here's how to add the dependency:
+
 ```xml
 <dependency>
-   <groupId>io.miragon.miranum</groupId>
-   <artifactId>element-template-api</artifactId>
-   <version>0.2.0</version>
+    <groupId>io.miragon.miranum</groupId>
+    <artifactId>element-template-api</artifactId>
+    <version>${project.version}</version>
+    <scope>compile</scope>
 </dependency>
 ```
-Having done so, the `@ElementTemplate` annotation needs to be added to a Miranum Worker method.
-The properties shown below are required when adding the annotation:
+
+### Step 3: Add ElementTemplate-Annotation to Worker
+
+To generate an element template, use the `@ElementTemplate` annotation on a Miranum Worker method.
+This annotation should at least specify the template's name and description.
+Here's an example:
 ```java
 @Worker(type = "doSomething")
 @ElementTemplate(
@@ -144,9 +175,11 @@ The properties shown below are required when adding the annotation:
 public void doSomething(DoSomethingCommand doSomethingCommand) {};
 ```
 
-To further customize the generated element-templates, the `@ElementTemplateProperty` annotation can be added to properties 
-of the input and output parameters of the worker definition. For example, the name, type and constraints are configured 
-in the `DoSomethingCommand`.
+### Step 4: Customize Your Template
+To customize your element templates, use the `@ElementTemplateProperty` annotation on properties of the worker's input and output parameters.
+This allows you to specify properties such as the name, type, and constraints for each parameter.
+
+Here's an example that configures two string parameters, "Variable A" and "Variable B", for a `DoSomethingCommand`:
 ```java
 class DoSomethingCommand {
     @ElementTemplateProperty(name = "Variable A", type = "String", required = true)
@@ -157,6 +190,11 @@ class DoSomethingCommand {
 }
 ```
 
-The element-templates are generated on startup (not on build). Currently, the generated templates are stored inside the 
-`target` folder of the startup project and can be found in the `classes/element-templates` directory. If you require information 
-on how to use element-templates in Camunda's Modeler, please refer to the [Camunda docs](https://docs.camunda.io/docs/components/modeler/desktop-modeler/element-templates/about-templates/).
+### Step 5: Accessing Your Templates
+
+Once your Maven project is built, your element templates will be generated and stored in the `classes/element-templates` directory within the `target` folder of your project. 
+The templates will be in a subdirectory corresponding to the target Camunda version.
+
+You can customize the output directory by adding the `outputDirectory` property to your plugin configuration and specifying your preferred path.
+
+Refer to the [Camunda docs](https://docs.camunda.io/docs/components/modeler/desktop-modeler/element-templates/about-templates/) for more information on using element templates in Camunda's Modeler.
