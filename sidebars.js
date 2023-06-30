@@ -44,8 +44,10 @@ const sidebars = {
             "guides/guides-overview",
             {
                 "Getting Started": [
+                    "guides/getting-started/quick-start",
                     "guides/getting-started/getting-started-web-ide-guide",
-                    "guides/getting-started/pizza-order-example"
+                    "guides/getting-started/pizza-order-example",
+                    "guides/getting-started/hexagonal-architecture",
                 ],
             },
         ],
@@ -67,7 +69,6 @@ const sidebars = {
                 ],
                 "Miranum-Connect": [
                     "components/miranum-connect/intro-miranum-connect",
-                    "components/miranum-connect/hexagonal-architecture",
                     {
                         "Java Client":
                             [
