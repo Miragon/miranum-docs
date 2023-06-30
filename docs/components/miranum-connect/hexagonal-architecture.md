@@ -6,9 +6,9 @@ description: "This section introduces the hexagonal architecture and it's advant
 ---
 
 # Hexagonal Architecture
-The hexagonal architecture, also known as Ports and Adapters, serves as an alternative to the previously discussed layered architecture \cite{Griffin}. The key difference is that all dependencies point inwards. At the core of the architecture lies the domain, which is independent of technologies and frameworks \cite{Griffin}.
+The hexagonal architecture, also known as Ports and Adapters, serves as an alternative to the well known layered architecture. The key difference is that all dependencies point inwards. At the core of the architecture lies the domain, which is independent of technologies and frameworks.
 
-![Hexagonal Architecture Diagram](images/hexagonal-architecture.png)
+![Hexagonal Architecture Diagram](static/img/hexagonal-architecture.svg)
 
 Figure 1: Hexagonal Architecture Diagram
 
@@ -17,9 +17,9 @@ In a domain rich with business rules, domain objects are the core of an applicat
 
 Domain objects have no external dependencies. They provide an API through which use cases can be executed.
 
-Since domain objects have no dependencies on other layers of the application, changes in other layers do not affect them. They can be evolved independently of dependencies. This exemplifies the Single Responsibility Principle\footnote{The Single Responsibility Principle, mentioned by Robert C. Martin in his paper "Design Principles and Design Patterns," is one of the main principles for clean software architecture \cite{RobertC.Martin}} which states that components should have only one reason to change. For our domain object, that reason is a change in business requirements.
+Since domain objects have no dependencies on other layers of the application, changes in other layers do not affect them. They can be evolved independently of dependencies. This exemplifies the Single Responsibility Principle. The Single Responsibility Principle, mentioned by Robert C. Martin in his paper "Design Principles and Design Patterns" is one of the main principles for clean software architecture which states that components should have only one reason to change. For our domain object, that reason is a change in business requirements.
 
-With a single responsibility, domain objects can be developed without considering external dependencies. This ability for evolution makes the hexagonal architecture style suitable for the application of Domain-Driven Design (DDD)\footnote{DDD is an approach to software development that places the business logic and requirements, represented by a conceptual model, at the center of design and implementation of the software \cite{Evans.2019}}.
+With a single responsibility, domain objects can be developed without considering external dependencies. This ability for evolution makes the hexagonal architecture style suitable for the application of Domain-Driven Design (DDD). DDD is an approach to software development that places the business logic and requirements, represented by a conceptual model, at the center of design and implementation of the software.
 
 ## Use Cases
 Use cases can be seen as abstract descriptions of user interactions with software. In the context of the hexagonal architecture, they are established as primary elements in the codebase.
@@ -44,4 +44,4 @@ Input adapters or driving adapters call the input ports to perform specific task
 
 Output adapters or driven adapters are called by use cases and could provide data from a database, for example. An output adapter implements a set of output port interfaces. It's important to note that the interfaces are determined by the use cases, not the other way around.
 
-Adapters facilitate the interchangeability of a specific layer of the application. If the application needs to be accessible from a different client in addition to the web, an alternative client input adapter can be added, utilizing the existing input port. If the application requires a different database, a new persistence adapter implementing the same output port interfaces can be added \cite{Hombergs.2019b}.
+Adapters facilitate the interchangeability of a specific layer of the application. If the application needs to be accessible from a different client in addition to the web, an alternative client input adapter can be added, utilizing the existing input port. If the application requires a different database, a new persistence adapter implementing the same output port interfaces can be added.
