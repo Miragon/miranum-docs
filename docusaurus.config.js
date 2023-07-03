@@ -70,7 +70,12 @@ module.exports = {
                         docId: 'apis/api-overview',
                         label: "APIs"
                     },
-                    {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}
+                    {
+                        href: 'https://github.com/Miragon/miranum-connect',
+                        position: 'right',
+                        className: "header-github-link",
+                        "aria-label": "GitHub repository",
+                    }
                 ],
             },
             algolia: {
