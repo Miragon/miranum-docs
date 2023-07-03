@@ -45,3 +45,43 @@ Input adapters or driving adapters call the input ports to perform specific task
 Output adapters or driven adapters are called by use cases and could provide data from a database, for example. An output adapter implements a set of output port interfaces. It's important to note that the interfaces are determined by the use cases, not the other way around.
 
 Adapters facilitate the interchangeability of a specific layer of the application. If the application needs to be accessible from a different client in addition to the web, an alternative client input adapter can be added, utilizing the existing input port. If the application requires a different database, a new persistence adapter implementing the same output port interfaces can be added.
+
+## Hexagonal Architecture vs. Layer Architecture
+
+To get a better understanding of the advantages the hexagonal architecture comes with, this section compares the two architectural styles based on the following criteria:
+
+1. **Coupling:** How strong are the dependencies between the components of the system? Low coupling is usually preferable as it facilitates changes and maintenance.
+2. **Drivers of Development:** Which part of the software drives the development? The adjustment of which part of the application brings a change in dependencies?
+3. **Testability:** How easily can the components of the system be tested? Good testability is important for quality assurance and maintainability of the software.
+
+### Coupling
+
+In terms of minimizing coupling, the hexagonal architecture indeed offers advantages. It is explicitly designed to control dependencies within the system and to decouple the core of the application (i.e., business logic and use cases) from the details of the infrastructure (such as databases, user interfaces, networks, etc.).
+
+This decoupling increases the system's flexibility, as changes to infrastructure details do not impact the core of the application. It also facilitates testing as the individual components of the system can be more easily isolated.
+
+In contrast, while the layered architecture does allow for a clear and structured organization of the system, it can lead to stronger coupling between layers, potentially impacting flexibility and testability.
+
+### Drivers of Development
+
+In a layered architecture, where the persistence layer is the final layer and the domain is based on this, the design tends to be influenced by the underlying database structure. This is known as database-driven design, meaning that the organization and behavior of the software are determined by the structure and properties of the used database. While this can lead to efficient data processing, it can also cause the business logic to become tied to the database structure, potentially limiting system flexibility. Changes to the entities of the database thus necessitate an adjustment of the domain. The adjustment of this can lead to further necessary changes to dependent layers.
+
+On the other hand, the hexagonal architecture aims to put the focus on business logic and use cases, known as domain-driven design. This means that the software's design is driven by understanding and modeling the business domain, rather than by technical details such as the database structure. This approach can lead to software closely tailored to business requirements and easily adaptable to changes in these requirements.
+
+### Testability
+
+
+Regarding testability, the hexagonal architecture shows some advantages. By using ports and adapters, the individual components of the application can be isolated and tested independently. The strict decoupling between the application core and the outer components allows the use of so-called mock objects for testing, simulating interactions with the outer components. This can simplify testing and improve the quality of tests, as it allows for more precise control of specific scenarios and edge cases.
+
+While the layered architecture, though also capable of supporting well-structured and testable applications, can pose challenges concerning testability due to its stronger coupling between layers. Particularly, it may be more challenging to separate the layers for isolated testing. Changes to one layer may ripple to others, making testing more complicated.
+
+In summary, the hexagonal architecture tends to exhibit higher testability, mainly through its ability to isolate the individual components of the application.
+
+### Conclusion
+
+In conclusion, the hexagonal architecture appears to be superior in terms of coupling, drivers of development, and testability compared to the layered architecture. However, it's worth noting that the complexity of the hexagonal architecture might be perceived as unnecessary overhead in smaller systems. Nevertheless, when considering all factors, the hexagonal architecture provides a robust and flexible structure for software development, especially for projects requiring high testability and low coupling.
+
+
+
+
+
