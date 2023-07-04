@@ -49,12 +49,19 @@
 
 .codeBlockContainer {
   justify-content: center;
-  margin: auto;
   max-width: 80rem;
   display: flex;
-  flex-direction: column;
   border-radius: 4px;
   padding: 16px;
+  margin: 0 1rem;
+
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.codeBlock {
+  max-width: 100%;
 }
 
 .title {
@@ -62,18 +69,14 @@
   text-align: center;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .description {
   --tw-shadow: 0 16px 32px -16px rgba(0,0,0,.1),0 0 0 1px rgba(0,0,0,.1);
   --tw-ring-offeset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
-  flex: 1;
+
+  flex: 1 1 40%;
   height: max-content;
+  min-width: 300px;
   padding: 3rem 1rem;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -131,7 +134,10 @@ pre {
 section {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn)
+  background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {

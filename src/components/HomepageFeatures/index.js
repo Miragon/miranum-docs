@@ -126,19 +126,17 @@ public Answer sendMessage(SendMessageCommand sendMessageCommand) {
 const CodeBlockWithDescription = ({ description, code, language }) => {
     return (
         <div className={styles.codeBlockContainer}>
-            <div className={styles.content}>
-                <div className={styles.codeBlock}>
-                    <div className={styles.codeBlockHeader}>
-                        <div className={clsx(styles.xButton, styles.red)}></div>
-                        <div className={clsx(styles.xButton, styles.orange)}></div>
-                        <div className={clsx(styles.xButton, styles.green)}></div>
-                    </div>
-                    <CodeBlock className={clsx('language-' + language)}>
-                        {code}
-                    </CodeBlock>
+            <div className={styles.codeBlock}>
+                <div className={styles.codeBlockHeader}>
+                    <div className={clsx(styles.xButton, styles.red)}></div>
+                    <div className={clsx(styles.xButton, styles.orange)}></div>
+                    <div className={clsx(styles.xButton, styles.green)}></div>
                 </div>
-                <div className={styles.description}>{description}</div>
+                <CodeBlock className={clsx('language-' + language)}>
+                    {code}
+                </CodeBlock>
             </div>
+            <div className={styles.description}>{description}</div>
         </div>
     );
 };
