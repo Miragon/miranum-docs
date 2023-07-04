@@ -147,6 +147,7 @@ const CodeBlockWithTitle = ({ title, description, code, language }) => {
 export default function HomepageFeatures() {
     return (
         <div style={{paddingTop: "8rem"}}>
+
             <CodeBlockWithTitle code={code}
                                 language="java"
                                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
@@ -160,6 +161,7 @@ export default function HomepageFeatures() {
             </CodeBlockWithTitle>
 
             <section className={styles.features}>
+                <h1>Your benefits</h1>
                 <div className="container">
                     <div className="row">
                         {FeatureList.map((props, idx) => (
@@ -168,16 +170,6 @@ export default function HomepageFeatures() {
                     </div>
                 </div>
             </section>
-            <section className={styles.customerVoices}>
-                <div className="container">
-                    <div className="row">
-                        {CustomerVoices.map((props, idx) => (
-                            <CustomerVoice key={idx} {...props} />
-                        ))}
-                    </div>
-                </div>
-            </section>
         </div>
     );
 }
-
