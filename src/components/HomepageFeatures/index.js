@@ -123,10 +123,9 @@ public Answer sendMessage(SendMessageCommand sendMessageCommand) {
     return answer;
 }`
 
-const CodeBlockWithTitle = ({ title, description, code, language }) => {
+const CodeBlockWithDescription = ({ description, code, language }) => {
     return (
         <div className={styles.codeBlockContainer}>
-            <h1 className={styles.title}>{title}</h1>
             <div className={styles.content}>
                 <div className={styles.codeBlock}>
                     <div className={styles.codeBlockHeader}>
@@ -146,22 +145,26 @@ const CodeBlockWithTitle = ({ title, description, code, language }) => {
 
 export default function HomepageFeatures() {
     return (
-        <div style={{paddingTop: "8rem"}}>
+        <div>
 
-            <CodeBlockWithTitle code={code}
-                                language="java"
-                                description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                                title="Create engine-neutal worker definitions">
-            </CodeBlockWithTitle>
+            <section>
+                <h1 className={styles.title}>Create engine-neutal worker definitions</h1>
+                <CodeBlockWithDescription code={code}
+                                    language="java"
+                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                </CodeBlockWithDescription>
+            </section>
 
-            <CodeBlockWithTitle code={code}
-                                language="java"
-                                description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                                title="Correlate messages">
-            </CodeBlockWithTitle>
+            <section>
+                <h1 className={styles.title}>Correlate a message</h1>
+                <CodeBlockWithDescription code={code}
+                                    language="java"
+                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                </CodeBlockWithDescription>
+            </section>
 
             <section className={styles.features}>
-                <h1>Your benefits</h1>
+                <h1 className={styles.title}>Your benefits</h1>
                 <div className="container">
                     <div className="row">
                         {FeatureList.map((props, idx) => (
