@@ -56,9 +56,7 @@
 }
 
 .title {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -90,12 +88,12 @@
 pre {
   border: 1px solid #e5e7eb;
   margin-top: 0 !important;
+  background-color: white !important;
 }
 
 .codeBlockHeader {
   height: 30px;
   width: 100%;
-  background-color: white;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   position: relative;
@@ -103,4 +101,27 @@ pre {
   top: 5px;
   box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
   border: 1px solid #e5e7eb;
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 247 249/var(--tw-bg-opacity));
+  display: flex;
+  align-items: center;
+}
+
+.xButton {
+  width: 10px;
+  height: 10px;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
 }

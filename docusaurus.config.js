@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer').themes.github;
+const theme = require('prism-react-renderer').themes.duotoneLight;
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -108,7 +109,7 @@ module.exports = {
             },
             prism: {
                 additionalLanguages: ['java'],
-                theme: lightCodeTheme,
+                theme: theme,
             },
             colorMode: {
                 disableSwitch: true,

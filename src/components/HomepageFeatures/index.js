@@ -126,10 +126,14 @@ public Answer sendMessage(SendMessageCommand sendMessageCommand) {
 const CodeBlockWithTitle = ({ title, description, code, language }) => {
     return (
         <div className={styles.codeBlockContainer}>
-            <div className={styles.title}>{title}</div>
+            <h1 className={styles.title}>{title}</h1>
             <div className={styles.content}>
                 <div className={styles.codeBlock}>
-                    <div className={styles.codeBlockHeader}></div>
+                    <div className={styles.codeBlockHeader}>
+                        <div className={clsx(styles.xButton, styles.red)}></div>
+                        <div className={clsx(styles.xButton, styles.orange)}></div>
+                        <div className={clsx(styles.xButton, styles.green)}></div>
+                    </div>
                     <CodeBlock className={clsx('language-' + language)}>
                         {code}
                     </CodeBlock>
@@ -142,7 +146,7 @@ const CodeBlockWithTitle = ({ title, description, code, language }) => {
 
 export default function HomepageFeatures() {
     return (
-        <div>
+        <div style={{paddingTop: "8rem"}}>
             <CodeBlockWithTitle code={code}
                                 language="java"
                                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
