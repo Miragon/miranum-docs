@@ -105,7 +105,9 @@ module.exports = {
                         href: 'https://miragon.io/datenschutz'
                     },],
                 },], copyright: `Copyright © ${new Date().getFullYear()} Miragon`,
-            }, prism: {
+            },
+            prism: {
+                additionalLanguages: ['java'],
                 theme: lightCodeTheme,
             },
             colorMode: {

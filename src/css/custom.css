@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+@import '~prismjs/themes/prism.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #0d47a1;

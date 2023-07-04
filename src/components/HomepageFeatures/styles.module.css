@@ -45,3 +45,62 @@
   filter: drop-shadow(5px 5px 5px #222);
 }
 
+.codeBlockContainer {
+  justify-content: center;
+  margin: auto;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.description {
+  --tw-shadow: 0 16px 32px -16px rgba(0,0,0,.1),0 0 0 1px rgba(0,0,0,.1);
+  --tw-ring-offeset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  flex: 1;
+  height: max-content;
+  padding: 3rem 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-left: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 12px;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow);
+}
+
+pre {
+  border: 1px solid #e5e7eb;
+  margin-top: 0 !important;
+}
+
+.codeBlockHeader {
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+  top: 5px;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  border: 1px solid #e5e7eb;
+}

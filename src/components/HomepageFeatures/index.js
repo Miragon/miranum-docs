@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import CodeBlock from '@theme/CodeBlock';
 
 const FeatureList = [
     {
@@ -115,10 +116,45 @@ function CustomerVoice({Svg, title, description}) {
     );
 }
 
+const code = `
+@Worker(type = "sendMessage")
+public Answer sendMessage(SendMessageCommand sendMessageCommand) {
+    // ...
+    return answer;
+}`
+
+const CodeBlockWithTitle = ({ title, description, code, language }) => {
+    return (
+        <div className={styles.codeBlockContainer}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.content}>
+                <div className={styles.codeBlock}>
+                    <div className={styles.codeBlockHeader}></div>
+                    <CodeBlock className={clsx('language-' + language)}>
+                        {code}
+                    </CodeBlock>
+                </div>
+                <div className={styles.description}>{description}</div>
+            </div>
+        </div>
+    );
+};
 
 export default function HomepageFeatures() {
     return (
         <div>
+            <CodeBlockWithTitle code={code}
+                                language="java"
+                                description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                                title="Create engine-neutal worker definitions">
+            </CodeBlockWithTitle>
+
+            <CodeBlockWithTitle code={code}
+                                language="java"
+                                description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                                title="Correlate messages">
+            </CodeBlockWithTitle>
+
             <section className={styles.features}>
                 <div className="container">
                     <div className="row">
