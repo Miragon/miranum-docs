@@ -69,23 +69,6 @@ const FeatureList = [
     }
 ];
 
-const CustomerVoices = [
-    {
-        title: 'City of Munich',
-        Svg: require('/static/img/lhm.webp').default,
-        description: (
-            <>
-                We are supporting the city of Munich since June 2020 in their project neoIT. That's when the core
-                concepts
-                of Miranum were born. We help concerting and implementing a platform for digitalising workflows.
-                The focus of this project lies especially on orchestrating their very heterogeneous system landscape.
-                Additionally, a task management needed to be created in order to involve various clerks in the cities
-                departments.
-            </>
-        ),
-    },
-];
-
 function Feature({Svg, title, description}) {
     return (
         <div className={clsx('col col--4')}>
@@ -95,22 +78,6 @@ function Feature({Svg, title, description}) {
             <div className="text--center padding-horiz--md">
                 <h3>{title}</h3>
                 <p>{description}</p>
-            </div>
-        </div>
-    );
-}
-
-function CustomerVoice({Svg, title, description}) {
-    return (
-        <div>
-            <div className={clsx(styles.subsection, "row")}>
-                <div className={clsx('col col--6', "text--center")}>
-                    <img src={Svg} className={styles.customerVoicesImg}></img>
-                </div>
-                <div className={clsx('col col--6', styles.subsectionContent)}>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                </div>
             </div>
         </div>
     );
@@ -136,17 +103,35 @@ const CodeBlockWithDescription = ({ description, code, language }) => {
                     {code}
                 </CodeBlock>
             </div>
-            <div className={styles.description}>{description}</div>
+            <p className={styles.description}>{description}</p>
         </div>
     );
 };
+
+const GifWithDescription = ({ src, description }) => {
+    return (
+        <div className={styles.codeBlockContainer}>
+            <img className={styles.gif} src={gif} alt="gif-player"/>
+            <p className={styles.description}>{description}</p>
+        </div>
+    );
+};
+
+import gif from "../../../static/img/test-gif.gif";
 
 export default function HomepageFeatures() {
     return (
         <div>
 
             <section>
-                <h1 className={styles.title}>Create engine-neutal worker definitions</h1>
+                <h1>Correlate a message</h1>
+                <GifWithDescription src={gif}
+                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                </GifWithDescription>
+            </section>
+
+            <section>
+                <h1>Create engine-neutal worker definitions</h1>
                 <CodeBlockWithDescription code={code}
                                     language="java"
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
@@ -154,7 +139,14 @@ export default function HomepageFeatures() {
             </section>
 
             <section>
-                <h1 className={styles.title}>Correlate a message</h1>
+                <h1>Correlate a message</h1>
+                <GifWithDescription src={gif}
+                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                </GifWithDescription>
+            </section>
+
+            <section>
+                <h1>Correlate a message</h1>
                 <CodeBlockWithDescription code={code}
                                     language="java"
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
@@ -162,7 +154,7 @@ export default function HomepageFeatures() {
             </section>
 
             <section className={styles.features}>
-                <h1 className={styles.title}>Your benefits</h1>
+                <h1>Your benefits</h1>
                 <div className="container">
                     <div className="row">
                         {FeatureList.map((props, idx) => (

@@ -53,12 +53,16 @@ module.exports = {
     themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: '',
                 logo: {
                     alt: 'miranum logo', src: 'img/logo_blau.png',
                 },
                 items: [
-                    {type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"},
+                    {
+                        type: "doc",
+                        position: "left",
+                        docId: 'guides/guides-overview',
+                        label: "Guides"
+                    },
                     {
                         type: "doc",
                         position: "left",
@@ -76,7 +80,7 @@ module.exports = {
                         position: 'right',
                         className: "header-github-link",
                         "aria-label": "GitHub repository",
-                    }
+                    },
                 ],
             },
             algolia: {
