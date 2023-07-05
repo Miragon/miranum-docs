@@ -2,6 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import CodeBlock from '@theme/CodeBlock';
+import gif from "../../../static/img/test-gif.gif";
+import Link from "@docusaurus/Link";
 
 const FeatureList = [
     {
@@ -83,41 +85,57 @@ function Feature({Svg, title, description}) {
     );
 }
 
-const code = `
+const miranumWorkerCode = `
 @Worker(type = "sendMessage")
 public Answer sendMessage(SendMessageCommand sendMessageCommand) {
     // ...
     return answer;
-}`
+}`;
 
-const CodeBlockWithDescription = ({ description, code, language }) => {
+const miranumMessageCode = `
+@RequiredArgsConstructor
+class Service {
+    private final MessageApi messageApi;
+    
+    public void correlateMessage(CorrelateMessageCommand correlateMessageCommand) {
+        messageApi.correlateMessage(correlateMessageCommand);
+    }
+}
+`;
+
+const ApplicationWindowWithDescription = ({children, description}) => {
     return (
-        <div className={styles.codeBlockContainer}>
-            <div className={styles.codeBlock}>
-                <div className={styles.codeBlockHeader}>
+        <div className={styles.blockContainer}>
+            <div className={styles.applicationWindow}>
+                <div className={styles.applicationMenuBar}>
                     <div className={clsx(styles.xButton, styles.red)}></div>
                     <div className={clsx(styles.xButton, styles.orange)}></div>
                     <div className={clsx(styles.xButton, styles.green)}></div>
                 </div>
-                <CodeBlock className={clsx('language-' + language)}>
-                    {code}
-                </CodeBlock>
+                {children}
             </div>
             <p className={styles.description}>{description}</p>
         </div>
     );
 };
 
-const GifWithDescription = ({ src, description }) => {
+const CodeBlockWithDescription = ({description, code, language}) => {
     return (
-        <div className={styles.codeBlockContainer}>
-            <img className={styles.gif} src={gif} alt="gif-player"/>
-            <p className={styles.description}>{description}</p>
-        </div>
-    );
+        <ApplicationWindowWithDescription
+            children={<CodeBlock className={clsx('language-' + language)}>
+                {code}
+            </CodeBlock>}
+            description={description}>
+        </ApplicationWindowWithDescription>);
 };
 
-import gif from "../../../static/img/test-gif.gif";
+const GifWithDescription = ({src, description}) => {
+    return (
+        <ApplicationWindowWithDescription
+            children={<img className={styles.gif} src={src} alt="gif-player"/>}
+            description={description}>
+        </ApplicationWindowWithDescription>);
+};
 
 export default function HomepageFeatures() {
     return (
@@ -132,9 +150,9 @@ export default function HomepageFeatures() {
 
             <section>
                 <h1>Create engine-neutral worker definitions</h1>
-                <CodeBlockWithDescription code={code}
-                                    language="java"
-                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                <CodeBlockWithDescription code={miranumWorkerCode}
+                                          language="java"
+                                          description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </CodeBlockWithDescription>
             </section>
 
@@ -147,9 +165,9 @@ export default function HomepageFeatures() {
 
             <section>
                 <h1>Correlate a message</h1>
-                <CodeBlockWithDescription code={code}
-                                    language="java"
-                                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
+                <CodeBlockWithDescription code={miranumMessageCode}
+                                          language="java"
+                                          description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </CodeBlockWithDescription>
             </section>
 
@@ -163,6 +181,16 @@ export default function HomepageFeatures() {
                     </div>
                 </div>
             </section>
+
+            <div className={styles.contribution}>
+                <img src={'img/logo.svg'} alt="miranum-logo"/>
+                <h1>Welcome to the Miranum community</h1>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="/docs/components/components-overview">
+                    Get Started
+                </Link>
+            </div>
         </div>
     );
 }
