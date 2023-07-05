@@ -147,4 +147,9 @@ section {
 
 .gif {
   max-width: 40rem;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
 }

@@ -124,14 +124,14 @@ export default function HomepageFeatures() {
         <div>
 
             <section>
-                <h1>Correlate a message</h1>
+                <h1>Model your process with the Miranum IDE</h1>
                 <GifWithDescription src={gif}
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </GifWithDescription>
             </section>
 
             <section>
-                <h1>Create engine-neutal worker definitions</h1>
+                <h1>Create engine-neutral worker definitions</h1>
                 <CodeBlockWithDescription code={code}
                                     language="java"
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
@@ -139,7 +139,7 @@ export default function HomepageFeatures() {
             </section>
 
             <section>
-                <h1>Correlate a message</h1>
+                <h1>Create custom forms</h1>
                 <GifWithDescription src={gif}
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </GifWithDescription>
