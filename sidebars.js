@@ -14,32 +14,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
 
-        APIs: [
-            "apis/api-overview",
-            {
-                "Cloud Events": [
-                    "apis/cloud-events/cloud-events-overview",
-                    {
-                        "Commands": [
-                            "apis/cloud-events/commands/ActivateJobsRequests",
-                            "apis/cloud-events/commands/ActivateJobsResponse",
-                            "apis/cloud-events/commands/CancelProcessInstanceRequest",
-                            "apis/cloud-events/commands/CancelProcessInstanceResponse",
-                            "apis/cloud-events/commands/CompleteJobRequest",
-                            "apis/cloud-events/commands/CompleteJobResponse",
-                            "apis/cloud-events/commands/CreateProcessInstanceRequest",
-                            "apis/cloud-events/commands/CreateProcessInstanceResponse",
-                            "apis/cloud-events/commands/DeployResourceRequest",
-                            "apis/cloud-events/commands/DeployResourceResponse",
-                            "apis/cloud-events/commands/FailJobRequest",
-                            "apis/cloud-events/commands/FailJobResponse",
-                            "apis/cloud-events/commands/PublishMessageRequest",
-                            "apis/cloud-events/commands/PublishMessageResponse",
-                        ],
-                    }
-                ]
-            }
-        ],
         Guides: [
             "guides/guides-overview",
             {
@@ -75,6 +49,27 @@ const sidebars = {
                                 "components/miranum-connect/java-client/miranum-process",
                                 "components/miranum-connect/java-client/miranum-message"
                             ],
+                        "Cloud Events": [
+                            "components/miranum-connect/cloud-events/cloud-events-overview",
+                            {
+                                "Commands": [
+                                    "components/miranum-connect/cloud-events/commands/ActivateJobsRequests",
+                                    "components/miranum-connect/cloud-events/commands/ActivateJobsResponse",
+                                    "components/miranum-connect/cloud-events/commands/CancelProcessInstanceRequest",
+                                    "components/miranum-connect/cloud-events/commands/CancelProcessInstanceResponse",
+                                    "components/miranum-connect/cloud-events/commands/CompleteJobRequest",
+                                    "components/miranum-connect/cloud-events/commands/CompleteJobResponse",
+                                    "components/miranum-connect/cloud-events/commands/CreateProcessInstanceRequest",
+                                    "components/miranum-connect/cloud-events/commands/CreateProcessInstanceResponse",
+                                    "components/miranum-connect/cloud-events/commands/DeployResourceRequest",
+                                    "components/miranum-connect/cloud-events/commands/DeployResourceResponse",
+                                    "components/miranum-connect/cloud-events/commands/FailJobRequest",
+                                    "components/miranum-connect/cloud-events/commands/FailJobResponse",
+                                    "components/miranum-connect/cloud-events/commands/PublishMessageRequest",
+                                    "components/miranum-connect/cloud-events/commands/PublishMessageResponse",
+                                ],
+                            }
+                        ]
                     }
                 ]
             }
