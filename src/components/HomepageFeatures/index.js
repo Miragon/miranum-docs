@@ -103,9 +103,9 @@ class Service {
 }
 `;
 
-const ApplicationWindowWithDescription = ({children, description}) => {
+const ApplicationWindowWithDescription = ({children, description, className}) => {
     return (
-        <div className={styles.blockContainer}>
+        <div className={clsx(styles.blockContainer, className)}>
             <div className={styles.applicationWindow}>
                 <div className={styles.applicationMenuBar}>
                     <div className={clsx(styles.xButton, styles.red)}></div>
@@ -119,9 +119,10 @@ const ApplicationWindowWithDescription = ({children, description}) => {
     );
 };
 
-const CodeBlockWithDescription = ({description, code, language}) => {
+const CodeBlockWithDescription = ({description, code, language, className}) => {
     return (
         <ApplicationWindowWithDescription
+            className={className}
             children={<CodeBlock className={clsx('language-' + language)}>
                 {code}
             </CodeBlock>}
@@ -140,12 +141,15 @@ const GifWithDescription = ({src, description}) => {
 export default function HomepageFeatures() {
     return (
         <div>
-
             <section>
-                <h1>Model your process with the Miranum IDE</h1>
+                <div className={styles.heading}>
+                    <h1>Model your process with the Miranum IDE</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
                 <GifWithDescription src={gif}
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </GifWithDescription>
+                <p className={styles.sectionFooter}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </section>
 
             <section>
@@ -166,6 +170,7 @@ export default function HomepageFeatures() {
             <section>
                 <h1>Correlate a message</h1>
                 <CodeBlockWithDescription code={miranumMessageCode}
+                                          className={styles.correlateMessageCode}
                                           language="java"
                                           description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </CodeBlockWithDescription>

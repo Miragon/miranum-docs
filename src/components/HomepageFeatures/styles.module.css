@@ -155,6 +155,10 @@ h1 {
   text-align: center;
 }
 
+.correlateMessageCode .applicationWindow {
+  width: 42rem;
+}
+
 .contribution {
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -168,4 +172,34 @@ h1 {
 .contribution > h1 {
   text-align: center;
   max-width: 52rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 56rem;
+}
+
+.heading p {
+  font-size: 20px;
+  max-width: 48rem;
+  text-align: center;
+}
+
+.heading h1 {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .heading h1 {
+    max-width: 32rem;
+  }
+}
+
+.sectionFooter {
+  font-size: 20px;
+  max-width: 48rem;
+  text-align: center;
 }
