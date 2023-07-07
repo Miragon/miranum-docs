@@ -138,43 +138,80 @@ const GifWithDescription = ({src, description}) => {
         </ApplicationWindowWithDescription>);
 };
 
+const ShowCaseSection = ({title, subtitleText, footerText, children}) => {
+    return (
+        <section>
+            <div className={styles.heading}>
+                <h1>{title}</h1>
+                <p>{subtitleText}</p>
+            </div>
+            {children}
+            <p className={styles.sectionFooter}>{footerText}</p>
+        </section>
+    );
+}
+
 export default function HomepageFeatures() {
     return (
         <div>
-            <section>
-                <div className={styles.heading}>
-                    <h1>Model your process with the Miranum IDE</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </div>
+            <ShowCaseSection title="Model your process with the Miranum IDE"
+                             subtitleText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet."
+                             footerText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.">
                 <GifWithDescription src={gif}
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </GifWithDescription>
-                <p className={styles.sectionFooter}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </section>
+            </ShowCaseSection>
 
-            <section>
-                <h1>Create engine-neutral worker definitions</h1>
+            <ShowCaseSection title="Create engine-neutral worker definitions"
+                             subtitleText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet."
+                             footerText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.">
                 <CodeBlockWithDescription code={miranumWorkerCode}
                                           language="java"
                                           description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </CodeBlockWithDescription>
-            </section>
+            </ShowCaseSection>
 
-            <section>
-                <h1>Create custom forms</h1>
+            <ShowCaseSection title="Create custom forms"
+                             subtitleText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet."
+                             footerText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.">
                 <GifWithDescription src={gif}
                                     description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </GifWithDescription>
-            </section>
+            </ShowCaseSection>
 
-            <section>
-                <h1>Correlate a message</h1>
+            <ShowCaseSection title="Correlate a message"
+                             subtitleText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet."
+                             footerText="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.">
                 <CodeBlockWithDescription code={miranumMessageCode}
                                           className={styles.correlateMessageCode}
                                           language="java"
                                           description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">
                 </CodeBlockWithDescription>
-            </section>
+            </ShowCaseSection>
 
             <section className={styles.features}>
                 <h1>Your benefits</h1>

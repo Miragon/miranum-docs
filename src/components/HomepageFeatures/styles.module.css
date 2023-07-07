@@ -131,6 +131,7 @@ pre {
 }
 
 section {
+  gap: 1rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn);
