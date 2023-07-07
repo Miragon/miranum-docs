@@ -57,7 +57,7 @@ module.exports = {
                     alt: 'miranum logo', src: 'img/logo_blau.png',
                 },
                 items: [
-                    {type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"},
+                    {type: "doc", position: "left", docId: 'guides/showcases/pizza-order-example', label: "Guides"},
                     {
                         type: "doc",
                         position: "left",

@@ -41,11 +41,9 @@ const sidebars = {
             }
         ],
         Guides: [
-            "guides/guides-overview",
             {
-                "Getting Started": [
-                    "guides/getting-started/getting-started-web-ide-guide",
-                    "guides/getting-started/pizza-order-example"
+                "Showcases": [
+                    "guides/showcases/pizza-order-example"
                 ],
             },
         ],
