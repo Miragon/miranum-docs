@@ -233,5 +233,5 @@ h1 {
 .logos img {
   width: 3rem;
   height: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
 }
