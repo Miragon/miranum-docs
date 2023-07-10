@@ -98,56 +98,72 @@ const ShowCaseSection = ({title, subtitleText, footerText, children}) => {
     </section>);
 }
 
+const modelerDescription =  {
+    title: "Model your process with the Miranum IDE",
+    subtitleText: "Miranum IDE is a collection of VS Code Plugins that allows you to edit, manage and access all artifacts for your process application in one place.",
+    footerText: "To create end-to-end process application a collaboration platform for various technical and non-technical roles is needed. Since processes need multiple artifacts like templates (forms, mails, PDF), workflow assets (BPMN, DMN) and configuration files (secrets, connectors) we see the growing need for a platform being capable of handling all of them. With Visual Studio Code developers are able to work in a familiar environment. Even non-technical personas are able to visit VS Code through the browser and do not need to fear any technical complexity. ",
+    description: "Miranum Modeler is one of the core components of our VS Code Plugins. It allows you to model BPMN 2.0 diagrams that can be used within Camunda. Besides, it supports the creation of DMN 1.3 diagrams.",
+    gifSrc: modeler_gif
+};
+
+const workerDescription =  {
+    title: "Create engine-neutral worker definitions",
+    subtitleText: "A job worker is a service capable of performing a particular task in a process, typically being written in Java. With Miranum-Connect developers are empowered to build reusable and technology neutral connectors and integrations.",
+    footerText: "Miranum-connect supports Camunda element templates as well. These are building\n                             blocks that simplify the process of designing and implementing processes in the Camunda Platform. They are used to standardize and streamline the modeling process by providing predefined elements\n                              with pre-configured properties, which can be easily customized to meet specific business requirements.",
+    code: miranumWorkerCode,
+    description: "This is a technology neutral worker implementation for a job of type “send-message”. Due to the miranum-connect abstraction layer it works with various process engines such as Camunda Platform 7, 8 as well as Flowable.",
+    language: "java",
+};
+
+const formsDescription = {
+    title: "Create custom forms",
+    subtitleText:"Forms are digital interfaces used to collect and organize information from users in processes. They play a vital role in automating workflows and ensuring compliance. Forms streamline processes, reduce errors, and enhance efficiency, making them essential for effective business operations.",
+    footerText:"While designing Forms, collaboration is key! Through the Live Share plugin for VS Code a real-time collaboration is easily possible. Empowering Business and IT to work even closer together. Once having desinged these forms, you can reference them in the required process.",
+    description:"Miranum JSON Forms is another key-component of our VS Code Plugins. It allows you to create and edit complex forms using JSONForms, which is based on JSON Schema, a specification for annotating and validating JSON documents.",
+    gifSrc: forms_gif,
+};
+
+const messageDescription = {
+    title: "Correlate a message",
+    subtitleText: "Message correlation is a crucial aspect of processes, as it involves associating incoming messages with a process instance. It ensures that responses are properly linked to the corresponding requests, enabling seamless communication and coordination among participants and systems.",
+    code: miranumMessageCode,
+    language: "java",
+    description: "By using miranum-connect’s message api you can correlate messages in multiple process-engines such as Camunda 7, 8 and Flowable."
+}
+
 export default function HomepageFeatures() {
     return (<div>
-        <ShowCaseSection title="Model your process with the Miranum IDE"
-                         subtitleText="Miranum IDE is a collection of VS Code Plugins that allows you to edit,
-                             manage and access all artifacts for your process application in one place."
-                         footerText="To create end-to-end process application a collaboration platform for various
-                             technical and non-technical roles is needed. Since processes need multiple artifacts like
-                             templates (forms, mails, PDF), workflow assets (BPMN, DMN) and configuration files (secrets,
-                              connectors) we see the growing need for a platform being capable of handling all of them.
-                              With Visual Studio Code developers are able to work in a familiar environment. Even non-technical
-                              personas are able to visit VS Code through the browser and do not need to fear any technical complexity. ">
-            <GifWithDescription src={modeler_gif}
-                                description="Miranum Modeler is one of the core components of our VS Code Plugins. It allows you to model BPMN 2.0 diagrams that can be used within Camunda. Besides, it supports the creation of DMN 1.3 diagrams.">
+        <ShowCaseSection title={modelerDescription.title}
+                         subtitleText={modelerDescription.subtitleText}
+                         footerText={modelerDescription.footerText}>
+            <GifWithDescription src={modelerDescription.gifSrc}
+                                description={modelerDescription.description}>
             </GifWithDescription>
         </ShowCaseSection>
 
-        <ShowCaseSection title="Create engine-neutral worker definitions"
-                         subtitleText="A job worker is a service capable of performing a particular task in a process,
-                              typically being written in Java. With Miranum-Connect developers are empowered to build reusable
-                               and technology neutral connectors and integrations."
-                         footerText="Miranum-connect supports Camunda element templates as well. These are building
-                             blocks that simplify the process of designing and implementing processes in the Camunda Platform.
-                              They are used to standardize and streamline the modeling process by providing predefined elements
-                              with pre-configured properties, which can be easily customized to meet specific business requirements.">
-            <CodeBlockWithDescription code={miranumWorkerCode}
-                                      language="java"
-                                      description="This is a technology neutral worker implementation for a job of type “send-message”. Due to the miranum-connect abstraction layer it works with various process engines such as Camunda Platform 7, 8 as well as Flowable. ">
+        <ShowCaseSection title={workerDescription.title}
+                         subtitleText={workerDescription.subtitleText}
+                         footerText={workerDescription.footerText}>
+            <CodeBlockWithDescription code={workerDescription.code}
+                                      language={workerDescription.language}
+                                      description={workerDescription.description}>
             </CodeBlockWithDescription>
         </ShowCaseSection>
 
-        <ShowCaseSection title="Create custom forms"
-                         subtitleText="Forms are digital interfaces used to collect and organize information from users in processes.
-                          They play a vital role in automating workflows and ensuring compliance. Forms streamline processes,
-                          reduce errors, and enhance efficiency, making them essential for effective business operations."
-                         footerText="While designing Forms, collaboration is key! Through the Live Share plugin for VS Code
-                         a real-time collaboration is easily possible. Empowering Business and IT to work even closer together.
-                          Once having desinged these forms, you can reference them in the required process. ">
-            <GifWithDescription src={forms_gif}
-                                description="Miranum JSON Forms is another key-component of our VS Code Plugins. It allows you to create and edit complex forms using JSONForms, which is based on JSON Schema, a specification for annotating and validating JSON documents.">
+        <ShowCaseSection title={formsDescription.title}
+                         subtitleText={formsDescription.subtitleText}
+                         footerText={formsDescription.footerText}>
+            <GifWithDescription src={formsDescription.gifSrc}
+                                description={formsDescription.description}>
             </GifWithDescription>
         </ShowCaseSection>
 
-        <ShowCaseSection title="Correlate a message"
-                         subtitleText="Message correlation is a crucial aspect of processes, as it involves associating incoming
-                         messages with a process instance. It ensures that responses are properly linked to the corresponding requests,
-                          enabling seamless communication and coordination among participants and systems.">
-            <CodeBlockWithDescription code={miranumMessageCode}
+        <ShowCaseSection title={messageDescription.title}
+                         subtitleText={messageDescription.subtitleText}>
+            <CodeBlockWithDescription code={messageDescription.code}
                                       className={styles.correlateMessageCode}
-                                      language="java"
-                                      description="By using miranum-connect’s message api you can correlate messages in multiple process-engines such as Camunda 7, 8 and Flowable.">
+                                      language={messageDescription.language}
+                                      description={messageDescription.description}>
             </CodeBlockWithDescription>
         </ShowCaseSection>
 
