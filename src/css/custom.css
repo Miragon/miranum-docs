@@ -44,3 +44,11 @@
   height: 24px;
   width: 24px;
 }
+
+.buttons {
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  padding: 15px 25px;
+  margin: auto auto;
+}
