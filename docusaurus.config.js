@@ -65,12 +65,6 @@ module.exports = {
                         label: "Components"
                     },
                     {
-                        type: "doc",
-                        position: "left",
-                        docId: 'apis/api-overview',
-                        label: "APIs"
-                    },
-                    {
                         href: 'https://github.com/Miragon/miranum-connect',
                         position: 'right',
                         className: "header-github-link",
