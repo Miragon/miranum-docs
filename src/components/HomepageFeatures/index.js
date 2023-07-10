@@ -5,6 +5,9 @@ import CodeBlock from '@theme/CodeBlock';
 import modeler_gif from "../../../static/img/modeler.gif";
 import forms_gif from "../../../static/img/forms.gif";
 import Link from "@docusaurus/Link";
+import flowableLogo from "../../../static/img/flowable-logo.png";
+import camunda7Logo from "../../../static/img/camunda7-logo.png";
+import camunda8Logo from "../../../static/img/camunda8-logo.png";
 
 const FeatureList = [{
     title: 'Integrated Development Environment for Processes',
@@ -73,10 +76,15 @@ const ApplicationWindowWithDescription = ({children, description, className}) =>
 const CodeBlockWithDescription = ({description, code, language, className}) => {
     return (<ApplicationWindowWithDescription
         className={className}
-        children={<CodeBlock className={clsx('language-' + language)}>
-            {code}
-        </CodeBlock>}
         description={description}>
+        <CodeBlock className={clsx('language-' + language)}>
+            {code}
+        </CodeBlock>
+        <div className={styles.logos}>
+            <img src={flowableLogo} alt="flowable-logo"/>
+            <img src={camunda7Logo} alt="camunda-7-logo"/>
+            <img src={camunda8Logo} alt="camunda-8-logo"/>
+        </div>
     </ApplicationWindowWithDescription>);
 };
 
