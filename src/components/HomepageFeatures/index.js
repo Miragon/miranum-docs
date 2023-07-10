@@ -103,13 +103,11 @@ const ShowCaseSection = ({title, subtitleText, footerText, children, buttonText,
         </div>
         {children}
         <p className={styles.sectionFooter}>{footerText}</p>
-        <div className={styles.buttons}>
-            <Link
-                className="button button--primary button--lg"
-                to={buttonLink}>
-                {buttonText}
-            </Link>
-        </div>
+        <Link
+            className="button button--primary button--lg text-wrap"
+            to={buttonLink}>
+            {buttonText}
+        </Link>
     </section>);
 }
 
