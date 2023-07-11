@@ -149,7 +149,7 @@ const workerDescription =  {
     description: (<>
         This is a technology neutral worker implementation for a job of type <code>send-message</code>.
         Due to the miranum-connect abstraction layer it works with various process engines such as
-        <b>Camunda Platform 7, 8</b> as well as <b>Flowable</b>.
+        <b> Camunda Platform 7, 8</b> as well as <b>Flowable</b>.
     </>),
         language: "java",
     buttonText: "Build your own worker",
