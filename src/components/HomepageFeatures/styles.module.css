@@ -76,7 +76,6 @@
 
   flex: 1 1 40%;
   height: max-content;
-  min-width: 300px;
   padding: 3rem 1rem;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -234,4 +233,8 @@ h1 {
   width: 3rem;
   height: 3rem;
   box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
+}
+
+.button {
+  white-space: break-spaces !important;
 }
