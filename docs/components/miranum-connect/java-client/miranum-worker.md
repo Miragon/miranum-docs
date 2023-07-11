@@ -115,10 +115,11 @@ For an actual example take a look on our [miranum-connect guide](../../../guides
 ### Retry mechanism
 If a job fails the worker can perform retries. Be aware that the behavior differs between Camunda Platform 7 & 8. 
 In Camunda Platform 8 the retries are set in the BPMN file. Camunda 7, does not provide the functionality to set 
-retries in the BPMN though. 
+retries in the BPMN file. Hence, we developed two different approaches to set the retries in Miranum-Connect.
 
 In **Camunda 7**:
-* Define default retries, using the `miranum.camunda7.worker.defaultRetries` application property.
+* By default, the worker will retry 3 times.
+* To define custom default retries, use the `miranum.camunda7.worker.defaultRetries` application property.
 * Or add an input parameter, as shown below, to the service task specifying the retry count for that task. The process variable will override the default value of retries. 
 ```xml
 <!-- BPMN Diagram -->
