@@ -100,6 +100,7 @@ module.exports = {
                     },],
                 },], copyright: `Copyright © ${new Date().getFullYear()} Miragon`,
             }, prism: {
+                additionalLanguages: ['java'],
                 theme: lightCodeTheme,
             },
             colorMode: {
