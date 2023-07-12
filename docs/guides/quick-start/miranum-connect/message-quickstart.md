@@ -63,8 +63,13 @@ If the correlation of the message is not possible, an exception will be thrown.
 
 ## What's Next?
 
-You have now learned how to correlate messages with running workflows using Miranum Connect. This is a critical aspect of working with asynchronous systems and will significantly improve your ability to manage complex workflows.
+You have now learned how to correlate messages with running workflows using Miranum Connect. 
+This is a critical aspect of working with asynchronous systems and will significantly improve your ability to manage complex workflows.
 
-If you want to expand your knowledge further, take a look at the other quickstart guides, [Creating Workers](./creating-workers.md) and [Starting a Process](./starting-a-process.md).
+If you want to expand your knowledge further, take a look at the other quickstart guides, 
+[Creating Workers](./worker-quickstart.md) and [Starting a Process](./process-start-quickstart.md).
 
-To delve deeper into the application of these features in real-world scenarios, refer to our [Showcases](./showcases.md) section. Also, make sure to visit the [Best Practices](./best-practices.md) section to understand the optimal ways to structure and use your Miranum Connect implementations.
+To delve deeper into the application of these features in real-world scenarios, refer to our
+[Showcases](../../showcases/showcases-overview.md) section. Also, make sure to visit the
+[Best Practices](../../best-practices/best-practices-overview.md) section to understand the optimal ways to structure
+and use your Miranum Connect implementations.

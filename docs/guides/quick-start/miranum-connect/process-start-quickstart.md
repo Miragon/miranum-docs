@@ -81,7 +81,7 @@ From here, there's a lot you can explore next. You might want to delve deeper in
 using your newly created worker. To learn how to further fine-tune your worker's capabilities, consider revisiting
 our [Creating Workers](./creating-workers.md) guide.
 
-For a broader view of how everything fits together, don't miss our [Showcases](./showcases.md) section.
+For a broader view of how everything fits together, don't miss our [Showcases](../../showcases/showcases-overview.md) section.
 It presents real-world applications using Miranum Connect, offering detailed examples of how workers can be effectively
 utilized in different scenarios.
 
