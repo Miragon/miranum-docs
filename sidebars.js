@@ -18,8 +18,14 @@ const sidebars = {
             "guides/guides-overview",
             {
                 "Getting Started": [
+                    "guides/getting-started/quick-start",
                     "guides/getting-started/getting-started-web-ide-guide",
-                    "guides/getting-started/pizza-order-example"
+                    "guides/getting-started/pizza-order-example",
+                ],
+            },
+            {
+                "Best Practices": [
+                    "guides/best-practices/hexagonal-architecture",
                 ],
             },
         ],
