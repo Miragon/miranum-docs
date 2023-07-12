@@ -6,13 +6,27 @@ description: "This section introduces the hexagonal architecture and it's advant
 ---
 
 # Hexagonal Architecture
+
+## Motivation
+
+Layered architectures have long been a standard in software design. However, they often lead to tightly coupled code where changes in one layer can have far-reaching effects on others. Furthermore, testing can become an arduous task when business logic is closely intertwined with peripheral concerns like databases and interfaces. These drawbacks can result in a system that is brittle, difficult to maintain, and hard to understand.
+
+The Hexagonal Architecture, or Ports and Adapters Pattern, is an architectural pattern that can drastically improve the maintainability and flexibility of your software. It enables you to isolate your application's core business logic from peripheral concerns like databases and interfaces, leading to software that is easier to test, understand, and evolve.
+
+By dedicating time to understanding and applying the Hexagonal Architecture, you'll be able to create software systems that are resistant to change-induced errors, more manageable in the face of evolving requirements, and easier to comprehend for both new and experienced team members.
+
+Let's dive into how the Hexagonal Architecture accomplishes this, and conclude some practical Do's and Don'ts for when you're implementing it in your own projects.
+
+
+## Hexagonal Architecture explained
+
 The hexagonal architecture, also known as Ports and Adapters, serves as an alternative to the well known layered architecture. The key difference is that all dependencies point inwards. At the core of the architecture lies the domain, which is independent of technologies and frameworks.
 
 ![Hexagonal Architecture Diagram](static/img/hexagonal-architecture.svg)
 
 Figure 1: Hexagonal Architecture Diagram
 
-## Domain Objects
+### Domain Objects
 In a domain rich with business rules, domain objects are the core of an application. Domain objects can contain both state and behavior. The closer the behavior aligns with the real world, the easier the code is to understand, replicate, and maintain.
 
 Domain objects have no external dependencies. They provide an API through which use cases can be executed.
@@ -21,14 +35,14 @@ Since domain objects have no dependencies on other layers of the application, ch
 
 With a single responsibility, domain objects can be developed without considering external dependencies. This ability for evolution makes the hexagonal architecture style suitable for the application of Domain-Driven Design (DDD). DDD is an approach to software development that places the business logic and requirements, represented by a conceptual model, at the center of design and implementation of the software.
 
-## Use Cases
+### Use Cases
 Use cases can be seen as abstract descriptions of user interactions with software. In the context of the hexagonal architecture, they are established as primary elements in the codebase.
 
 A use case can be understood as a class that handles all aspects of a specific application scenario. For example, in a travel application, there could be a class named `BookFlightUseCase` that provides a specific API allowing users to book a flight. The code within this class encompasses all validations and business rule logics specific to the use case, which cannot be implemented within domain objects. Any additional requirements would be delegated to domain objects. For example, there could be a domain object called `Flight`.
 
 In alignment with domain objects, a use case class has no dependencies on external components. If it requires data or functions outside the hexagon, an output port is created.
 
-## Input and Output Ports
+### Input and Output Ports
 Domain objects and use cases reside within the hexagon, representing the core of the application. Any communication to and from the outside world is facilitated through dedicated ports.
 
 An input port is a simple interface that can be called by external components and implemented by a use case. The component calling such an input port is referred to as an input or driving adapter.
@@ -37,7 +51,7 @@ An output port, on the other hand, is a simple interface that can be called by u
 
 With input and output ports, there are clear points at which data enters and exits the system, facilitating understanding of the architecture.
 
-## Adapters
+### Adapters
 Adapters form the outer layer of the hexagonal architecture. They are not part of the core but interact with it.
 
 Input adapters or driving adapters call the input ports to perform specific tasks. An input adapter could be a web interface, where pressing a button in a web browser triggers a specific input port to execute the corresponding use case.
@@ -46,7 +60,7 @@ Output adapters or driven adapters are called by use cases and could provide dat
 
 Adapters facilitate the interchangeability of a specific layer of the application. If the application needs to be accessible from a different client in addition to the web, an alternative client input adapter can be added, utilizing the existing input port. If the application requires a different database, a new persistence adapter implementing the same output port interfaces can be added.
 
-## Hexagonal Architecture vs. Layer Architecture
+## Hexagonal vs. Layer
 
 To get a better understanding of the advantages the hexagonal architecture comes with, this section compares the two architectural styles based on the following criteria:
 
@@ -77,10 +91,25 @@ While the layered architecture, though also capable of supporting well-structure
 
 In summary, the hexagonal architecture tends to exhibit higher testability, mainly through its ability to isolate the individual components of the application.
 
-### Conclusion
+## Conclusion
 
-In conclusion, the hexagonal architecture appears to be superior in terms of coupling, drivers of development, and testability compared to the layered architecture. However, it's worth noting that the complexity of the hexagonal architecture might be perceived as unnecessary overhead in smaller systems. Nevertheless, when considering all factors, the hexagonal architecture provides a robust and flexible structure for software development, especially for projects requiring high testability and low coupling.
+Implementing the hexagonal architecture in software projects, particularly those heavy on domain logic, can bring immense benefits. It facilitates loose coupling, enhances testability, and encourages a clear focus on the core business logic. However, these benefits are realized only when the architecture is implemented properly. Missteps in the implementation can lead to unnecessary complexity and potential design issues.
 
+Here are some concrete Do's and Don'ts that will guide you in properly applying the hexagonal architecture:
+
+| Do's (🟢) | Don'ts (🔴) |
+| ---- | ---- |
+| Do keep your domain objects free from dependencies to ensure the core of your application remains independent of frameworks and external interfaces. | Don't design your domain objects to mirror their representation in the database. This could couple your domain logic too closely to specific database technology. |
+| Do use Dependency Injection whenever possible to facilitate testing and to enhance the modularity of your code. | Don't allow the bypassing of your defined application ports. This could undermine the boundaries and isolation provided by the hexagonal architecture. |
+| Do segregate your application into stable (inside) and volatile (outside) parts to isolate your core business logic from changes in external systems. | Don't make direct calls from your adapters to the domain layer. This could cause high coupling and reduced testability. |
+| Do ensure that dependencies always point inwards. This means the inner layers should be independent of the outer layers. | Don't use frameworks that force your domain layer to depend on them. This could cause a violation of the Dependency Rule. |
+| Do implement interfaces or 'ports' to communicate between your application and external systems, thus promoting loose coupling. | Don't allow your domain objects to be affected by changes in external systems or interfaces. This could compromise the integrity of your application's core. |
+
+In conclusion, when correctly applied, the hexagonal architecture provides a robust and flexible structure that supports long-term maintainability and scalability. It allows developers to focus on the core business logic, safely insulated from the changing landscape of external systems and interfaces. Nevertheless, it's important to consider the specific needs and constraints of your project before deciding on an architecture. By adhering to the Do's and avoiding the Don'ts, you can make the most of the hexagonal architecture and create high-quality, resilient software.
+
+Remember that choosing the right architecture is essential to the success of your software project. Hexagonal architecture, when applied appropriately, can provide a robust and flexible structure that supports long-term maintainability and scalability. But like all tools, it's most effective when used appropriately and with understanding.
+
+Investing your time in mastering Hexagonal Architecture is not just about following a best practice—it's about gaining a powerful tool that will help you design better software systems, regardless of their size or complexity.
 
 
 

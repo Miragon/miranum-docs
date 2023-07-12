@@ -21,7 +21,11 @@ const sidebars = {
                     "guides/getting-started/quick-start",
                     "guides/getting-started/getting-started-web-ide-guide",
                     "guides/getting-started/pizza-order-example",
-                    "guides/getting-started/hexagonal-architecture",
+                ],
+            },
+            {
+                "Best Practices": [
+                    "guides/best-practices/hexagonal-architecture",
                 ],
             },
         ],
