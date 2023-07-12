@@ -40,6 +40,7 @@ const sidebars = {
             },
             {
                 "Best Practices": [
+                    "guides/best-practices/best-practices-overview",
                     "guides/best-practices/hexagonal-architecture",
                 ],
             },
