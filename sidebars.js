@@ -16,6 +16,23 @@ const sidebars = {
 
         Guides: [
             {
+                "Quickstart": [
+                    {
+                        "Miranum Connect": [
+                            "guides/quick-start/miranum-connect/miranum-connect-quickstart",
+                            "guides/quick-start/miranum-connect/worker-quickstart",
+                            "guides/quick-start/miranum-connect/message-quickstart",
+                            "guides/quick-start/miranum-connect/process-start-quickstart",
+                        ],
+                    },
+                    {
+                        "Miranum IDE": [
+                            "guides/quick-start/miranum-ide/miranum-ide-quickstart",
+                        ],
+                    },
+                ],
+            },
+            {
                 "Showcases": [
                     "guides/showcases/pizza-order-example"
                 ],
