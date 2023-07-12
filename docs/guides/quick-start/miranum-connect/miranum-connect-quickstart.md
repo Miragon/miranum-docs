@@ -5,7 +5,7 @@ sidebar_label: Overview
 description: "This section introduces the concept of Miranum Connect and how to use it."
 ---
 
-# Miranum Connect Quickstart Guid
+# Miranum Connect Quickstart Guide
 
 Welcome to the Quickstart Guide for Miranum Connect, a powerful, engine-neutral framework built to facilitate
 integrations and streamline the often complex process of automation.

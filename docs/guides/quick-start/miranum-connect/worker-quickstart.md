@@ -11,6 +11,11 @@ This guide will help you understand how to create a Miranum Worker in your Java 
 Workers are essential components of the Miranum ecosystem that bridge the gap between your process engine and your tasks,
 enabling streamlined process automation.
 
+:::info What You Will Learn
+- How to incorporate necessary dependencies to use Miranum Message
+- How to implement and use the Message Correlation feature
+:::
+
 :::note
 This guide assumes familiarity with Java and Maven.
 :::
@@ -21,7 +26,7 @@ A Miranum Worker interfaces with your process engine (like Camunda Platform 7 or
 These tasks can then trigger various actions in the context of a process instance. After a task is completed, 
 the process engine advances to the next step, maintaining a smooth flow of operations.
 
-## Prerequisites
+## Add the Necessary Dependencies
 
 To start creating Workers, you'll need to add the Miranum `worker-api` dependency to your Maven project:
 
@@ -69,8 +74,18 @@ The return type of your Worker method can vary based on your needs. If you don't
 process engine, use `void`. If you want to store a result, your method can return an object which will be stored in a
 local-context within the process instance. To use the result globally, define the input/output mappings in your process.
 
-## Conclusion
+## What's Next?
 
 Creating a Worker is a fundamental step in leveraging the power of Miranum Connect for process automation. With a few
 simple steps, you can start orchestrating tasks directly from your process engine. For more complex examples and
 advanced usage, please refer to our [Showcases](showcases.md) and [Best Practices](best-practices.md) sections.
+
+Here's what you can explore further:
+
+1. **Explore Correlating Messages:** Correlation of messages is an integral part of interacting with your processes. It allows you to send signals and data to running process instances, helping you to asynchronously handle external system updates. Check out the 'Correlating Messages' guide for a comprehensive understanding.
+
+2. **Start a Process:** Dive into our 'Starting a Process' guide to understand how you can initiate a process from your code. The ability to programmatically start your processes can open a world of possibilities for your applications.
+
+3. **Build on the Basics:** Use the knowledge you've gained here to experiment further with Miranum Workers. Explore more complex tasks, try handling multiple types of tasks, or experiment with different return types to see how they affect the scope of your process engine.
+
+Keep up the momentum and continue exploring the world of Miranum Connect!

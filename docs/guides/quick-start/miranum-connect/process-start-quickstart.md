@@ -4,13 +4,18 @@ title: Start a Process Quickstart
 sidebar_label: Start a Process
 description: "This section introduces the concept of starting a process using the Miranum Connect API."
 ---
-# Quickstart Guide: Starting a Process with Miranum Connect
+
+# Starting a Process with Miranum Connect
 
 In this quickstart guide, we will cover how to use Miranum Connect to initiate a process. This feature allows you to start a process from your code, thereby offering great flexibility and control over your workflows.
 
 :::info What you will learn
 - How to add the necessary dependencies to use Miranum Process.
 - How to start a process instance from your code.
+:::
+
+:::note
+This guide assumes familiarity with Java and Maven.
 :::
 
 ## Add the Necessary Dependencies
@@ -67,14 +72,24 @@ In the above code:
 
 That's it! You've now set up a simple mechanism to start processes with Miranum Connect.
 
-## Next Steps
+## What's Next?
 
-Once you have initiated a process, you might want to perform various actions or tasks. To learn how to do this, check out our guide on [Creating Workers](./creating-workers.md) with Miranum Connect.
+Congratulations on creating your first Miranum Worker! This is a crucial step in leveraging the full potential of
+Miranum Connect.
 
-For more complex scenarios, we recommend you to take a look at our [Best Practices](./best-practices.md) guide, which provides architectural advice for using Miranum Connect effectively.
+From here, there's a lot you can explore next. You might want to delve deeper into performing tasks within a process
+using your newly created worker. To learn how to further fine-tune your worker's capabilities, consider revisiting
+our [Creating Workers](./creating-workers.md) guide.
 
-Also, don't forget to check our [Showcases](./showcases.md) section, which provides real-world examples of applications using Miranum Connect.
+For a broader view of how everything fits together, don't miss our [Showcases](./showcases.md) section.
+It presents real-world applications using Miranum Connect, offering detailed examples of how workers can be effectively
+utilized in different scenarios.
 
-Happy Coding!
+On top of this, to ensure you're getting the most out of Miranum Connect, we highly recommend our 
+[Best Practices](./best-practices.md) guide. This guide is a valuable resource packed with architectural advice and
+tips that can enhance the effectiveness of your workers and your overall Miranum Connect usage.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Finally, now that you're comfortable with workers, consider venturing into other aspects of Miranum Connect. 
+Explore our guides on 'Correlating Messages' or 'Starting a Process' to uncover more of the powerful features at
+your disposal.
+Stay curious, continue to expand your knowledge, and always enjoy the process of creating with Miranum Connect!
