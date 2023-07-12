@@ -6,7 +6,7 @@ description: "This section contains an introduction to Miranum-Connect."
 ---
 
 :::note
-Miranum-Connect is currently in early stage of development. No version is officially released yet. When using the framework
+Miranum-Connect is currently in early stage of development. Alpha version 0.2.0 is the most up to date one. When using the framework
 by cloning the repository it can happen that the API changes in future versions
 :::
 

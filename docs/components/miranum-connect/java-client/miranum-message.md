@@ -14,7 +14,7 @@ To use the Miranum-Message, declare the following Maven dependency in your proje
 <dependency>
     <groupId>io.miragon.miranum</groupId>
     <artifactId>message-api</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 

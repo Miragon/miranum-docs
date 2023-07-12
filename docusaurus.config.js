@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -65,12 +65,11 @@ module.exports = {
                         label: "Components"
                     },
                     {
-                        type: "doc",
-                        position: "left",
-                        docId: 'apis/api-overview',
-                        label: "APIs"
-                    },
-                    {href: 'https://github.com/flowsquad', label: 'GitHub', position: 'right'}
+                        href: 'https://github.com/Miragon/miranum-connect',
+                        position: 'right',
+                        className: "header-github-link",
+                        "aria-label": "GitHub repository",
+                    }
                 ],
             },
             algolia: {
