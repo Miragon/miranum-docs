@@ -20,6 +20,11 @@ const sidebars = {
                     "guides/showcases/pizza-order-example"
                 ],
             },
+            {
+                "Best Practices": [
+                    "guides/best-practices/hexagonal-architecture",
+                ],
+            },
         ],
         Components: [
             "components/components-overview",
