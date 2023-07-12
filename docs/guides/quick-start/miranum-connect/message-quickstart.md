@@ -67,9 +67,9 @@ You have now learned how to correlate messages with running workflows using Mira
 This is a critical aspect of working with asynchronous systems and will significantly improve your ability to manage complex workflows.
 
 If you want to expand your knowledge further, take a look at the other quickstart guides, 
-[Creating Workers](./worker-quickstart.md) and [Starting a Process](./process-start-quickstart.md).
+[Creating Workers](./worker-quickstart) and [Starting a Process](./process-start-quickstart).
 
 To delve deeper into the application of these features in real-world scenarios, refer to our
-[Showcases](../../showcases/showcases-overview.md) section. Also, make sure to visit the
-[Best Practices](../../best-practices/best-practices-overview.md) section to understand the optimal ways to structure
+[Showcases](../../showcases/showcases-overview) section. Also, make sure to visit the
+[Best Practices](../../best-practices/best-practices-overview) section to understand the optimal ways to structure
 and use your Miranum Connect implementations.

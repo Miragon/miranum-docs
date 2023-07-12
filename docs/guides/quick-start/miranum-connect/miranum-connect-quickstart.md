@@ -20,11 +20,11 @@ In this guide, you'll get hands-on experience with the following core features o
 Each of these mini-guides will help you get started quickly, providing you with a firm understanding of the basics.
 However, Miranum Connect's capabilities extend beyond these core features, and you're encouraged to explore further!
 
-In addition to this quickstart guide, we've also developed a [Showcases](../../showcases/showcases-overview.md) section. Here, you'll find a collection of more
+In addition to this quickstart guide, we've also developed a [Showcases](../../showcases/showcases-overview) section. Here, you'll find a collection of more
 realistic and comprehensive applications built using Miranum Connect. This will give you a broader perspective of the
 potential applications of our platform, and inspire you to build your own solutions.
 
-Furthermore, we recommend you delve into our [Best Practices](../../best-practices/hexagonal-architecture.md) section. Here, we've outlined the architecture that we
+Furthermore, we recommend you delve into our [Best Practices](../../best-practices/best-practices-overview) section. Here, we've outlined the architecture that we
 suggest when using Miranum Connect. It's a culmination of knowledge from experienced practitioners, distilled into
 actionable advice.
 

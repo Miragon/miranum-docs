@@ -79,14 +79,14 @@ Miranum Connect.
 
 From here, there's a lot you can explore next. You might want to delve deeper into performing tasks within a process
 using your newly created worker. To learn how to further fine-tune your worker's capabilities, consider revisiting
-our [Creating Workers](./creating-workers.md) guide.
+our [Creating Workers](./worker-quickstart) guide.
 
-For a broader view of how everything fits together, don't miss our [Showcases](../../showcases/showcases-overview.md) section.
+For a broader view of how everything fits together, don't miss our [Showcases](../../showcases/showcases-overview) section.
 It presents real-world applications using Miranum Connect, offering detailed examples of how workers can be effectively
 utilized in different scenarios.
 
 On top of this, to ensure you're getting the most out of Miranum Connect, we highly recommend our 
-[Best Practices](./best-practices.md) guide. This guide is a valuable resource packed with architectural advice and
+[Best Practices](../../best-practices/best-practices-overview) guide. This guide is a valuable resource packed with architectural advice and
 tips that can enhance the effectiveness of your workers and your overall Miranum Connect usage.
 
 Finally, now that you're comfortable with workers, consider venturing into other aspects of Miranum Connect. 

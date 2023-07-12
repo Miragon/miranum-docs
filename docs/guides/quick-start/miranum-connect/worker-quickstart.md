@@ -78,7 +78,8 @@ local-context within the process instance. To use the result globally, define th
 
 Creating a Worker is a fundamental step in leveraging the power of Miranum Connect for process automation. With a few
 simple steps, you can start orchestrating tasks directly from your process engine. For more complex examples and
-advanced usage, please refer to our [Showcases](../../showcases/showcases-overview.md) and [Best Practices](best-practices.md) sections.
+advanced usage, please refer to our [Showcases](../../showcases/showcases-overview) and 
+[Best Practices](../../best-practices/best-practices-overview) sections.
 
 Here's what you can explore further:
 
