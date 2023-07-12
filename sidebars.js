@@ -34,6 +34,7 @@ const sidebars = {
             },
             {
                 "Showcases": [
+                    "guides/showcases/showcases-overview",
                     "guides/showcases/pizza-order-example"
                 ],
             },
