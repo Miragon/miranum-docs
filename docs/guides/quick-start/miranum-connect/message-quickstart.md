@@ -50,12 +50,14 @@ Here is an example of how you can correlate a message using a `CorrelateMessageC
 import io.miragon.miranum.connect.message.api.CorrelateMessageCommand;
 import io.miragon.miranum.connect.message.api.MessageApi;
 
-private final MessageApi messageApi;
-    
-public void correlateMessage(CorrelateMessageCommand message) {
-    log.info("Received message: " + message);
-    messageApi.correlateMessage(new CorrelateMessageCommand(message.getName(), message.getKey(), Map.of(message.getVariables())));
-    log.info(message + " successfully correlated")
+@RequiredArgsConstructor
+public class MessageCorrelationService {
+
+    private final MessageApi messageApi;
+
+    public void correlateMessage(CorrelateMessageCommand message) {
+        messageApi.correlateMessage(new CorrelateMessageCommand(message.getName(), message.getKey(), Map.of(message.getVariables())));
+    }
 }
 ```
 
