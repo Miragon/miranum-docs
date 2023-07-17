@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+@import '~prismjs/themes/prism.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #0d47a1;
@@ -41,4 +43,9 @@
   display: flex;
   height: 24px;
   width: 24px;
+}
+
+.button {
+  white-space: break-spaces !important;
+  margin: 0 1rem;
 }
