@@ -62,8 +62,8 @@ should fetch. Here's a simple example:
 
 ```java
 @Worker(type = "my-type") 
-public void doSomething(DoSomethingCommand doSomethingCommand) {
-    doSomethingUseCase.doSomething(doSomethingCommand);
+public DoSomethingResult doSomething(DoSomethingCommand doSomethingCommand) {
+    return doSomethingUseCase.doSomething(doSomethingCommand);
 }
 ```
 
