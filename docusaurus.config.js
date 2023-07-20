@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer').themes.github;
+const theme = require('prism-react-renderer').themes.duotoneLight;
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -53,12 +54,16 @@ module.exports = {
     themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: '',
                 logo: {
                     alt: 'miranum logo', src: 'img/logo_blau.png',
                 },
                 items: [
-                    {type: "doc", position: "left", docId: 'guides/guides-overview', label: "Guides"},
+                    {
+                        type: "doc",
+                        position: "left",
+                        docId: 'guides/guides-overview',
+                        label: "Guides"
+                    },
                     {
                         type: "doc",
                         position: "left",
@@ -70,7 +75,7 @@ module.exports = {
                         position: 'right',
                         className: "header-github-link",
                         "aria-label": "GitHub repository",
-                    }
+                    },
                 ],
             },
             algolia: {
@@ -100,8 +105,10 @@ module.exports = {
                         href: 'https://miragon.io/datenschutz'
                     },],
                 },], copyright: `Copyright © ${new Date().getFullYear()} Miragon`,
-            }, prism: {
-                theme: lightCodeTheme,
+            },
+            prism: {
+                additionalLanguages: ['java'],
+                theme: theme,
             },
             colorMode: {
                 disableSwitch: true,
