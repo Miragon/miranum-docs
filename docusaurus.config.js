@@ -22,7 +22,8 @@ module.exports = {
     i18n: {
         defaultLocale: 'de', locales: ['de'],
     },
-
+    // Allows use of @theme/JSONSchemaViewer
+    themes: ["docusaurus-json-schema-plugin"],
     presets: [
         [
             'classic',
