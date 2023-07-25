@@ -74,7 +74,7 @@ That's it! You've now set up a simple mechanism to start processes with Miranum 
 
 ## What's Next?
 
-Congratulations on creating your first Miranum Worker! This is a crucial step in leveraging the full potential of
+Congratulations on creating your first Miranum Client! This is a crucial step in leveraging the full potential of
 Miranum Connect.
 
 From here, there's a lot you can explore next. You might want to delve deeper into performing tasks within a process
