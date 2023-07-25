@@ -26,7 +26,7 @@ To use the message correlation feature of Miranum Connect, you must add the `mes
 <dependency>
  <groupId>io.miragon.miranum</groupId>
  <artifactId>message-api</artifactId>
- <version>0.2.0</version>
+ <version>${miranum.version}</version>
 </dependency>
 ```
 
@@ -36,7 +36,7 @@ Depending on the engine you're using, you will also need to include an engine-sp
 <dependency>
  <groupId>io.miragon.miranum</groupId>
  <artifactId>message-adapter-c7</artifactId>
- <version>${miranum.worker.version}</version>
+ <version>${miranum.version}</version>
 </dependency>
 ```
 

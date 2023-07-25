@@ -26,7 +26,7 @@ To start, we need to include the `process-api` dependency in our project. This i
 <dependency>
  <groupId>io.miragon.miranum</groupId>
  <artifactId>process-api</artifactId>
- <version>0.2.0</version>
+ <version>${miranum.version}</version>
 </dependency>
 ```
 
@@ -36,7 +36,7 @@ Depending on the engine you're working with, you'll also need to include the res
 <dependency>
  <groupId>io.miragon.miranum</groupId>
  <artifactId>process-adapter-c7</artifactId>
- <version>${miranum.worker.version}</version>
+ <version>${miranum.version}</version>
 </dependency>
 ```
 

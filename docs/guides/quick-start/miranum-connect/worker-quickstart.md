@@ -34,7 +34,7 @@ To start creating Workers, you'll need to add the Miranum `worker-api` dependenc
 <dependency>
  <groupId>io.miragon.miranum</groupId>
  <artifactId>worker-api</artifactId>
- <version>${miranum.worker.version}</version>
+ <version>${miranum.version}</version>
 </dependency>
 ```
 
@@ -45,7 +45,7 @@ corresponding engine-specific dependency. Here's an example for Camunda 7:
 <dependency>
     <groupId>io.miragon.miranum</groupId>
     <artifactId>worker-adapter-c7</artifactId>
-    <version>${miranum.worker.version}</version>
+    <version>${miranum.version}</version>
 </dependency>
 ```
 
