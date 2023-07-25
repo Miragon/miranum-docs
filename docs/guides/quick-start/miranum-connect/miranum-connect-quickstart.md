@@ -28,4 +28,13 @@ Furthermore, we recommend you delve into our [Best Practices](../../best-practic
 suggest when using Miranum Connect. It's a culmination of knowledge from experienced practitioners, distilled into
 actionable advice.
 
+:::tip Check Out Our GitHub Templates
+We have created two GitHub templates to help you initiate your Miranum Connect projects easily! 🚀
+
+- [Miranum Connect Basic Template](https://www.github.com/Miragon/miranum-connect-basic-template): A simplified and beginner-friendly template focusing on key features - Worker creation, Message correlation, and Process start.
+- [Miranum Connect Hexagonal Template](https://www.github.com/Miragon/miranum-connect-hexagonal-template): A beginner-friendly template with Hexagonal Architecture, offering a structured approach with Workers, Message correlation, and Process start.
+
+Feel free to clone the templates, update project information, and get started with automation faster!
+:::
+
 Dive in, explore, and start building with Miranum Connect! We look forward to seeing what you create.
