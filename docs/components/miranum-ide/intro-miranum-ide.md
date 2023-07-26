@@ -6,7 +6,7 @@ description: "This section contains an introduction to Miranum-IDE."
 ---
 
 :::note
-To get started right away follow the [getting-started guide](../../guides/getting-started/gettingstarted-ide.md).
+To get started right away follow the [getting-started guide](../../guides/quick-start/miranum-ide/miranum-ide-quickstart).
 :::
 
 Miranum-IDE is an Integrated Development Environment targeted for designing and developing process automation projects. 

@@ -15,16 +15,32 @@
 const sidebars = {
 
         Guides: [
-            "guides/guides-overview",
             {
-                "Getting Started": [
-                    "guides/getting-started/quick-start",
-                    "guides/getting-started/getting-started-web-ide-guide",
-                    "guides/getting-started/pizza-order-example",
+                "Quickstart": [
+                    {
+                        "Miranum Connect": [
+                            "guides/quick-start/miranum-connect/miranum-connect-quickstart",
+                            "guides/quick-start/miranum-connect/worker-quickstart",
+                            "guides/quick-start/miranum-connect/message-quickstart",
+                            "guides/quick-start/miranum-connect/process-start-quickstart",
+                        ],
+                    },
+                    {
+                        "Miranum IDE": [
+                            "guides/quick-start/miranum-ide/miranum-ide-quickstart",
+                        ],
+                    },
+                ],
+            },
+            {
+                "Showcases": [
+                    "guides/showcases/showcases-overview",
+                    "guides/showcases/pizza-order-example"
                 ],
             },
             {
                 "Best Practices": [
+                    "guides/best-practices/best-practices-overview",
                     "guides/best-practices/hexagonal-architecture",
                 ],
             },
