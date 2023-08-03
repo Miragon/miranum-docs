@@ -5,7 +5,7 @@ sidebar_label: Miranum Deployment
 description: "This section contains an overview of the functionality of the Miranum Modeler."
 ---
 
-The Miranum Deployment consists of two parts. The Miranum Deployment Server and the Miranum Deployment Receiver.
+The [Miranum Deployment](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment) consists of two parts. The Miranum Deployment Server and the Miranum Deployment Receiver.
 The Miranum Deployment Server is a Spring Boot application that provides a REST API to deploy process artifacts to
 Spring applications that use the Miranum Deployment Receiver library.
 
@@ -84,7 +84,7 @@ It transfers the process artifacts to applications which implement the Miranum D
 
 #### Miranum Deployment Server REST
 
-> A full example is available in the [miranum-deployment-service](miranum-deployment-service) module.
+> A full example is available in the [miranum-deployment-service](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-service) module.
 
 1. Add the Miranum Deployment Server REST starter to your spring application.
 
@@ -123,7 +123,7 @@ io:
 In case you have a single spring application you can use the Miranum Deployment Server Embedded starter.
 It provides the Miranum Deployment Server as well as a build in Miranum Deployment Receiver implementation.
 
-> A full example is available in the [miranum-deployment-example](miranum-deployment-example) module.
+> A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
 
 ##### Usage
 
@@ -162,7 +162,7 @@ public class ExampleDeploymentReceiver implements MiranumDeploymentReceiver {
 Add the Miranum Deployment Receiver REST starter to each spring application that should deploy process artifacts.
 In the Miranum Deployment Server you can configure the target applications via the application.yml file.
 
-> A full example is available in the [miranum-deployment-example](miranum-deployment-example) module.
+> A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
 
 #### Usage
 
