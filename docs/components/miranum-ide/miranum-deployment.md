@@ -150,7 +150,7 @@ import java.util.List;
 public class ExampleDeploymentReceiver implements MiranumDeploymentReceiver {
 
     @Override
-    public void deploy(String file, String type, String namespace, List<String> tags) {
+    public void deploy(final Deployment deployment, final List<String> tags) {
         // TODO: Implement your deployment logic here
     }
 
@@ -189,7 +189,7 @@ import java.util.List;
 public class ExampleDeploymentReceiver implements MiranumDeploymentReceiver {
 
     @Override
-    public void deploy(String file, String type, String namespace, List<String> tags) {
+    public void deploy(final Deployment deployment, final List<String> tags) {
         // TODO: Implement your deployment logic here
     }
 
