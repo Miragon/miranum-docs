@@ -14,7 +14,7 @@ Spring applications that use the Miranum Deployment Receiver library.
 ## Usage
 
 We provide Spring Boot starters for the Miranum Deployment Server and the Miranum Deployment Receiver.
-Additionally, we provide with the Miranum Deployment Service a ready to go spring boot application.
+Additionally, we provide the Miranum Deployment Service with a ready to go spring boot application.
 
 ### Miranum Deployment Service
 
