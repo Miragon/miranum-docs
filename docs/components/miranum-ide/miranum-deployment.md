@@ -172,7 +172,7 @@ A full example is available in the [miranum-deployment-example](https://github.c
 
 #### Usage
 
-1. Add the Miranum Deployment Receiver REST starter to your spring application.
+1. Add the Miranum Deployment Receiver REST starter to your Spring application.
 
 ```xml
 
