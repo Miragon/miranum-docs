@@ -166,7 +166,9 @@ public class ExampleDeploymentReceiver implements MiranumDeploymentReceiver {
 Add the Miranum Deployment Receiver REST starter to each spring application that should deploy process artifacts.
 In the Miranum Deployment Server you can configure the target applications via the application.yml file.
 
-> A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
+:::info 
+A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
+:::
 
 #### Usage
 
