@@ -84,7 +84,9 @@ It transfers the process artifacts to applications which implement the Miranum D
 
 #### Miranum Deployment Server REST
 
-> A full example is available in the [miranum-deployment-service](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-service) module.
+:::info 
+A full example is available in the [miranum-deployment-service](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-service) module.
+:::
 
 1. Add the Miranum Deployment Server REST starter to your spring application.
 
