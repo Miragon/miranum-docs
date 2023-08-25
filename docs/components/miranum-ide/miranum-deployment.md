@@ -18,7 +18,7 @@ Additionally, we provide the Miranum Deployment Service with a ready to go sprin
 
 ### Miranum Deployment Service
 
-The Miranum Deployment Service is a ready to go spring boot application that provides the
+The Miranum Deployment Service is a ready to go Spring Boot application that provides the
 Miranum Deployment Server with a REST implementation.
 Therefore, it uses the REST starters to transfer the process artifacts to the Miranum Deployment Receiver.
 
