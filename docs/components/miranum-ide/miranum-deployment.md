@@ -125,7 +125,9 @@ io:
 In case you have a single spring application you can use the Miranum Deployment Server Embedded starter.
 It provides the Miranum Deployment Server as well as a build in Miranum Deployment Receiver implementation.
 
-> A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
+:::info
+ A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
+ :::
 
 ##### Usage
 
