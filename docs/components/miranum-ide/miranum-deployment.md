@@ -79,7 +79,7 @@ them.
 
 ### Miranum Deployment Server
 
-The Miranum Deployment Server is a single api for the *Miranum-IDE* to deploy process artifacts to.
+The Miranum Deployment Server is a single API for the *Miranum-IDE* to deploy process artifacts to.
 It transfers the process artifacts to applications which implement the Miranum Deployment Receiver library.
 
 #### Miranum Deployment Server REST
