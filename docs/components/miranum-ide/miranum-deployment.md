@@ -11,6 +11,11 @@ Spring applications that use the Miranum Deployment Receiver library.
 
 ![Miranum Deployment Diagram](static/img/miranum-deployment.png)
 
+## Java 11 and Spring Boot 2 support
+
+Miranum Deployment supports Spring Boot 2 (and Java 11) until version 0.2.x.
+With version 0.3.0 the support for Spring Boot 2 (and Java 11) will be dropped.
+
 ## Usage
 
 We provide Spring Boot starters for the Miranum Deployment Server and the Miranum Deployment Receiver.
@@ -126,8 +131,8 @@ In case you have a single spring application you can use the Miranum Deployment 
 It provides the Miranum Deployment Server as well as a build in Miranum Deployment Receiver implementation.
 
 :::info
- A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
- :::
+A full example is available in the [miranum-deployment-example](https://github.com/Miragon/miranum-ide/tree/main/spring-boot-apps/miranum-deployment/miranum-deployment-example) module.
+:::
 
 ##### Usage
 
@@ -201,8 +206,3 @@ public class ExampleDeploymentReceiver implements MiranumDeploymentReceiver {
 
 }
 ```
-
-## Java 11 and Spring Boot 2 support
-
-Miranum Deployment supports Spring Boot 2 (and Java 11) until version 0.2.x.
-With version 0.3.0 the support for Spring Boot 2 (and Java 11) will be dropped.
