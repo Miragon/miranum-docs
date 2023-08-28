@@ -54,6 +54,7 @@ const sidebars = {
                     "components/miranum-ide/miranum-modeler",
                     "components/miranum-ide/miranum-json",
                     "components/miranum-ide/element-template-support",
+                    "components/miranum-ide/miranum-deployment",
                     {
                         "Commands": [
                             "components/miranum-ide/commands/deployment_api",
