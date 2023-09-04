@@ -35,7 +35,8 @@ const sidebars = {
             {
                 "Showcases": [
                     "guides/showcases/showcases-overview",
-                    "guides/showcases/pizza-order-example"
+                    "guides/showcases/pizza-order-example",
+                    "guides/showcases/miranum-stack/miranum-stack-showcase",
                 ],
             },
             {
