@@ -5,7 +5,7 @@ sidebar_label: Setup Miranum Platform
 description: "In this step, we are going to setup Miranum Platform."
 ---
 
-# Setup **Miranum Platform**
+# Setup Miranum Platform
 
 For the development of this Showcase, we copied the `platform-stack` folder from our [Miranum Platform Repository](https://github.com/Miragon/miranum-platform)
 
@@ -28,7 +28,7 @@ on how to set up **Miranum Platform**.
 6. Select `engine` (if not already selected) and click on `OK`
 7. Switch to the `Docker View` to manage the container
 
-    <img src="../static/img/miranumStack_docker-view-icon.png" alt="docker-view-icon" width="300">
+    ![Docker View Icon](../static/img/miranumStack_docker-view-icon.png)
 
 ### Best Practice
 
@@ -113,8 +113,10 @@ to the `.vscode` folder
 
 4. Right-Click on `/platform-stack/docker-compose.yml` and select `Compose Up`
 
-> Note: If you don't want to get asked for the profile every time you can replace `${profileList}` form the JSON above
-> with `engine`.
+:::tip
+If you don't want to get asked for the profile every time you can replace `${profileList}` form the JSON above with
+`engine`.
+:::
 
 #### Add *Miranum Platform Repository* to the Workspace
 

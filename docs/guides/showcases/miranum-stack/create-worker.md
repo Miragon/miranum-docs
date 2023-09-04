@@ -5,13 +5,19 @@ sidebar_label: Create the Worker
 description: "In this step, we will create the Worker that will be used in the BPMN diagram."
 ---
 
-# Create the **Worker**
+import ElementTemplateGen from "../static/img/miranumStack_element-template-gen.png"
+
+# Create the Worker
 
 We use the **Miranum Connect Library** to make our application independent of the engine used.  
-There are already many examples that explain how to create a worker, so we will not go into detail here.
-If you want to know more about **Miranum Connect** we recommend you to read the [documentation](https://www.miranum.io/docs/guides/quick-start/miranum-connect/miranum-connect-quickstart) or look at some [examples](https://github.com/Miragon/miranum-consulting).
 
-## 1. Create the **Worker**
+:::tip
+There are already many examples that explain how to create a worker, so we will not go into detail here.
+If you want to know more about **Miranum Connect** we recommend you to read the [documentation](../../quick-start/miranum-connect/miranum-connect-quickstart.md)
+or look at some [examples](https://github.com/Miragon/miranum-consulting).
+:::
+
+## 1. Create the Worker
 
 In the [previous step](./setup-project.md) we use a template to initiate the project.
 So the necessary Java classes already exist.
@@ -32,7 +38,7 @@ public class MiranumWorkerAdapter {
 
 [MiranumWorkerAdapter](https://github.com/Miragon/miranum-consulting/blob/f64927d6a36e89869d6e9547987d6c11c063a703/miranum-stack-showcase/order-example/order-example-core/src/main/java/io/miragon/orderExample/adapter/in/miranum/MiranumWorkerAdapter.java)
 
-## 2. Create the Business Logic
+## 2. Create the Domain Logic
 
 The `Service` that contains the business logic is also created from the template.
 We are changing the service so that it adds up the given item values and returns the total order amount.
@@ -153,14 +159,19 @@ public class PrepareDeliveryCommand
 [PrepareDeliveryCommand](https://github.com/Miragon/miranum-consulting/blob/f64927d6a36e89869d6e9547987d6c11c063a703/miranum-stack-showcase/order-example/order-example-core/src/main/java/io/miragon/orderExample/application/port/in/PrepareDeliveryCommand.java)
 
 To execute the plugin, expand the *Maven*-Menu in VS Code and click on *generate*.
-> Note: This requires the Plugin listed [here](./setup-project.md#2-install-vs-code-plugins).
+After running the plugin there should be a JSON file in the target folder under
+`order-example/order-example-core/target/generated-sources/element-templates/camunda7/prepareDelivery-0-1.json`.
 
-<img src="../static/img/miranumStack_element-template-gen.png" alt="Screenshot" width="280">  
+:::note
+This requires the Plugin listed [here](./setup-project.md#2-install-vs-code-plugins).
+:::
 
-After running the plugin there should be a JSON file in the target folder under `order-example/order-example-core/target/generated-sources/element-templates/camunda7/prepareDelivery-0-1.json`.
+<img src={ElementTemplateGen} alt="Screenshot" style={{width: 380}} />
 
-> ❗ Note: There is a Bug that can lead to an incorrect Element Template.
-> In our case, the input parameter's "value" property was missing from the generated element template, so we added it manually.
+:::danger
+There is a Bug that can lead to an incorrect Element Template.
+In our case, the input parameter's "value" property was missing from the generated element template, so we added it manually.
+:::
 
 ## What's next?
 

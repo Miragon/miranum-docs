@@ -1,15 +1,15 @@
 ---
 id: miranum-stack-showcase
 title: Miranum Stack Showcase
-sidebar_label: Overview
+sidebar_label: Miranum Stack Showcase
 description: "This showcase demonstrates our various tools, grouped under the Miranum brand."
 ---
+
+import VSCode from "../static/img/miranumStack_vscode.png"
 
 :::info
 The Code for this repository can be found in our [miranum-consulting repository](https://github.com/Miragon/miranum-consulting/tree/f64927d6a36e89869d6e9547987d6c11c063a703/miranum-stack-showcase).
 :::
-
-# Miranum Stack Showcase
 
 This showcase demonstrates our various tools, grouped under the **Miranum** brand.
 
@@ -20,36 +20,39 @@ This showcase demonstrates our various tools, grouped under the **Miranum** bran
 3. [Miranum IDE](https://github.com/Miragon/miranum-ide)
    provides a centralized hub for editing, managing and accessing process application artifacts via VS Code.
 
-> Note: **Miranum** is still in an early stage of development. As such, there may be some bugs or missing features that will be implemented in the near future.
+:::caution
+**Miranum** is still in an early stage of development. As such, there may be some bugs or missing features that will be
+implemented in the near future.
+:::
 
 <p>
-   <img src="../static/img/miranumStack_vscode.png" alt="VS Code" width="1000"><br>
+   <img src={VSCode} alt="VS Code" /><br />
    <em>A screenshot of an External Task Service next to the BPMN diagram in VS Code.</em>
 </p>
 
 ## Quick Start
 
 1. Clone this repository
- 
-   ```bash
+
+   ```shell
    git clone https://github.com/Miragon/miranum-consulting.git
    ```
 
 2. Build Project
 
-   ```bash
+   ```shell
    cd miranum-consulting/miranum-stack-showcase/
    mvn clean package
    ```
-   
+
 3. Run docker compose
 
-   ```bash
+   ```shell
    cd platform-stack
    docker compose --profile engine up
    ```
-   
-4. Deploy Artifacts (see [here](./docs/deploy-artifacts.md))
+
+4. Deploy Artifacts (see [here](./deploy-artifacts.md))
 
 5. Open your Browser under `localhost:8081` and login with the following credentials:
 
@@ -58,7 +61,7 @@ This showcase demonstrates our various tools, grouped under the **Miranum** bran
    password: test
    ```
 
-<img src="../static/img/miranumStack_miranum-platform.gif" alt="Miranum Platform in Action" width="1000">
+![Miranum Platform in Action](../static/img/miranumStack_miranum-platform.gif)
 
 ## Development
 

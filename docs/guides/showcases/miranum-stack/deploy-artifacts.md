@@ -5,11 +5,18 @@ sidebar_label: Deploy Artifacts
 description: "In this step, we are going to deploy the process artifacts to Miranum Platform."
 ---
 
+import PostmanWorkspace from "../static/img/miranumStack_postman-workspace.png"
+import PostmanImport from "../static/img/miranumStack_postman-import.png"
+import PostmanAccessToken from "../static/img/miranumStack_postman-access-token.png"
+import PostmanDeployBpmn from "../static/img/miranumStack_postman-deploy-bpmn.png"
+
 # Deploy your Process Artifacts
 
-> Note: The current version of **Miranum IDE** (= 0.5.3) does not support the deployment of process artifacts to
-> **Miranum Platform**.
-> Therefore, we use [Postman](https://identity.getpostman.com/login) to make the necessary POST requests.
+:::caution
+The current version of **Miranum IDE** (= 0.5.3) does not support the deployment of process artifacts to
+**Miranum Platform**.
+Therefore, we use [Postman](https://identity.getpostman.com/login) to make the necessary POST requests.
+:::
 
 ## Import Collection
 
@@ -20,11 +27,11 @@ To import them into your *Postman Workspace* follow these steps:
 1. Login/Sign up for Postman
 2. Go to *My Workspaces* or create a new Workspace
 
-   <img src="../static/img/miranumStack_postman-workspace.png" alt="Navigate to workspace" width="300">
+   <img src={PostmanWorkspace} alt="Navigate to workspace" style={{width: 500}} />
 
 3. Import the collection
 
-   <img src="../static/img/miranumStack_postman-import.png" alt="Import collection" width="300">
+   <img src={PostmanImport} alt="Import collection" style={{width: 500}} />
 
 4. Select the pre-configured collection (`/resources/postman_collection.json`)
 
@@ -34,7 +41,9 @@ Before you can deploy your artifacts, you have to generate an Access Token.
 You can also use *Postman* to do that:
 
 1. Select the imported collection and navigate to `Authorization`  
-   <img src="../static/img/miranumStack_postman-access-token.png" alt="Navigate to authorization" width="300">
+
+   <img src={PostmanAccessToken} alt="Navigate to authorization" style={{width: 500}} />
+
 2. Scroll to the bottom and click on `Get New Access Token`
 3. Proceed and click on `Use Token`
 
@@ -43,14 +52,16 @@ You can also use *Postman* to do that:
 1. Navigate to the respective POST request an choose `Body`
 2. Click on `Select Files` and select your .bpmn or .dmn file you want to deploy
 
-   <img src="../static/img/miranumStack_postman-deploy-bpmn.png" alt="Deploy BPMN or DMN" width="300">
+   <img src={PostmanDeployBpmn} alt="Deploy BPMN or DMN" style={{width: 800}} />
 
 ## Deploy Forms and Configs
 
 To deploy the forms and configs, you can just send the respective requests.
 If you make changes to one of these files, you have to copy the JSON and paste it into the body of the POST request.
 
-**The next steps are only required if you make changes.**
+:::info
+The next steps are only required if you make changes.
+:::
 
 ### Deploy Configs
 

@@ -42,8 +42,8 @@ With the plugin installed, it is easy to run the application.
 1. Switch to the *Spring Boot Dashboard View*
 2. Run `order-example-camunda7`
 
-    <img src="../static/img/miranumStack_run-application.png" alt="Run Spring Boot Application" width="300">
+   ![Run Spring Boot Application](../static/img/miranumStack_run-application.png)
 
 ## What's next?
 
-Now everything is up and running, and you can go [back](./overview#development) and follow the instruction in step 8.
+Now everything is up and running, and you can go [back](./miranum-stack-showcase#development) and follow the instruction in step 8.

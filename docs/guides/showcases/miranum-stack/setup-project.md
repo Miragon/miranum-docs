@@ -5,10 +5,12 @@ sidebar_label: Setup Project and IDE
 description: "This guide will show you how to set up a new project and VS Code as your IDE."
 ---
 
-# Setup Project and Development Environment
+# Setup Project and IDE
 
-> We only use **Visual Studio Code** (>= 1.76.0) as our IDE.
-> Click [here](https://code.visualstudio.com/Download) to install it if you don't already have it.
+:::info
+We only use **Visual Studio Code** (>= 1.76.0) as our IDE.
+Click [here](https://code.visualstudio.com/Download) to install it if you don't already have it.
+:::
 
 ## 1. Create the Directory and Project Structure
 
@@ -28,8 +30,13 @@ gh repo create --template <repository> --private
 
 Now all you need to do is clone your new repository with `git clone <your-repository>`.
 
-**In this showcase, we will use the Hexagonal Architecture Template.**
-> Note: If you'd like to find out more about *Hexagonal Architecture* and how it can benefit you, click [here](https://www.miranum.io/docs/guides/best-practices/hexagonal-architecture).
+:::info
+In this showcase, we will use the Hexagonal Architecture Template.
+:::
+
+:::tip
+If you'd like to find out more about *Hexagonal Architecture* and how it can benefit you, click [here](../../best-practices/hexagonal-architecture.md).
+:::
 
 ## 2. Install VS Code Plugins
 

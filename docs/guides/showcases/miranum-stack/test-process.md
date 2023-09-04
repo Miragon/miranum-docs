@@ -125,13 +125,15 @@ You can display the report with the [Live Preview Plugin](https://marketplace.vi
 
 1. Install the Plugin
 2. Change the default Port
-    > Note: This is necessary because we use the default port 3000 for *Miranum Platform**
+    :::note
+    This is necessary because we use the default port 3000 for **Miranum Platform**
+    :::
     * Open the settings (Code > Preferences > Settings)
     * Search for "Live Preview: Port Number"
     * Change the port to 4000
 3. Open the generated `report.html` and click on the preview icon ![live-preview-icon](../static/img/miranumStack_live-preview-icon.png) in the top right corner.
 
-<img src="../static/img/miranumStack_test-coverage.png" alt="Test Coverage" width="600">
+![Code Coverage](../static/img/miranumStack_test-coverage.png)
 
 ## What's next?
 
