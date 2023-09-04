@@ -1,7 +1,7 @@
 ---
 id: miranum-stack-showcase
-title: Miranum Stack Showcase
-sidebar_label: Miranum Stack Showcase
+title: Miranum Stack Quickstart
+sidebar_label: Miranum Stack Quickstart
 description: "This showcase demonstrates our various tools, grouped under the Miranum brand."
 ---
 
