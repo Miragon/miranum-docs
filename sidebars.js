@@ -35,7 +35,20 @@ const sidebars = {
             {
                 "Showcases": [
                     "guides/showcases/showcases-overview",
-                    "guides/showcases/pizza-order-example"
+                    "guides/showcases/pizza-order-example",
+
+                    {
+                        "Miranum Stack Showcase": [
+                            "guides/showcases/miranum-stack/miranum-stack-showcase",
+                            "guides/showcases/miranum-stack/miranum-stack-setup-project",
+                            "guides/showcases/miranum-stack/miranum-stack-create-worker",
+                            "guides/showcases/miranum-stack/miranum-stack-create-process",
+                            "guides/showcases/miranum-stack/miranum-stack-test-process",
+                            "guides/showcases/miranum-stack/miranum-stack-setup-miranum-platform",
+                            "guides/showcases/miranum-stack/miranum-stack-deploy-artifacts",
+                            "guides/showcases/miranum-stack/miranum-stack-run-application",
+                        ],
+                    },
                 ],
             },
             {
