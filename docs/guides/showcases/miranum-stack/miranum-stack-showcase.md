@@ -1,7 +1,7 @@
 ---
 id: miranum-stack-showcase
 title: Miranum Stack Quickstart
-sidebar_label: Miranum Stack Quickstart
+sidebar_label: Overview
 description: "This showcase demonstrates our various tools, grouped under the Miranum brand."
 ---
 
@@ -54,7 +54,7 @@ implemented in the near future.
 
 4. Deploy Artifacts (see [here](./deploy-artifacts.md))
 
-5. Open your Browser under `localhost:8081` and login with the following credentials:
+5. Open your browser and navigate to `localhost:8081`, then login with the following credentials:
 
    ```text
    user: alex
