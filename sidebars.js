@@ -28,6 +28,8 @@ const sidebars = {
                     {
                         "Miranum IDE": [
                             "guides/quick-start/miranum-ide/miranum-ide-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-initialize-project-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-create-process-quickstart",
                         ],
                     },
                 ],
