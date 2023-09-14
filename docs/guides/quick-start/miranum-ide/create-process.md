@@ -14,14 +14,15 @@ import CreateAppendMenu from "../static/img/miranumIDE_create-append-menu.png"
 
 **Miranum Modeler** is one component of the Miranum IDE.
 This plugin provides you with a custom editor to view and edit `.bpmn` and `.dmn` files.
+It enables you to build BPMN 2.0 diagrams and DMN 1.3 decision tables.
 
 :::info What You Will Learn
-- [UI Elements of the BPMN Modeler](#ui-overview)
+- [UI Elements of the BPMN Modeler](#ui-overview-bpmn-modeler)
 - [Create a process](#create-a-process)
 - [Create a decision table](#create-a-decision-table)
 :::
 
-## UI Overview
+## UI Overview BPMN Modeler
 
 The Miranum Modeler opens automatically when you click on a `.bpmn` file in VS Code.
 If you have used the Camunda Modeler in the past, the Miranum Modeler should look familiar to you.
@@ -76,4 +77,44 @@ The generated `.bpmn` file already contains a Start Event.
 
 You can use the DMN Modeler for your DMN 1.3 models.
 The Modeler opens on `.dmn` files and the UI Elements are the same as in the BPMN Modeler.
+If you generated the `.dmn` file with the Miranum Console, it already contains a *Decision*.
+1. Double-click on it and enter a name and a id
+2. Drill down to the decision table by clicking on the `table` button on the top left corner of the decision
+3. Define the input
+   * Double-click on `When`
+   * Enter a label
+   * Enter the input expression (the variable from the process that holds the value)
+   * Select the type of the input
+   * Close the modal menu and add your rules by clicking on the `+` button
+4. Define the output
+   * Double-click on `Then`
+   * Enter a label
+   * Enter the output expression (the variable that can be accessed in the process)
+   * Select the type of the output
+   * For every rule you added in step 3, add a corresponding output value
+5. Select your `Hit Policy`
+
+### Link the Decision to your Process
+
+1. Open your BPMN diagram
+2. Select the `Business Rule Task`
+3. Expand `Implementation` in the Properties Panel
+4. Select `DMN` as the `Type`
+5. Enter the ID of your decision in the `Decision Ref` field
+
+   | `.dmn` | `.bpmn` |
+   |--------|---------|
+   | img    | img     |
+ 
+6. Enter the variable name that will hold the output of the decision in the `Result Variable` field
+
+   | `.dmn` | `.bpmn` |
+   |--------|---------|
+   | img    | img     |
+
+7. Add the input variable in the `Inputs` section
+
+   | `.dmn` | `.bpmn` |
+   |--------|---------|
+   | img    | img     |
 
