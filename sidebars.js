@@ -30,6 +30,7 @@ const sidebars = {
                             "guides/quick-start/miranum-ide/miranum-ide-quickstart",
                             "guides/quick-start/miranum-ide/miranum-ide-initialize-project-quickstart",
                             "guides/quick-start/miranum-ide/miranum-ide-create-process-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-create-form-quickstart",
                         ],
                     },
                 ],
