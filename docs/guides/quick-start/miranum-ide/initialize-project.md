@@ -7,8 +7,8 @@ description: "This section introduces Miranum Console as the tool to initialize 
 
 # Miranum Console Quickstart Guide
 
-**Miranum Console** is one component of the Miranum IDE.
-It provides a UI that helps you to scaffold a new digitization project.
+**Miranum Console** is one component of the Miranum IDE.  
+It provides a UI that helps you to scaffold a new digitization project and generate new process artifacts.
 
 :::info What You Will Learn
 - [How to create a new project](#create-a-new-project)
@@ -46,7 +46,7 @@ Right now (v0.5.3) the generated BPMN diagrams are only compatible with **Camund
 * `/element-templates` - The folder for your element templates
 * `/configs` - The folder for your configuration files
 
-We will explore these files and folders in more detail in the following guides.
+We will explore some of these files and folders in more detail in the following guides.
 
 ## Generate a Process Artifact
 

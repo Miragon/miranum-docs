@@ -7,7 +7,7 @@ description: "This section introduces the concepts of the Miranum IDE and how to
 
 # Miranum IDE Quickstart Guide
 
-Welcome to the Quickstart Guide for **Miranum IDE**, a collection of VS Code Plugins that allows you to  initialize, edit,
+Welcome to the Quickstart Guide for **Miranum IDE**, a collection of VS Code Plugins that allows you to initialize, edit,
 manage and access all artifacts for your process application in one place.
 
 :::info What you will learn
@@ -30,13 +30,14 @@ Each of these mini-guides will help you get started quickly, providing you with 
 In addition to this quickstart guide, we've also developed a [Showcase](../../showcases/miranum-stack/miranum-stack-showcase.md).
 This showcase will demonstrate how the Miranum IDE can be used in conjunction with our various Miranum tools to help you create a simple process application.
 We will use the same process example in our guides.
+You can find all the files [here](https://github.com/Miragon/miranum-consulting/tree/main/miranum-stack-showcase/order-example/order-example-camunda7/src/main/resources).
 The process is kept simple and does not represent a real-world use case, focusing on the capabilities of the Miranum IDE.
 But we are curious to see what you can build with it and hear your [feedback](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-ide&ssr=false#review-details)!
 
 You will need to install the Miranum IDE before diving into the tutorials.
 1. Install [VS Code](https://code.visualstudio.com/download)
-2. Open the *Extensions* view in VS Code and search for `Miranum` and click on `Install`.
+2. Open the *Extensions* view in VS Code and search for `Miranum` and install the **Miranum IDE**.
 
 ![Extension View](../static/img/miranumIDE_install-extension.png)
 
-Now you are ready to take off! 🚀
+**Now you are ready to take off! 🚀**

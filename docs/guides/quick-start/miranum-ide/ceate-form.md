@@ -7,7 +7,7 @@ description: "This section introduces Miranum Form Builder as the tool to create
 
 # Miranum Form Builder Quickstart Guide
 
-**Miranum Form Builder** is one component of the Miranum IDE.
+**Miranum Form Builder** is one component of the Miranum IDE.  
 This plugin provides you with a custom editor to view and edit `.form` files.
 The forms you build can be used within **Miranum Platform**.
 
@@ -26,7 +26,7 @@ The elements can be dragged and dropped into the editor to add them to your form
 
 To view the form you can use the Preview on the right side of the editor.
 The preview is automatically opened whe you use the Form Builder.
-With the `Preview Button` on the top right corner of the editor you can toggle the preview.
+With the `Preview Button` in the top right corner of the editor you can toggle the preview.
 
 ## Create a Form
 
