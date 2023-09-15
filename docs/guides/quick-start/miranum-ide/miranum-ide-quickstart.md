@@ -14,8 +14,8 @@ manage and access all artifacts for your process application in one place.
 In this guide, you'll get hands-on experience with the following core features of Miranum IDE:
 - [Initializing a Project](initialize-project.md)
 - [Creating a BPMN Process](create-process.md)
-- [Creating a Business Rule]
-- [Creating a Form]
+- [Creating a Business Rule](create-process.md#create-a-decision-table)
+- [Creating a Form](create-form.md)
 :::
 
 :::caution Early Stage of Development
@@ -29,7 +29,7 @@ Each of these mini-guides will help you get started quickly, providing you with 
 
 In addition to this quickstart guide, we've also developed a [Showcase](../../showcases/miranum-stack/miranum-stack-showcase.md).
 This showcase will demonstrate how the Miranum IDE can be used in conjunction with our various Miranum tools to help you create a simple process application.
-We will use the same process example in our guides.
+We will use the same process example from the showcase in the following guides.
 You can find all the files [here](https://github.com/Miragon/miranum-consulting/tree/main/miranum-stack-showcase/order-example/order-example-camunda7/src/main/resources).
 The process is kept simple and does not represent a real-world use case, focusing on the capabilities of the Miranum IDE.
 But we are curious to see what you can build with it and hear your [feedback](https://marketplace.visualstudio.com/items?itemName=miragon-gmbh.miranum-ide&ssr=false#review-details)!

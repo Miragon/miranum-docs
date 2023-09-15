@@ -9,6 +9,7 @@ import ElementPalette from "../static/img/miranumIDE/miranumIDE_element-palette.
 import ContextPad from "../static/img/miranumIDE/miranumIDE_context-pad.png"
 import PropertiesPanel from "../static/img/miranumIDE/miranumIDE_properties-panel.png"
 import CreateAppendMenu from "../static/img/miranumIDE/miranumIDE_create-append-menu.png"
+import WrenchButton from "../static/img/miranumIDE/miranumIDE_process-wrench-button.png"
 
 import ProcessEnterName from "../static/img/miranumIDE/miranumIDE_process-enter-name.png"
 import OpenAppendMenu from "../static/img/miranumIDE/miranumIDE_process-open-append-menu.png"
@@ -65,16 +66,20 @@ You can use it to quickly append a BPMN element to your process or to remove/mor
 ### Properties Panel
 
 The Properties Panel is located on the right side of the editor and shows the properties of the selected element.
-You can use it to configure the selected element, like defining the input and output variables.
+You can use it to configure the element, like defining the input and output variables.
 
 <img src={PropertiesPanel} alt="Properties Panel" style={{width: 480}} />
 
 ### Create/Append Menu
 
 Instead of dragging and dropping elements from the Element Palette, you can also use the Create/Append Menu.
-Normally you would drag and drop the element and then use the Context Menu to morph it to a specific type.  
+Normally you would drag and drop the element and then use the `Wrench Button` in the Context Pad to morph it 
+to a specific type.
 For example, you can drag and drop a `Task` and then morph it to a `User Task`.
-With the menu you can directly create a `User Task` without the need to morph it.
+
+<img src={WrenchButton} alt="Wrench Button" style={{width: 140}} />
+
+With the Create/Append Menu you can directly create a `User Task` without the need to morph it.
 
 <img src={CreateAppendMenu} alt="Create Append Menu" style={{width: 480}} />
 
@@ -118,7 +123,7 @@ If you generated the `.dmn` file with the Miranum Console, it already contains a
 
    <img src={DmnEnterNameId} alt="Enter name and id" style={{width: 480}} />
 
-2. Drill down to the decision table by clicking on the `table` button in the top left corner of the decision
+2. Drill down to the decision table by clicking on the `Table Button` in the top left corner of the decision
 
    <img src={DmnSwitchToTable} alt="Switch to table" style={{width: 480}} />
 
@@ -127,24 +132,22 @@ If you generated the `.dmn` file with the Miranum Console, it already contains a
    * Enter a label
    * Enter the input expression (the variable from the process that holds the value)
    * Select the type of the input
-
-   <img src={DmnDefineInput} alt="Define input" style={{width: 480}} />
-
    * Close the modal menu and add your rules by clicking on the `+` button
 
-   <img src={DmnAddRules} alt="Add rules" style={{width: 480}} />
+   | Define Input                                                         | Add Rules                                                      |
+   |----------------------------------------------------------------------|----------------------------------------------------------------|
+   | <img src={DmnDefineInput} alt="Define input" style={{width: 480}} /> | <img src={DmnAddRules} alt="Add rules" style={{width: 480}} /> |
 
 4. Define the output
    * Double-click on `Then`
    * Enter a label
    * Enter the output expression (the variable that can be accessed in the process)
    * Select the type of the output
-
-   <img src={DmnDefineOutput} alt="Define output" style={{width: 480}} />
-
    * For every rule you added in step 3, add a corresponding output value
 
-   <img src={DmnAddOutputValues} alt="Add output values" style={{width: 480}} />
+   | Define Output                                                          | Add Output Values                                                             |
+   |------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+   | <img src={DmnDefineOutput} alt="Define output" style={{width: 480}} /> | <img src={DmnAddOutputValues} alt="Add output values" style={{width: 480}} /> |
 
 5. Select your `Hit Policy`
 
