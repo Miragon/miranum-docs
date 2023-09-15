@@ -38,6 +38,6 @@ You will need to install the Miranum IDE before diving into the tutorials.
 1. Install [VS Code](https://code.visualstudio.com/download)
 2. Open the *Extensions* view in VS Code and search for `Miranum` and install the **Miranum IDE**.
 
-![Extension View](../static/img/miranumIDE_install-extension.png)
+![Extension View](../static/img/miranumIDE/miranumIDE_install-extension.png)
 
 **Now you are ready to take off! 🚀**

@@ -5,30 +5,30 @@ sidebar_label: Create your Process
 description: "This section introduces Miranum Modeler as the tool to create and edit BPMN processes or DMN decision tables."
 ---
 
-import ElementPalette from "../static/img/miranumIDE_element-palette.png"
-import ContextPad from "../static/img/miranumIDE_context-pad.png"
-import PropertiesPanel from "../static/img/miranumIDE_properties-panel.png"
-import CreateAppendMenu from "../static/img/miranumIDE_create-append-menu.png"
+import ElementPalette from "../static/img/miranumIDE/miranumIDE_element-palette.png"
+import ContextPad from "../static/img/miranumIDE/miranumIDE_context-pad.png"
+import PropertiesPanel from "../static/img/miranumIDE/miranumIDE_properties-panel.png"
+import CreateAppendMenu from "../static/img/miranumIDE/miranumIDE_create-append-menu.png"
 
-import ProcessEnterName from "../static/img/miranumIDE_process-enter-name.png"
-import OpenAppendMenu from "../static/img/miranumIDE_process-open-append-menu.png"
-import AppendMenu from "../static/img/miranumIDE_process-append-menu.png"
-import ProcessNameTask from "../static/img/miranumIDE_process-name-the-task.png"
+import ProcessEnterName from "../static/img/miranumIDE/miranumIDE_process-enter-name.png"
+import OpenAppendMenu from "../static/img/miranumIDE/miranumIDE_process-open-append-menu.png"
+import AppendMenu from "../static/img/miranumIDE/miranumIDE_process-append-menu.png"
+import ProcessNameTask from "../static/img/miranumIDE/miranumIDE_process-name-the-task.png"
 
-import DmnEnterNameId from "../static/img/miranumIDE_dmn-enter-name-id.png"
-import DmnSwitchToTable from "../static/img/miranumIDE_dmn-switch-to-table.gif"
-import DmnDefineInput from "../static/img/miranumIDE_dmn-define-input.png"
-import DmnAddRules from "../static/img/miranumIDE_dmn-add-rules.png"
-import DmnDefineOutput from "../static/img/miranumIDE_dmn-define-output.png"
-import DmnAddOutputValues from "../static/img/miranumIDE_dmn-add-output-values.png"
-import DmnSelectHitPolicy from "../static/img/miranumIDE_dmn-select-hit-policy.png"
+import DmnEnterNameId from "../static/img/miranumIDE/miranumIDE_dmn-enter-name-id.png"
+import DmnSwitchToTable from "../static/img/miranumIDE/miranumIDE_dmn-switch-to-table.gif"
+import DmnDefineInput from "../static/img/miranumIDE/miranumIDE_dmn-define-input.png"
+import DmnAddRules from "../static/img/miranumIDE/miranumIDE_dmn-add-rules.png"
+import DmnDefineOutput from "../static/img/miranumIDE/miranumIDE_dmn-define-output.png"
+import DmnAddOutputValues from "../static/img/miranumIDE/miranumIDE_dmn-add-output-values.png"
+import DmnSelectHitPolicy from "../static/img/miranumIDE/miranumIDE_dmn-select-hit-policy.png"
 
-import DmnKey from "../static/img/miranumIDE_dmn-bpmn-key.png"
-import BpmnKey from "../static/img/miranumIDE_bpmn-dmn-key.png"
-import DmnOutput from "../static/img/miranumIDE_dmn-bpmn-output.png"
-import BpmnOutput from "../static/img/miranumIDE_bpmn-dmn-output.png"
-import DmnInput from "../static/img/miranumIDE_dmn-bpmn-input.png"
-import BpmnInput from "../static/img/miranumIDE_bpmn-dmn-input.png"
+import DmnKey from "../static/img/miranumIDE/miranumIDE_dmn-bpmn-key.png"
+import BpmnKey from "../static/img/miranumIDE/miranumIDE_bpmn-dmn-key.png"
+import DmnOutput from "../static/img/miranumIDE/miranumIDE_dmn-bpmn-output.png"
+import BpmnOutput from "../static/img/miranumIDE/miranumIDE_bpmn-dmn-output.png"
+import DmnInput from "../static/img/miranumIDE/miranumIDE_dmn-bpmn-input.png"
+import BpmnInput from "../static/img/miranumIDE/miranumIDE_bpmn-dmn-input.png"
 
 # Miranum Modeler Quickstart Guide
 
@@ -105,7 +105,7 @@ The generated `.bpmn` file already contains a Start Event.
  
 5. Repeat steps 2-4 to add further elements to your process until it looks like this:
 
-![Create Process](../static/img/miranumIDE_create-process.gif)
+![Create Process](../static/img/miranumIDE/miranumIDE_create-process.gif)
 
 ## Create a Decision Table
 

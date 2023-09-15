@@ -20,7 +20,7 @@ It provides a UI that helps you to scaffold a new digitization project and gener
 We start with an empty workspace in VS Code.
 So your Screen should look something like this:
 
-![Empty Workspace](../static/img/miranumIDE_empty-workspace.png)
+![Empty Workspace](../static/img/miranumIDE/miranumIDE_empty-workspace.png)
 
 To create a new project, follow these steps:
 1. Select the Miranum Console view in the Activity Bar on the left side of VS Code.
@@ -29,7 +29,7 @@ To create a new project, follow these steps:
 4. Select a location for your project.
 5. Click on `Generate`.
 
-![Create new Project](../static/img/miranumIDE_create-new-project.png)
+![Create new Project](../static/img/miranumIDE/miranumIDE_create-new-project.png)
 
 After a few seconds, the project and workspace are created.
 
@@ -57,7 +57,7 @@ If your project needs more artifacts, you can generate them with **Miranum Conso
 4. Select the type of the file you want to generate
 5. Click on `Generate`
 
-![Generate new File](../static/img/miranumIDE_generate-new-file.png)
+![Generate new File](../static/img/miranumIDE/miranumIDE_generate-new-file.png)
 
 Now you should have all necessary files ready to start modeling the process with the **Miranum Modeler**
 in the [next step](create-process.md).
