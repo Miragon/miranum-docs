@@ -25,9 +25,10 @@ of Miranum Connect.
 Each showcase listed here provides in-depth documentation, including the step-by-step process of building the project, the key features of Miranum Connect used, and the specific technologies and architectural approaches employed.
 :::
 
-| Showcase                                        | Technologies   | Description                                                                                                                                  |
-|-------------------------------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Pizza Order Example](./pizza-order-miranum.md) | Camunda 8      | This example demonstrates how to use miranum connect and how you can decouple microservices using it in a realistic pizza order application. |
+| Showcase                                                            | Technologies  | Description                                                                                                                                        |
+|---------------------------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Pizza Order Example](./pizza-order-miranum.md)                     | Camunda 8     | This example demonstrates how to use miranum connect and how you can decouple microservices using it in a realistic pizza order application. <br/> |  
+| [Miranum Stack Showcase](./miranum-stack/miranum-stack-showcase.md) | Camunda 7 & 8 | This example demonstrates how to use the whole Miranum Stack to automate an order process. <br/>                                                   |
 
 By studying these showcases, you will gain a more profound understanding of how to leverage Miranum Connect's features
 to their fullest potential. They are also a great source of inspiration for your own projects.
