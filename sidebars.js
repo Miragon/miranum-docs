@@ -34,6 +34,7 @@ const sidebars = {
                             "guides/quick-start/miranum-ide/miranum-ide-create-form-quickstart",
                         ],
                     },
+                    "guides/quick-start/miranum-cli-quickstart",
                 ],
             },
             {

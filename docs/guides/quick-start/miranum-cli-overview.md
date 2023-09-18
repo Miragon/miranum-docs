@@ -1,6 +1,6 @@
 ---
-id: miranum-cli-overview
-title: Miranum CLI Overview
+id: miranum-cli-quickstart
+title: Miranum CLI Quickstart
 sidebar_label: Miranum CLI
 description: "This section contains quickstart guides for our various Miranum tools."
 ---
