@@ -16,7 +16,18 @@ import LinkToBpmn from "../static/img/miranumIDE/miranumIDE_form-link-to-bpmn.pn
 
 **Miranum Form Builder** is one component of the Miranum IDE.  
 This plugin provides you with a custom editor to view and edit `.form` files.
-The forms you build can be used within **Miranum Platform**.
+
+:::caution
+The forms you build with the Miranum Form Builder Plugin can only be used within **Miranum Platform**.
+:::
+
+:::info
+We are simultaneously working on a Form Builder based on [JSON Forms](https://jsonforms.io/).
+This plugin is only available as a **preview**, because some important features like separating schema and ui-schema
+into different files are missing.
+Also, JSON Forms is not supported by Miranum Platform yet.
+We will release a quickstart guide for the JSON Forms plugin as soon as it is ready.
+:::
 
 :::info What You Will Learn
 - [UI Elements](#ui-overview)
