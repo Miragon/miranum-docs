@@ -8,7 +8,8 @@ description: "This section introduces Miranum Console as the tool to initialize 
 # Miranum Console Quickstart Guide
 
 **Miranum Console** is one component of the Miranum IDE.  
-It provides a UI that helps you to scaffold a new digitization project and generate new process artifacts.
+It is a user interface for Miranum CLI that assists you in the creation of a new digitization project and the generation
+of new process artifacts.
 
 :::info What You Will Learn
 - [How to create a new project](#create-a-new-project)
@@ -58,3 +59,13 @@ If your project needs more artifacts, you can generate them with **Miranum Conso
 5. Click on `Generate`
 
 ![Generate new File](../static/img/miranumIDE/miranumIDE_generate-new-file.png)
+
+## Deploy a Process
+
+:::info
+Miranum Console has a build in feature to deploy your artifacts within VS Code.
+However, this feature is not up-to-date and needs to be overhauled.
+You can still use the Miranum CLI to deploy your artifacts.
+
+**The documentation for the Miranum CLI can be found [here](../miranum-cli-overview.md#deployment).**
+:::
