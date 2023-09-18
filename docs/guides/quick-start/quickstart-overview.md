@@ -17,7 +17,7 @@ If you're looking for more in-depth documentation, check out the [Showcase](../s
 where we provide detailed guides on how to build more complex applications using Miranum.
 
 :::tip
-The list below will be continuously updated as we add more quickstart guides for our various tools.
+The list below will be continuously updated as we add more quickstart guides.
 So make sure to revisit this page to stay up to date!
 :::
 

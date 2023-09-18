@@ -64,7 +64,7 @@ module.exports = {
                     {
                         type: "doc",
                         position: "left",
-                        docId: 'guides/quick-start/miranum-connect/miranum-connect-quickstart',
+                        docId: 'guides/quick-start/quickstart-overview',
                         label: "Guides"
                     },
                     {

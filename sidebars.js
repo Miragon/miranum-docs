@@ -17,6 +17,7 @@ const sidebars = {
         Guides: [
             {
                 "Quickstart": [
+                    "guides/quick-start/quickstart-overview",
                     {
                         "Miranum Connect": [
                             "guides/quick-start/miranum-connect/miranum-connect-quickstart",
