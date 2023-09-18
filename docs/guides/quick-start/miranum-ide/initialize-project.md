@@ -67,5 +67,5 @@ Miranum Console has a build in feature to deploy your artifacts within VS Code.
 However, this feature is not up-to-date and needs to be overhauled.
 You can still use the Miranum CLI to deploy your artifacts.
 
-**The documentation for the Miranum CLI can be found [here](../miranum-cli-overview.md#deployment).**
+**The documentation for the Miranum CLI can be found [here](../miranum-cli-quickstart.md#deployment).**
 :::
