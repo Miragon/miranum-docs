@@ -17,6 +17,7 @@ const sidebars = {
         Guides: [
             {
                 "Quickstart": [
+                    "guides/quick-start/quickstart-overview",
                     {
                         "Miranum Connect": [
                             "guides/quick-start/miranum-connect/miranum-connect-quickstart",
@@ -28,8 +29,12 @@ const sidebars = {
                     {
                         "Miranum IDE": [
                             "guides/quick-start/miranum-ide/miranum-ide-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-initialize-project-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-create-process-quickstart",
+                            "guides/quick-start/miranum-ide/miranum-ide-create-form-quickstart",
                         ],
                     },
+                    "guides/quick-start/miranum-cli-quickstart",
                 ],
             },
             {

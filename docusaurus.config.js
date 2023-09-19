@@ -51,6 +51,9 @@ module.exports = {
             }),
         ],
     ],
+    plugins: [
+        require.resolve("docusaurus-plugin-image-zoom")
+    ],
     themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
@@ -61,7 +64,7 @@ module.exports = {
                     {
                         type: "doc",
                         position: "left",
-                        docId: 'guides/quick-start/miranum-connect/miranum-connect-quickstart',
+                        docId: 'guides/quick-start/quickstart-overview',
                         label: "Guides"
                     },
                     {
@@ -113,6 +116,16 @@ module.exports = {
             colorMode: {
                 disableSwitch: true,
             },
+            zoom: {
+                selector: '.markdown img',
+                config: {
+                    // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+                    background: {
+                        light: 'rgb(255, 255, 255)',
+                        dark: 'rgb(50, 50, 50)'
+                    }
+                }
+            }
         }),
 };
 
