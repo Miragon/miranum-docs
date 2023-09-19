@@ -88,7 +88,9 @@ With this in mind, let's create our first process.
 ## Create a Process
 
 :::info
-The Miranum Modeler can be used to model BPMN diagrams for **Camunda 7** and **Camunda 8**.
+The Miranum Modeler can be used to model BPMN diagrams for **Camunda 7** and **Camunda 8**.  
+If you create an empty `.bpmn` file manually, the Modeler will automatically create a diagram for **Camunda 7**
+and use the respective namespace.
 :::
 
 The generated `.bpmn` file already contains a Start Event.
