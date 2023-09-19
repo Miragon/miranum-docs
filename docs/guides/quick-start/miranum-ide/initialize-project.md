@@ -1,7 +1,7 @@
 ---
 id: miranum-ide-initialize-project-quickstart
-title: Initiale your Project
-sidebar_label: Initialise your Project
+title: Initialize your Project
+sidebar_label: Initialize your Project
 description: "This section introduces Miranum Console as the tool to initialize a project."
 ---
 
