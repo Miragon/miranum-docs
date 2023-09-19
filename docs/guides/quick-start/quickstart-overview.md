@@ -25,6 +25,7 @@ So make sure to revisit this page to stay up to date!
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Miranum Connect](miranum-connect/miranum-connect-quickstart.md) | Miranum Connect is a powerful and engine-neutral framework. These guides will help you get started quickly, providing you with a firm understanding of the basics of Miranum Connect. |
 | [Miranum IDE](miranum-ide/miranum-ide-quickstart.md)             | Miranum IDE is a collection of different Visual Studio Code Plugins. These guides will help you in setting up and using them for your own projects.                                   |
+| [Miranum CLI](miranum-cli-quickstart)                            | Miranum CLI is a command-line interface for Miranum. The guid will help you in installing and using it.                                                                               |
 
 By following these quick-start guides, you will learn the basics of each Miranum tool and be able to use them in your 
 own projects.

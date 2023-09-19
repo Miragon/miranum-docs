@@ -36,7 +36,7 @@ After a few seconds, the project and workspace are created.
 
 Miranum Console will generate the following files and folders:
 
-:::note
+:::caution
 BPMN diagrams must be created for the process engine they intend to be deployed on.
 Right now (v0.5.3) the generated BPMN diagrams are only compatible with **Camunda 7**.
 :::
